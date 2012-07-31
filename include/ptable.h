@@ -1,3 +1,5 @@
+//	ChemTerm Copyright (C) 2012 Travis Michael Whitaker
+//
 //	This file contains all of the elemental data locally accessible by ChemTerm.
 //
 //	Test implementation of element struct:
