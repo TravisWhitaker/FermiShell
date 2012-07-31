@@ -3,6 +3,7 @@
 #include <stdio.h>
 
 #include <ptable.h>
+#include <portutils.h>
 
 int main()
 {

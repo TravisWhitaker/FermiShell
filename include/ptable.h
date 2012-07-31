@@ -82,7 +82,7 @@ int populate()
 	element hydrogen;
 
 	hydrogen.atomNumber = 1;
-	hydrogen.atomName = "Hydrogen\0";
+	portstrcpy(hydrogen.atomName,"Hydrogen\0");
 	hydrogen.atomMass = 1.00794;
 	hydrogen.phase = 0;
 	hydrogen.fusionP = -259.14;
@@ -92,7 +92,7 @@ int populate()
 	hydrogen.thermCon = 0.1805;
 	hydrogen.metalloid = -1;
 	hydrogen.magType = 0;
-	hydrogen.color = "colorless\0";
+	portstrcpy(hydrogen.color,"colorless\0");
 	hydrogen.refractiveIndex = 1.000132;
 	hydrogen.valence = 1;
 	hydrogen.electroneg = 2.2;
@@ -108,8 +108,8 @@ int populate()
 	hydrogen.crustAbundance = 0.15;
 	hydrogen.humanAbundance = 10;
 	hydrogen.halfLifeYears = -1;
-	hydrogen.CASn = "1333-74-0\0";
-	hydrogen.CIDn = "783";
+	portstrcpy(hydrogen.CASn,"1333-74-0\0");
+	portstrcpy(hydrogen.CIDn,"783\0")
 
 	//struct isotope H_1;
 
