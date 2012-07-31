@@ -4,7 +4,11 @@ CC=clang
 CFLAGS=
 SOURCE= $(wildcard src/*.c)
 INCLUDE=-I./include
-EXECUTABLE=-o chemterm
+OUT=-o
+EXECUTABLE=chemterm
 
 all:
-	$(CC) $(CFLAGS) $(INCLUDE) $(EXECUTABLE) $(SOURCE)
+	$(CC) $(CFLAGS) $(INCLUDE) $(OUT) $(EXECUTABLE) $(SOURCE)
+
+clean:
+	rm $(EXECUTABLE)
