@@ -4,8 +4,8 @@
 
 #include <ptable.h>
 
-void main()
+int main()
 {
 	printf(hydrogen.atomName);
-	return;
+	return 0;
 }
