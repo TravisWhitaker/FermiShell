@@ -5,7 +5,9 @@
 //	Test implementation of element struct:
 //	Disabling isotopes for now...
 
-struct element
+struct elemental
+
+typedef struct elemental
 {
 	int atomNumber;
 	char atomName[15];
@@ -35,7 +37,7 @@ struct element
 	float halfLifeYears; // -1 indicates stability.
 	char CASn[15];
 	char CIDn[15];
-};
+} element;
 
 //	Test implementation of isotope struct:
 
@@ -76,7 +78,7 @@ struct element
 
 //	Hydrogen
 
-struct element hydrogen;
+element hydrogen;
 
 hydrogen.atomNumber = 1;
 hydrogen.atomName = "Hydrogen\0";
