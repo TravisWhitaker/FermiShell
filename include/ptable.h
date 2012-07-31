@@ -62,28 +62,28 @@ struct element
 
 //	Function to fill the remainder of the element.isotope array with 'notope.'
 
-void isoFill(struct isoArray, int isoFilled)
-{
-	int isoInc;
-	for(isoInc = isoFilled; isoInc < 37; isoInc++)
-	{
-		isoArray[isoInc] = notope;
-	}
-	return;
-}
+//void isoFill(struct isoArray, int isoFilled)
+//{
+//	int isoInc;
+//	for(isoInc = isoFilled; isoInc < 37; isoInc++)
+//	{
+//		isoArray[isoInc] = notope;
+//	}
+//	return;
+//}
 
 //	Start Periodic Table:
 
 //	Hydrogen
 
-struct element hydrogen
+struct element hydrogen;
 
 hydrogen.atomNumber = 1;
 hydrogen.atomName = "Hydrogen\0";
 hydrogen.atomMass = 1.00794;
 hydrogen.phase = 0;
 hydrogen.fusionP = -259.14;
-hydrogen.vaporP = -252.87'
+hydrogen.vaporP = -252.87;
 hydrogen.density = 0.00000899;
 hydrogen.soundSpeed = 1270;
 hydrogen.thermCon = 0.1805;
@@ -99,8 +99,8 @@ hydrogen.ionE2 = -1;
 hydrogen.ionE3 = -1;
 hydrogen.mHc = 285.8;
 hydrogen.atomRadius = 25;
-hydrogen.isotope[0] = H_1; hydrogen.isotope[1] = H_2; hydrogen.isotope[2] = H_3;
-isoFill(hydrogen.isotope,3);
+//hydrogen.isotope[0] = H_1; hydrogen.isotope[1] = H_2; hydrogen.isotope[2] = H_3;
+//isoFill(hydrogen.isotope,3);
 hydrogen.universeAbundance = 75;
 hydrogen.crustAbundance = 0.15;
 hydrogen.humanAbundance = 10;
