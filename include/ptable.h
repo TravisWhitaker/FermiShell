@@ -3,6 +3,7 @@
 //	This file contains all of the elemental data locally accessible by ChemTerm.
 //
 //	Test implementation of element struct:
+//	Disabling isotopes for now...
 
 struct element
 {
@@ -27,7 +28,7 @@ struct element
 	float ionE3;
 	float mHc;
 	float atomRadius;
-	struct isotope[37];
+//	struct isotope[37];
 	float universeAbundance;
 	float crustAbundance;
 	float humanAbundance;
@@ -38,26 +39,26 @@ struct element
 
 //	Test implementation of isotope struct:
 
-struct isotope
-{
-	int isoNumber;
-	char isoName[20];
-	int isoMass;
-	float abundance;// -1 indicates unknown/non-significant.
-	int isRadioactive; // -1 indicates unknown/undefined, 0 indicates non-radioactive, 1 indicates radioactivity.
-	float halfLifeYears; // -1 indicates stability.
-};
+//struct isotope
+//{
+//	int isoNumber;
+//	char isoName[20];
+//	int isoMass;
+//	float abundance;// -1 indicates unknown/non-significant.
+//	int isRadioactive; // -1 indicates unknown/undefined, 0 indicates non-radioactive, 1 indicates radioactivity.
+//	float halfLifeYears; // -1 indicates stability.
+//};
 
 //	This is the null instance of the struct 'isotope.'
 
-struct isotope notope;
+//struct isotope notope;
 
-notope.isoNumber = 0;
-notope.isoName = "\0"
-notope.isoMass = 0;
-notope.abundance = 100;
-notope.isRadioactive = -1;
-notope.halfLifeYears = -1;
+//notope.isoNumber = 0;
+//notope.isoName = "\0"
+//notope.isoMass = 0;
+//notope.abundance = 100;
+//notope.isRadioactive = -1;
+//notope.halfLifeYears = -1;
 
 //	Function to fill the remainder of the element.isotope array with 'notope.'
 
@@ -107,29 +108,29 @@ hydrogen.halfLifeYears = -1;
 hydrogen.CASn = "1333-74-0\0";
 hydrogen.CIDn = "783";
 
-struct isotope H_1;
+//struct isotope H_1;
 
-H_1.isoNumber = 1;
-H_1.isoName = "Hydrogen\0";
-H_1.isoMass = 1;
-H_1.abundance = 99.985;
-H_1.isRadioactive = 0;
-H_1.halfLifeYears = -1;
+//H_1.isoNumber = 1;
+//H_1.isoName = "Hydrogen\0";
+//H_1.isoMass = 1;
+//H_1.abundance = 99.985;
+//H_1.isRadioactive = 0;
+//H_1.halfLifeYears = -1;
 
-struct isotope H_2;
+//struct isotope H_2;
 
-H_2.isoNumber = 2;
-H_2.isoName = "Deuterium\0";
-H_2.isoMass = 2;
-H_2.abundance = 0.00015;
-H_2.isRadioactive = 0;
-H_2.halfLifeYears = -1;
+//H_2.isoNumber = 2;
+//H_2.isoName = "Deuterium\0";
+//H_2.isoMass = 2;
+//H_2.abundance = 0.00015;
+//H_2.isRadioactive = 0;
+//H_2.halfLifeYears = -1;
 
-struct isotope H_3;
+//struct isotope H_3;
 
-H_3.isoNumber = 3;
-H_3.isoName = "Tritium\0";
-H_3.isoMass = 3;
-H_3.abundance = -1;
-H_3.isRadioactive = 1;
-H_3.halfLifeYears = 12.32;
+//H_3.isoNumber = 3;
+//H_3.isoName = "Tritium\0";
+//H_3.isoMass = 3;
+//H_3.abundance = -1;
+//H_3.isRadioactive = 1;
+//H_3.halfLifeYears = 12.32;
