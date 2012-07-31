@@ -6,6 +6,7 @@
 
 int main()
 {
+	populate();
 	printf(hydrogen.atomName);
 	return 0;
 }
