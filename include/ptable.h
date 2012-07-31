@@ -31,6 +31,8 @@ typedef struct
 	char CIDn[15];
 } element;
 
-extern element hydrogen;
+element *populator;
+void popPtable();
 
-extern void populate();
+element hydrogen;
+
