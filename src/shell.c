@@ -8,6 +8,6 @@
 int main()
 {
 	populate();
-	printf(hydrogen.atomName);
+	printf("%s",hydrogen.atomName);
 	return 0;
 }

@@ -109,7 +109,7 @@ int populate()
 	hydrogen.humanAbundance = 10;
 	hydrogen.halfLifeYears = -1;
 	portstrcpy(hydrogen.CASn,"1333-74-0\0");
-	portstrcpy(hydrogen.CIDn,"783\0")
+	portstrcpy(hydrogen.CIDn,"783\0");
 
 	//struct isotope H_1;
 
