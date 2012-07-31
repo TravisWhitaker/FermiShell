@@ -7,6 +7,7 @@
 
 int main()
 {
+	printf("Populating tables...\n");
 	populate();
 	printf("%s",hydrogen.atomName);
 	return 0;
