@@ -1,7 +1,8 @@
 //	Copyright (C) 2012 Travis Michael Whitaker
 
-#include <portutils.h>
 #include <ptable.h>
+
+char *portstrcpy(char dest[], const char source[]);
 
 void popPtable()
 {

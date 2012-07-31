@@ -8,6 +8,6 @@ int main()
 {
 	printf("Populating tables...\n");
 	popPtable();
-	printf("%s",hydrogen.atomName);
+	printf("%s\n",hydrogen.atomName);
 	return 0;
 }
