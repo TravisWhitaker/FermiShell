@@ -96,4 +96,6 @@ void popPtable()
 	portstrcpy(populator->CASn,"7440-59-7\0");
 	portstrcpy(populator->CIDn,"23987\0");
 
+	populator = &lithium;
+
 }

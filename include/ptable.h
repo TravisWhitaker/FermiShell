@@ -36,3 +36,11 @@ void popPtable();
 
 element hydrogen;
 element helium;
+element lithium;
+element beryllium;
+element boron;
+element carbon;
+element nitrogen;
+element oxygen;
+element fluorine;
+element neon;
