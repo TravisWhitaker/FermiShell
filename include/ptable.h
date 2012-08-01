@@ -31,8 +31,25 @@ typedef struct
 	char CIDn[15];
 } element;
 
-element *populator;
+typedef struct
+{
+	int isoNumber;
+	char isoName[25];
+	float isoMass;
+	float isoRadius;
+	float isoAbundance;
+	float halfLifeYears;
+	int primaryDecayMode;
+	int secondaryDecayMode;
+	int tertiaryDecayMode;
+	element *finalState;
+} isotope;
+
+element *elementPop;
 void popPtable();
+
+isotope *isoPop;
+void popIso();
 
 element hydrogen;
 element helium;
