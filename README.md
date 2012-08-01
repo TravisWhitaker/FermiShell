@@ -17,4 +17,4 @@ What can ChemTerm do?
 - Analyze theoretical chemical systems with support for many common reactions, including electrochemical cells. Test hypotheses and verify the range and accuracy of experimental data.
 - Graph your data alongside theoretical means and extremes. Make powerful comparisons and gain more insight into experimental results and errors.
 - Simulate experiments with your own specified parameters. Gain insight into your potential data before and during your time in the lab.
-- Experiment with chemicals outside of your kit. Don't have access to nuclear-grade equipment? Conduct titrations with salts of Plutonium. Don't have an ISO 8 cleanroom? Thermodynamially optimize the growth of silicon substrates.
+- Experiment with chemicals outside of your kit. Don't have access to nuclear-grade equipment? Conduct titrations with salts of Uranium. Don't have an ISO 8 cleanroom? Thermodynamially optimize the growth of silicon substrates.
