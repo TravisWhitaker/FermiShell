@@ -6,7 +6,7 @@ typedef struct
 	char atomName[15];
 	float atomMass;
 	int phase; // -1 indicates unknown/ambiguous phase, 0 indicates a gas, 1 indicates a liquid, 2 indicates a solid.
-	float fusionP;
+	float fusionP; //-1 indicates unknown temperature.
 	float vaporP;
 	float density;
 	float soundSpeed;
@@ -35,4 +35,4 @@ element *populator;
 void popPtable();
 
 element hydrogen;
-
+element helium;
