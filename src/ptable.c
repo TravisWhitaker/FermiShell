@@ -73,7 +73,7 @@ void popPtable()
 	populator->atomMass = 4.00260;
 	populator->phase = 0;
 	populator->fusionP = -1;
-	populator->vaporp = -268.93;
+	populator->vaporP = -268.93;
 	populator->density = 0.0001785;
 	populator->soundSpeed = 970;
 	populator->thermCon = 0.1513;
@@ -92,7 +92,7 @@ void popPtable()
 	populator->universeAbundance = 23;
 	populator->crustAbundance = 0.00000055;
 	populator->humanAbundance = -1;
-	populator->halfFileYears = -1;
+	populator->halfLifeYears = -1;
 	portstrcpy(populator->CASn,"7440-59-7\0");
 	portstrcpy(populator->CIDn,"23987\0");
 
