@@ -22,7 +22,7 @@ int main()
 		}
 		else
 		{
-			if(portstrcmp(usersays,"lol\n",sizeof(usersays),sizeof("lol\n")) == 1)
+			if(portstrcmp(usersays,"That is some Gerard shit right there...\n",sizeof(usersays),sizeof("That is some Gerard shit right there...\n")) == 1)
 			{
 				printf("LAWL\n");
 			}
