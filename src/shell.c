@@ -9,9 +9,9 @@ int main()
 	printf("Populating tables...");
 	popPtable();
 	printf("               [OK!]\n");
-	printf("%s     ",hydrogen.atomSymbol);
-	printf("%s\n",hydrogen.atomName);
-	printf("%s     ",helium.atomSymbol);
-	printf("%s\n",helium.atomName);
+	printf("%s     ",Elements[0]->atomSymbol);
+	printf("%s\n",Elements[0]->atomName);
+	printf("%s     ",Elements[1]->atomSymbol);
+	printf("%s\n",Elements[1]->atomName);
 	return 0;
 }

@@ -7,6 +7,7 @@ char *portstrcpy(char dest[], const char source[]);
 void popPtable()
 {
 	elementPop = &hydrogen;
+	Elements[0] = &hydrogen;
 
 	elementPop->atomNumber = 1;
 	portstrcpy(elementPop->atomSymbol,"H\0");
@@ -38,6 +39,7 @@ void popPtable()
     portstrcpy(elementPop->CIDn,"783\0");
 
 	elementPop = &helium;
+	Elements[1] = &helium;
 
 	elementPop->atomNumber = 2;
 	portstrcpy(elementPop->atomSymbol,"He\0");
