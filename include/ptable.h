@@ -3,6 +3,7 @@
 typedef struct
 {
 	int atomNumber;
+	char atomSymbol[5];
 	char atomName[15];
 	float atomMass;
 	int phase; // -1 indicates unknown/ambiguous phase, 0 indicates a gas, 1 indicates a liquid, 2 indicates a solid.
@@ -34,6 +35,7 @@ typedef struct
 typedef struct
 {
 	int isoNumber;
+	char isoSymbol[5];
 	char isoName[25];
 	float isoMass;
 	float isoRadius;

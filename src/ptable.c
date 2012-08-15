@@ -9,6 +9,7 @@ void popPtable()
 	elementPop = &hydrogen;
 
 	elementPop->atomNumber = 1;
+	portstrcpy(elementPop->atomSymbol,"H\0");
     portstrcpy(elementPop->atomName,"Hydrogen\0");
     elementPop->atomMass = 1.00794;
     elementPop->phase = 0;
@@ -39,6 +40,7 @@ void popPtable()
 	elementPop = &helium;
 
 	elementPop->atomNumber = 2;
+	portstrcpy(elementPop->atomSymbol,"He\0");
 	portstrcpy(elementPop->atomName,"Helium\0");
 	elementPop->atomMass = 4.00260;
 	elementPop->phase = 0;
