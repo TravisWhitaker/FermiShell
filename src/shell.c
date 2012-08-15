@@ -4,14 +4,29 @@
 #include <ptable.h>
 #include <portutils.h>
 
+char usersays[100];
+
 int main()
 {
 	printf("Populating tables...");
 	popPtable();
 	printf("               [OK!]\n");
-	printf("%s     ",Elements[0]->atomSymbol);
-	printf("%s\n",Elements[0]->atomName);
-	printf("%s     ",Elements[1]->atomSymbol);
-	printf("%s\n",Elements[1]->atomName);
+	usersays[0] = '\0';
+	while(usersays[0] != 'q')
+	{
+		printf("~#>");
+		fgets(usersays,100,stdin);
+		if(usersays[0] == 'q')
+		{
+			printf("Exiting...\n");
+			break;
+		}
+		else
+		{
+			printf("YAY!\n");
+		}
+	}
 	return 0;
 }
+
+
