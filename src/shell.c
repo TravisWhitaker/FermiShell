@@ -12,21 +12,26 @@ int main()
 	popPtable();
 	printf("               [OK!]\n");
 	usersays[0] = '\0';
-	while(usersays[0] != 'q')
+	while(usersays[0] != 'q' && usersays[0] != 'Q')
 	{
 		printf("~#>");
 		fgets(usersays,100,stdin);
-		if(usersays[0] == 'q')
+		if(usersays[0] == 'q' || usersays[0] == 'Q')
 		{
-			printf("Exiting...\n");
 			break;
 		}
 		else
 		{
-			printf("YAY!\n");
+			if(portstrcmp(usersays,"dingas\0") == 1)
+			{
+				printf("LAWL\n");
+			}
+			else
+			{
+				printf("Shh, I'm trying to think!\n");
+			}
 		}
 	}
+	printf("Exiting...\n");
 	return 0;
 }
-
-
