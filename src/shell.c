@@ -1,4 +1,4 @@
-//	ChemTerm Copyright (C) 2012 Travis Michael Whitaker
+//	ChemTerm Copyright (C) 2012 Travis Whitaker
 
 #include <stdio.h>
 #include <ptable.h>
@@ -22,7 +22,7 @@ int main()
 		}
 		else
 		{
-			if(portstrcmp(usersays,"dingas\0") == 1)
+			if(portstrcmp(usersays,"That is some Gerard shit right there...") == 1)
 			{
 				printf("LAWL\n");
 			}

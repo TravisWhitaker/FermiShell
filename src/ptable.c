@@ -1,4 +1,4 @@
-//	Copyright (C) 2012 Travis Michael Whitaker
+//	Copyright (C) 2012 Travis Whitaker
 
 #include <ptable.h>
 

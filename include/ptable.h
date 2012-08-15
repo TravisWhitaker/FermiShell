@@ -1,4 +1,4 @@
-//	ChemTerm Copyright (C) 2012 Travis Michael Whitaker
+//	ChemTerm Copyright (C) 2012 Travis Whitaker
 
 typedef struct
 {
