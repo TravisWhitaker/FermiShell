@@ -1,5 +1,7 @@
 //	ChemTerm Copyright (C) 2012 Travis Whitaker
 
+#ifndef PTABLE
+#define PTABLE
 typedef struct
 {
 	int atomNumber;
@@ -65,3 +67,4 @@ element nitrogen;
 element oxygen;
 element fluorine;
 element neon;
+#endif

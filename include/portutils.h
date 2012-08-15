@@ -2,8 +2,8 @@
 //
 //	Here we implement several common functions from files like <string.h> to preserve potential future portability to Z80 and AVR.
 
-#ifndef PORTSTRCPY
-#define PORTSTRCPY
+#ifndef PORTUTILS
+#define PORTUTILS
 char *portstrcpy(char dest[], const char source[]) //Copies one null-terminated string onto another.
 {
 	int i = 0;
