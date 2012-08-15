@@ -16,30 +16,51 @@ char *portstrcpy(char dest[], const char source[]) //Copies one null-terminated 
 	return(dest);
 }
 
-int portstrcmp(const char str1[], const char str2[]) //Compares two strings
+int portstrcmp(const char str1[], const char str2[], int str1len, int str2len) //Compares two strings
 {
 	int different = 0;
 	int limit;
-	int str1len = sizeof(str1);
-	int str2len = sizeof(str2);
 
-	if(str1len > str2len)
+	printf("\n");
+	printf("According to portstrcpy:\n");
+	printf("size of str1: %d\n",str1len);
+	printf("size of str2: %d\n",str2len);
+
+	if(str1len >= str2len)
 	{
-		limit = str1len+1;
+		limit = str1len;
 	}
 	else
 	{
-		limit = str2len+1;
+		limit = str2len;
 	}
+
+	printf("Size of limit: %d\n",limit);
+	printf("\n");
 
 	for(int i=0; i<=limit; i++)
 	{
+		printf("i is currently %d",i);
+		printf(", str1[i] is %c",str1[i]);
+		printf(", str2[i] is %c\n",str2[i]);
 		if(str1[i] == str2[i])
 		{
-			continue;
+			printf("I see that str1[i] == str2[i]...\n");
+			if(str1[i] == '\0' && str2[i] == '\0')
+			{
+				printf("Found null terminator in str1 and str2, setting different = 0 and breaking...\n");
+				different = 0;
+				break;
+			}
+			else
+			{
+				printf("No null terminator, continuing...\n");
+				continue;
+			}
 		}
 		else
 		{
+			printf("str1[i] and str2[i] are different, setting different = 1 and breaking...\n");
 			different = 1;
 			break;
 		}
@@ -47,10 +68,12 @@ int portstrcmp(const char str1[], const char str2[]) //Compares two strings
 
 	if(different == 0)
 	{
+		printf("They were the same, returning 1.\n");
 		return 1;
 	}
 	else
 	{
+		printf("They were different, returning 0.\n");
 		return 0;
 	}
 }
