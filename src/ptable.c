@@ -65,10 +65,9 @@ void popPtable()
 	elementPop->halfLifeYears = -1;
 	portstrcpy(elementPop->CASn,"7440-59-7\0");
 	portstrcpy(elementPop->CIDn,"23987\0");
-
 }
 
-void popIso()
-{
-	isoPop = &___;
-}
+//void popIso()
+//{
+//	isoPop = &___;
+//}

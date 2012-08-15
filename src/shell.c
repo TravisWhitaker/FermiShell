@@ -6,8 +6,9 @@
 
 int main()
 {
-	printf("Populating tables...\n");
+	printf("Populating tables...");
 	popPtable();
+	printf("               [OK!]\n");
 	printf("%s\n",hydrogen.atomName);
 	printf("%s\n",helium.atomName);
 	return 0;
