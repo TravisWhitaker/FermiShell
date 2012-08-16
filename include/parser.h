@@ -19,6 +19,33 @@ int beanCounter(const char input[], const int inputSize)
 	return -1;
 }
 
+char *muchBetter(char input[], const int inputSize)
+{
+	char lowerCase[27] = "abcdefghijklmnopqrstuvwxyz";
+	char upperCase[27] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	char init = input[0];
+	if(beanCounter(input,inputSize) <= 3)
+	{
+		return input;
+	}
+	else
+	{
+		for(int i=0; i<26; i++)
+		{
+			if(init == lowerCase[i])
+			{
+				input[0] = upperCase[i];
+				return input;
+			}
+			else
+			{
+				continue;
+			}
+		}
+	}
+	return input;
+}
+
 char *atomNameCapFix(char input[], const int inputSize)
 {
 	char init = input[0];

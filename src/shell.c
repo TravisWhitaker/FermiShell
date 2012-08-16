@@ -25,7 +25,7 @@ int main()
 		}
 		else
 		{
-			output = singularParse(atomNameCapFix(usersays,sizeof(usersays)),sizeof(usersays));
+			output = singularParse(muchBetter(usersays,sizeof(usersays)),sizeof(usersays));
 
 			if(output != 0)
 			{
