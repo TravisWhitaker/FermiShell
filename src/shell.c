@@ -12,8 +12,8 @@ int main()
 	printf("Populating tables...");
 	popPtable();
 	printf("                    [OK!]\n");
-	printf("Size of elements: %d bytes",sizeof(element);
-	printf("Size of database: %d bytes",2*sizeof(element);
+	printf("Size of element: %d bytes\n",sizeof(element));
+	printf("Size of database: %d bytes\n",2*sizeof(element));
 	usersays[0] = '\0';
 	while(usersays[0] != 'q' && usersays[0] != 'Q')
 	{
