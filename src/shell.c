@@ -4,8 +4,8 @@
 #include <ptable.h>
 #include <portutils.h>
 
-char usersays[100];
-element *singularParse(char input[]);
+char usersays[256];
+element *singularParse(char input[],int inputSize);
 element *output;
 
 int main()
@@ -14,8 +14,6 @@ int main()
 	printf("Populating tables...");
 	popPtable();
 	printf("                    [OK!]\n");
-	printf("Size of element: %d bytes\n",sizeof(element));
-	printf("Size of database: %d bytes\n",2*sizeof(element));
 	usersays[0] = '\0';
 	while(usersays[0] != 'q' && usersays[0] != 'Q')
 	{
@@ -27,7 +25,7 @@ int main()
 		}
 		else
 		{
-			output = singularParse(usersays);
+			output = singularParse(usersays,sizeof(usersays));
 
 			if(output != 0)
 			{
@@ -45,9 +43,9 @@ int main()
 	return 0;
 }
 
-element *singularParse(char input[])
+element *singularParse(char input[], int inputSize)
 {
-	for(int i=0;i<sizeof(input);i++)
+	for(int i=0;i<inputSize;i++)
 	{
 		if(input[i] == '\n')
 		{
@@ -59,7 +57,6 @@ element *singularParse(char input[])
 			continue;
 		}
 	}
-
 	element *scanner;
 
 	for(int i=0;i<119;i++)

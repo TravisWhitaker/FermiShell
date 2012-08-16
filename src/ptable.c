@@ -10,8 +10,8 @@ void popPtable()
 	Elements[0] = &hydrogen;
 
 	elementPop->atomNumber = 1;
-	portstrcpy(elementPop->atomSymbol,"H\0");
-    portstrcpy(elementPop->atomName,"Hydrogen\0");
+	portstrcpy(elementPop->atomSymbol,"H");
+    portstrcpy(elementPop->atomName,"Hydrogen");
     elementPop->atomMass = 1.00794;
     elementPop->phase = 0;
     elementPop->fusionP = -259.14;
@@ -21,7 +21,7 @@ void popPtable()
     elementPop->thermCon = 0.1805;
     elementPop->metalloid = -1;
     elementPop->magType = 0;
-    portstrcpy(elementPop->color,"colorless\0");
+    portstrcpy(elementPop->color,"colorless");
     elementPop->refractiveIndex = 1.000132;
     elementPop->valence = 1;
     elementPop->electroneg = 2.2;
@@ -35,15 +35,15 @@ void popPtable()
     elementPop->crustAbundance = 0.15;
     elementPop->humanAbundance = 10;
 	elementPop->halfLifeYears = -1;
-    portstrcpy(elementPop->CASn,"1333-74-0\0");
-    portstrcpy(elementPop->CIDn,"783\0");
+    portstrcpy(elementPop->CASn,"1333-74-0");
+    portstrcpy(elementPop->CIDn,"783");
 
 	elementPop = &helium;
 	Elements[1] = &helium;
 
 	elementPop->atomNumber = 2;
-	portstrcpy(elementPop->atomSymbol,"He\0");
-	portstrcpy(elementPop->atomName,"Helium\0");
+	portstrcpy(elementPop->atomSymbol,"He");
+	portstrcpy(elementPop->atomName,"Helium");
 	elementPop->atomMass = 4.00260;
 	elementPop->phase = 0;
 	elementPop->fusionP = -1;
@@ -53,7 +53,7 @@ void popPtable()
 	elementPop->thermCon = 0.1513;
 	elementPop->metalloid = 2;
 	elementPop->magType = 0;
-	portstrcpy(elementPop->color,"colorless\0");
+	portstrcpy(elementPop->color,"colorless");
 	elementPop->refractiveIndex = 1.000035;
 	elementPop->valence = 0;
 	elementPop->electroneg = 0;
@@ -67,8 +67,8 @@ void popPtable()
 	elementPop->crustAbundance = 0.00000055;
 	elementPop->humanAbundance = -1;
 	elementPop->halfLifeYears = -1;
-	portstrcpy(elementPop->CASn,"7440-59-7\0");
-	portstrcpy(elementPop->CIDn,"23987\0");
+	portstrcpy(elementPop->CASn,"7440-59-7");
+	portstrcpy(elementPop->CIDn,"23987");
 }
 
 //void popIso()
