@@ -5,6 +5,7 @@
 #include <portutils.h>
 
 char usersays[100];
+element *singularParse(char input[]);
 
 int main()
 {
@@ -25,8 +26,44 @@ int main()
 		}
 		else
 		{
+			printf("%s\n",singularParse(usersays)->atomName);
 		}
 	}
 	printf("Exiting...\n");
 	return 0;
+}
+
+element *singularParse(char input[])
+{
+	for(int i=0;i<sizeof(input);i++)
+	{
+		if(input[i] == '\n')
+		{
+			input[i] = '\0';
+			break;
+		}
+		else
+		{
+			continue;
+		}
+	}
+
+	element *scanner;
+
+	for(int i=0;i<119;i++)
+	{
+		scanner = Elements[i];
+		if(portstrcmp(input,Elements[i]->atomName,sizeof(input),sizeof(Elements[i]->atomName)) == 1)
+		{
+			return Elements[i];
+		}
+		else if(portstrcmp(input,Elements[i]->atomSymbol,sizeof(input),sizeof(Elements[i]->atomSymbol)) == 1)
+		{
+			return Elements[i];
+		}
+		else
+		{
+			return 0;
+		}
+	}
 }
