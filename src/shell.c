@@ -59,7 +59,6 @@ element *singularParse(char input[])
 			continue;
 		}
 	}
-	printf("I sanitized input[], it now contains this:\n.\n%s\n.\n",input);
 
 	element *scanner;
 
@@ -72,20 +71,16 @@ element *singularParse(char input[])
 		}
 		else if(portstrcmp(input,Elements[i]->atomName,sizeof(input),sizeof(Elements[i]->atomName)) == 1)
 		{
-			printf("\nGreat, matched an element by name\n");
 			return Elements[i];
 		}
 		else if(portstrcmp(input,Elements[i]->atomSymbol,sizeof(input),sizeof(Elements[i]->atomSymbol)) == 1)
 		{
-			printf("\nGreat, matched an element by symbol\n");
 			return Elements[i];
 		}
 		else
 		{
-			printf("\nFell through, continuing...\n");
 			continue;
 		}
 	}
-	printf("\nFell through entire function, parser returning zero\n");
 	return 0;
 }
