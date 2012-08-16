@@ -8,9 +8,12 @@ char usersays[100];
 
 int main()
 {
+	printf("ChemTerm v0.0.1d\n");
 	printf("Populating tables...");
 	popPtable();
-	printf("               [OK!]\n");
+	printf("                    [OK!]\n");
+	printf("Size of elements: %d bytes",sizeof(element);
+	printf("Size of database: %d bytes",2*sizeof(element);
 	usersays[0] = '\0';
 	while(usersays[0] != 'q' && usersays[0] != 'Q')
 	{
@@ -22,14 +25,6 @@ int main()
 		}
 		else
 		{
-			if(portstrcmp(usersays,"That is some Gerard shit right there...\n",sizeof(usersays),sizeof("That is some Gerard shit right there...\n")) == 1)
-			{
-				printf("LAWL\n");
-			}
-			else
-			{
-				printf("Shh, I'm trying to think!\n");
-			}
 		}
 	}
 	printf("Exiting...\n");

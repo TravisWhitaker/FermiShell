@@ -55,7 +55,7 @@ void popPtable();
 isotope *isoPop;
 void popIso();
 
-element *Elements[120];
+element *Elements[119];
 
 element hydrogen;
 element helium;
