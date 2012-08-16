@@ -69,6 +69,42 @@ void popPtable()
 	elementPop->halfLifeYears = -1;
 	portstrcpy(elementPop->CASn,"7440-59-7");
 	portstrcpy(elementPop->CIDn,"23987");
+
+	elementPop = &lithium;
+	Elements[2] = &lithium;
+
+	elementPop->atomNumber = 3;
+	portstrcpy(elementPop->atomSymbol,"Li");
+    portstrcpy(elementPop->atomName,"Lithium");
+    elementPop->atomMass = 6.941;
+//    elementPop->phase = 0;
+    elementPop->fusionP = 180.54;
+    elementPop->vaporP = 1342.0;
+    elementPop->density = 0.535;
+//	elementPop->mohsHardness = 0.6;
+//	elementPop->youngsModulus = 4.9;
+    elementPop->soundSpeed = 6000;
+//	elementPop->thermalExp = .000046;	
+    elementPop->thermCon = 85.0;
+    elementPop->metalloid = -1;
+    elementPop->magType = 0;
+    portstrcpy(elementPop->color,"colorless");
+    elementPop->refractiveIndex = 1.000132;
+    elementPop->valence = 1;
+    elementPop->electroneg = 2.2;
+    elementPop->electroAffinity = 0.755;
+    elementPop->ionE1 = 13.598;
+    elementPop->ionE2 = -1;
+    elementPop->ionE3 = -1;
+    elementPop->mHc = 285.8;
+    elementPop->atomRadius = 25;
+    elementPop->universeAbundance = 75;
+    elementPop->crustAbundance = 0.15;
+    elementPop->humanAbundance = 10;
+	elementPop->halfLifeYears = -1;
+    portstrcpy(elementPop->CASn,"1333-74-0");
+    portstrcpy(elementPop->CIDn,"783");
+
 }
 
 //void popIso()
