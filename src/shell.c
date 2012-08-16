@@ -6,6 +6,7 @@
 
 char usersays[100];
 element *singularParse(char input[]);
+element *output;
 
 int main()
 {
@@ -26,7 +27,18 @@ int main()
 		}
 		else
 		{
-			printf("%s\n",singularParse(usersays)->atomName);
+			output = singularParse(usersays);
+
+			if(output != 0)
+			{
+				printf("%s\n",output->atomName);
+				printf("%s\n",output->atomSymbol);
+				printf("%d\n",output->atomNumber);
+			}
+			else
+			{
+				printf("No match, try entering an element name or symbol.\n");
+			}
 		}
 	}
 	printf("Exiting...\n");
@@ -47,23 +59,33 @@ element *singularParse(char input[])
 			continue;
 		}
 	}
+	printf("I sanitized input[], it now contains this:\n.\n%s\n.\n",input);
 
 	element *scanner;
 
 	for(int i=0;i<119;i++)
 	{
 		scanner = Elements[i];
-		if(portstrcmp(input,Elements[i]->atomName,sizeof(input),sizeof(Elements[i]->atomName)) == 1)
+		if(scanner == 0)
 		{
+			break;
+		}
+		else if(portstrcmp(input,Elements[i]->atomName,sizeof(input),sizeof(Elements[i]->atomName)) == 1)
+		{
+			printf("\nGreat, matched an element by name\n");
 			return Elements[i];
 		}
 		else if(portstrcmp(input,Elements[i]->atomSymbol,sizeof(input),sizeof(Elements[i]->atomSymbol)) == 1)
 		{
+			printf("\nGreat, matched an element by symbol\n");
 			return Elements[i];
 		}
 		else
 		{
-			return 0;
+			printf("\nFell through, continuing...\n");
+			continue;
 		}
 	}
+	printf("\nFell through entire function, parser returning zero\n");
+	return 0;
 }
