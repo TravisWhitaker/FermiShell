@@ -31,9 +31,9 @@ int main()
 
 			if(output != 0)
 			{
-				printf("%s\n",output->atomName);
-				printf("%s\n",output->atomSymbol);
-				printf("%d\n",output->atomNumber);
+				printf("Name:\t\t%s\n",output->atomName);
+				printf("Symbol:\t\t%s\n",output->atomSymbol);
+				printf("Atomic Number:\t%d\n",output->atomNumber);
 			}
 			else
 			{
