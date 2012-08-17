@@ -12,7 +12,10 @@ typedef struct
 	float fusionP; //-1 indicates unknown temperature.
 	float vaporP;
 	float density;
+	float mohsHardness;
+	float youngsModulus;
 	float soundSpeed;
+	float thermalExp;
 	float thermCon;
 	int metalloid; // -1 indicates unknown/ambiguous, 0 indicates a metal, 1 indicates a metalloid, 2 indicates a non-metal.
 	int magType; //-1 indicates unknown/ambiguous, 0 indicates diamagnetism, 1 indicates paramagnetism, 2 indicates ferromagnetism.
