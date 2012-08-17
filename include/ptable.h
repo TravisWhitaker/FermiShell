@@ -10,32 +10,32 @@ typedef struct
 	int atomNumber;
 	char atomSymbol[5];
 	char atomName[15];
-	float atomMass;
+	mpf_t atomMass;
 	int phase; // -1 indicates unknown/ambiguous phase, 0 indicates a gas, 1 indicates a liquid, 2 indicates a solid.
-	float fusionP; //-1 indicates unknown temperature.
-	float vaporP;
-	float density;
-	float mohsHardness;
-	float youngsModulus;
-	float soundSpeed;
-	float thermalExp;
-	float thermCon;
+	mpf_t fusionP; //-1 indicates unknown temperature.
+	mpf_t vaporP;
+	mpf_t density;
+	mpf_t mohsHardness;
+	mpf_t youngsModulus;
+	mpf_t soundSpeed;
+	mpf_t thermalExp;
+	mpf_t thermCon;
 	int metalloid; // -1 indicates unknown/ambiguous, 0 indicates a metal, 1 indicates a metalloid, 2 indicates a non-metal.
 	int magType; //-1 indicates unknown/ambiguous, 0 indicates diamagnetism, 1 indicates paramagnetism, 2 indicates ferromagnetism.
 	char color[20];
-	float refractiveIndex;
+	mpf_t refractiveIndex;
 	int valence;
-	float electroneg;
-	float electroAffinity;
-	float ionE1; // A value of -1 indicates unknown/undefined.
-	float ionE2;
-	float ionE3;
-	float mHc;
-	float atomRadius;
-	float universeAbundance;
-	float crustAbundance;
-	float humanAbundance;
-	float halfLifeYears; // -1 indicates stability.
+	mpf_t electroneg;
+	mpf_t electroAffinity;
+	mpf_t ionE1; // A value of -1 indicates unknown/undefined.
+	mpf_t ionE2;
+	mpf_t ionE3;
+	mpf_t mHc;
+	mpf_t atomRadius;
+	mpf_t universeAbundance;
+	mpf_t crustAbundance;
+	mpf_t humanAbundance;
+	mpf_t halfLifeYears; // -1 indicates stability.
 	char CASn[15];
 	char CIDn[15];
 } element;
@@ -45,10 +45,10 @@ typedef struct
 	int isoNumber;
 	char isoSymbol[5];
 	char isoName[25];
-	float isoMass;
-	float isoRadius;
-	float isoAbundance;
-	float halfLifeYears;
+	mpf_t isoMass;
+	mpf_t isoRadius;
+	mpf_t isoAbundance;
+	mpf_t halfLifeYears;
 	int primaryDecayMode;
 	int secondaryDecayMode;
 	int tertiaryDecayMode;
