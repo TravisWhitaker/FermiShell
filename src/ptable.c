@@ -1,6 +1,8 @@
 //	Copyright (C) 2012 Travis Whitaker
 
+#include <gmp.h>
 #include <ptable.h>
+
 
 char *portstrcpy(char dest[], const char source[]);
 

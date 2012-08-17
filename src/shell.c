@@ -1,6 +1,7 @@
 //	ChemTerm Copyright (C) 2012 Travis Whitaker
 
 #include <stdio.h>
+#include <gmp.h>
 #include <ptable.h>
 #include <portutils.h>
 #include <parser.h>

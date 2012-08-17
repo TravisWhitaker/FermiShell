@@ -2,6 +2,9 @@
 
 #ifndef PTABLE
 #define PTABLE
+
+#include <gmp.h>
+
 typedef struct
 {
 	int atomNumber;

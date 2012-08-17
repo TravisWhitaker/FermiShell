@@ -1,6 +1,4 @@
 //	ChemTerm Copyright (C) 2012 Travis Whitaker
-//
-//	Here we implement several common functions from files like <string.h> to preserve potential future portability to Z80 and AVR.
 
 #ifndef PORTUTILS
 #define PORTUTILS

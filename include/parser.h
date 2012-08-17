@@ -2,6 +2,8 @@
 #ifndef PARSER
 #define PARSER
 
+#include <gmp.h>
+
 int beanCounter(const char input[], const int inputSize)
 {
 	int beans = 0;
