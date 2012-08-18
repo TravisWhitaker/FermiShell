@@ -33,6 +33,9 @@ int main()
 				printf("Name:\t\t%s\n",output->atomName);
 				printf("Symbol:\t\t%s\n",output->atomSymbol);
 				printf("Atomic Number:\t%d\n",output->atomNumber);
+				printf("Atomic Mass:\t");
+				mpf_out_str(stdout,10,0,output->atomMass);
+				printf("\n");
 			}
 			else
 			{
