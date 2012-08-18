@@ -61,6 +61,7 @@ void popPtable()
 	mpf_init_set_str(elementPop->thermCon,"0.1513",10);
 	elementPop->metalloid = 2;
 	elementPop->magType = 0;
+	mpf_init_set_str(elementPop->superconductingPoint,"-1.0",10);
 	portstrcpy(elementPop->color,"colorless");
 	mpf_init_set_str(elementPop->refractiveIndex,"1.000035",10);
 	elementPop->valence = 0;
@@ -96,7 +97,8 @@ void popPtable()
     mpf_init_set_str(elementPop->thermCon,"85.0",10);
     elementPop->metalloid = 0;
     elementPop->magType = 1;
-    portstrcpy(elementPop->color,"silver");
+    mpf_init_set_str(elementPop->superconductingPoint,"-1.0",10);
+	portstrcpy(elementPop->color,"silver");
     mpf_init_set_str(elementPop->refractiveIndex,"-1.0",10);
     elementPop->valence = 1;
     mpf_init_set_str(elementPop->electroneg,"0.98",10);
@@ -112,6 +114,43 @@ void popPtable()
 	mpf_init_set_str(elementPop->halfLifeYears,"-1.0",10);
     portstrcpy(elementPop->CASn,"7439-93-2");
     portstrcpy(elementPop->CIDn,"3028194");
+
+	elementPop = &beryllium;
+	Elements[3] = &beryllium;
+
+	elementPop->atomNumber = 4;
+	portstrcpy(elementPop->atomSymbol,"Be");
+    portstrcpy(elementPop->atomName,"Beryllium");
+    mpf_init_set_str(elementPop->atomMass,"9.012182",10);
+    elementPop->phase = 2;
+    mpf_init_set_str(elementPop->fusionP,"1287.0",10);
+    mpf_init_set_str(elementPop->vaporP,"2480.0",10);
+    mpf_init_set_str(elementPop->density,"1.858",10);
+	mpf_init_set_str(elementPop->mohsHardness,"5.5",10);
+	mpf_init_set_str(elementPop->youngsModulus,"287.0",10);
+    mpf_init_set_str(elementPop->soundSpeed,"12000.0",10);
+	mpf_init_set_str(elementPop->thermalExp,"0.0000113",10);	
+    mpf_init_set_str(elementPop->thermCon,"190.0",10);
+    elementPop->metalloid = 0;
+    elementPop->magType = 0;
+	mpf_init_set_str(elementPop->superconductingPoint,"0.026",10);
+    portstrcpy(elementPop->color,"slate gray");
+    mpf_init_set_str(elementPop->refractiveIndex,"-1.0",10);
+    elementPop->valence = 2;
+    mpf_init_set_str(elementPop->electroneg,"1.57",10);
+    mpf_init_set_str(elementPop->electroAffinity,"0.0",10);
+    mpf_init_set_str(elementPop->ionE1,"9.323",10);
+    mpf_init_set_str(elementPop->ionE2,"-1.0",10);
+    mpf_init_set_str(elementPop->ionE3,"-1.0",10);
+    mpf_init_set_str(elementPop->mHc,"-1.0",10);
+    mpf_init_set_str(elementPop->atomRadius,"105.0",10);
+    mpf_init_set_str(elementPop->universeAbundance,"0.0000001",10);
+    mpf_init_set_str(elementPop->crustAbundance,"0.00019",10);
+    mpf_init_set_str(elementPop->humanAbundance,"0.00000004",10);
+	mpf_init_set_str(elementPop->halfLifeYears,"-1.0",10);
+    portstrcpy(elementPop->CASn,"7440-41-7");
+    portstrcpy(elementPop->CIDn,"5460467");
+
 
 }
 
