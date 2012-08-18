@@ -74,4 +74,15 @@ element nitrogen;
 element oxygen;
 element fluorine;
 element neon;
+element sodium;
+element magnesium;
+element aluminium;
+element silicon;
+element phosphorus;
+element sulfur;
+element chlorine;
+element argon;
+element potassium;
+element calcium;
+
 #endif
