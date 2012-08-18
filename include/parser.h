@@ -3,6 +3,8 @@
 #define PARSER
 
 #include <gmp.h>
+#include <portutils.h>
+#include <stdlib.h>
 
 int beanCounter(const char input[], const int inputSize)
 {
@@ -86,4 +88,71 @@ element *singularParse(char input[], const int inputSize)
 	}
 	return 0;
 }
+
+char *niceMPF(mpf_t input, char output[])
+{
+	int j = 0;
+	char mantissa[102];
+	mp_exp_t magnitude;
+	mp_exp_t *exponent;
+	exponent = &magnitude;
+
+	mpf_get_str(mantissa,exponent,10,100,input);
+
+	if(magnitude == 0)
+	{
+		portstrcpy(output,"0");
+		return output;
+	}
+	else if(magnitude > 0)
+	{
+		for(int i=j;i<118;i++)
+		{
+			if(i == magnitude)
+			{
+				output[i] = '.';
+				continue;
+			}
+			else if(mantissa[j] == '\0')
+			{
+				output[i] = '\0';
+				return output;
+			}
+			else
+			{
+				output[i] = mantissa[j];
+				j++;
+			}
+		}
+	}
+	else if(magnitude < 0)
+	{
+		portstrcpy(output,"NEGATIVE RESULT");
+		return output;
+	}
+	else
+	{
+		portstrcpy(output,"MP_EXT_T ERROR");
+		return output;
+	}
+
+	portstrcpy(output,"UNKNOWN ERROR");
+	return output;
+
+}
+
+void basicElementData(element *input)
+{
+	char *mpfOut;
+	mpfOut = malloc(sizeof(mpfOut)*118);
+
+	printf("Name:\t\t%s\n",input->atomName);
+	printf("Symbol:\t\t%s\n",input->atomSymbol);
+	printf("Atomic Number:\t%d\n",input->atomNumber);
+	printf("Atomic Mass:\t%s\n",niceMPF(input->atomMass,mpfOut));
+
+	free(mpfOut);
+}
+
+
 #endif
