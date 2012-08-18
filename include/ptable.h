@@ -22,6 +22,7 @@ typedef struct
 	mpf_t thermCon;
 	int metalloid; // -1 indicates unknown/ambiguous, 0 indicates a metal, 1 indicates a metalloid, 2 indicates a non-metal.
 	int magType; //-1 indicates unknown/ambiguous, 0 indicates diamagnetism, 1 indicates paramagnetism, 2 indicates ferromagnetism.
+	mpf_t superconductingPoint;
 	char color[20];
 	mpf_t refractiveIndex;
 	int valence;
