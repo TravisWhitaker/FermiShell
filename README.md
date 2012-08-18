@@ -7,7 +7,7 @@ Retrieve, compare, calculate, analyze, graph, simulate, and experiment with chem
 
 ---
 
-ChemTerm is an interactive shell designed to allow for straightforward, computational, simulatory, and scriptable modelling and analysis of chemical states and systems. It can draw from an extensive built-in database of chemical data and statistics. ChemTerm is written in C and is meant to be compiled with LLVM/Clang, although GCC will probably work. It has extensive documentation written in LaTeX. ChemTerm is released under the terms of a modified version of the MIT license, the full terms of which may be found in the file "LICENSE."
+ChemTerm is an interactive shell designed to allow for straightforward, computational, simulatory, and scriptable modelling and analysis of chemical states and systems. It can draw from an extensive built-in database of chemical data and statistics. ChemTerm is written in C and makes extensive use of the GNU Multiprecision library(GMP). ChemTerm is released under the terms of a modified version of the MIT license, the full terms of which may be found in the file "LICENSE."
 
 What can ChemTerm do?
 =====================
@@ -18,3 +18,8 @@ What can ChemTerm do?
 - Graph your data alongside theoretical means and extremes. Make powerful comparisons and gain more insight into experimental results and errors.
 - Simulate experiments with your own specified parameters. Gain insight into your potential data before and during your time in the lab.
 - Experiment with chemicals outside of your kit. Don't have access to nuclear-grade equipment? Conduct titrations with salts of Uranium anyway. Don't have an ISO 8 cleanroom? Thermodynamially optimize the growth of silicon substrates.
+
+Dependencies:
+=============
+-libc
+-gmblib(version 4 or greater for best simulation performance)
