@@ -8,6 +8,7 @@ char *portstrcpy(char dest[], const char source[]);
 
 void popPtable()
 {
+
 	elementPop = &hydrogen;
 	Elements[0] = &hydrogen;
 
@@ -151,6 +152,41 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-41-7");
     portstrcpy(elementPop->CIDn,"5460467");
 
+	elementPop = &boron;
+	Elements[4] = &boron;
+
+	elementPop->atomNumber = 5;
+	portstrcpy(elementPop->atomSymbol,"B");
+    portstrcpy(elementPop->atomName,"Boron");
+    mpf_init_set_str(elementPop->atomMass,"10.811",10);
+    elementPop->phase = 2;
+    mpf_init_set_str(elementPop->fusionP,"2075.0",10);
+    mpf_init_set_str(elementPop->vaporP,"4000.0",10);
+    mpf_init_set_str(elementPop->density,"2.46",10);
+	mpf_init_set_str(elementPop->mohsHardness,"9.3",10);
+	mpf_init_set_str(elementPop->youngsModulus,"-1.0",10);
+    mpf_init_set_str(elementPop->soundSpeed,"16200",10);
+	mpf_init_set_str(elementPop->thermalExp,"0.000006",10);	
+    mpf_init_set_str(elementPop->thermCon,"27.0",10);
+    elementPop->metalloid = 2;
+    elementPop->magType = 0;
+	mpf_init_set_str(elementPop->superconductingPoint,"-1.0",10);
+    portstrcpy(elementPop->color,"black");
+    mpf_init_set_str(elementPop->refractiveIndex,"-1.0",10);
+    elementPop->valence = 3;
+    mpf_init_set_str(elementPop->electroneg,"2.04",10);
+    mpf_init_set_str(elementPop->electroAffinity,"0.277",10);
+    mpf_init_set_str(elementPop->ionE1,"8.298",10);
+    mpf_init_set_str(elementPop->ionE2,"-1.0",10);
+    mpf_init_set_str(elementPop->ionE3,"-1.0",10);
+    mpf_init_set_str(elementPop->mHc,"-1.0",10);
+    mpf_init_set_str(elementPop->atomRadius,"85.0",10);
+    mpf_init_set_str(elementPop->universeAbundance,"0.0000001",10);
+    mpf_init_set_str(elementPop->crustAbundance,"0.00086",10);
+    mpf_init_set_str(elementPop->humanAbundance,"0.0000007",10);
+	mpf_init_set_str(elementPop->halfLifeYears,"-1.0",10);
+    portstrcpy(elementPop->CASn,"7440-42-8");
+    portstrcpy(elementPop->CIDn,"5462311");
 
 }
 
