@@ -188,6 +188,43 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-42-8");
     portstrcpy(elementPop->CIDn,"5462311");
 
+	elementPop = &carbon;
+	Elements[5] = &carbon;
+
+	elementPop->atomNumber = 6;
+	portstrcpy(elementPop->atomSymbol,"C");
+    portstrcpy(elementPop->atomName,"Carbon");
+    mpf_init_set_str(elementPop->atomMass,"12.0107",10);
+    elementPop->phase = 2;
+    mpf_init_set_str(elementPop->fusionP,"3550.0",10);
+    mpf_init_set_str(elementPop->vaporP,"4027.0",10);
+    mpf_init_set_str(elementPop->density,"2.26",10);
+	mpf_init_set_str(elementPop->mohsHardness,"0.5",10);
+	mpf_init_set_str(elementPop->youngsModulus,"-1.0",10);
+    mpf_init_set_str(elementPop->soundSpeed,"18350.0",10);
+	mpf_init_set_str(elementPop->thermalExp,"0.0000071",10);	
+    mpf_init_set_str(elementPop->thermCon,"140.0",10);
+    elementPop->metalloid = 2;
+    elementPop->magType = 0;
+	mpf_init_set_str(elementPop->superconductingPoint,"-1.0",10);
+    portstrcpy(elementPop->color,"black");
+    mpf_init_set_str(elementPop->refractiveIndex,"2.417",10);
+    elementPop->valence = 4;
+    mpf_init_set_str(elementPop->electroneg,"2.55",10);
+    mpf_init_set_str(elementPop->electroAffinity,"1.595",10);
+    mpf_init_set_str(elementPop->ionE1,"11.261",10);
+    mpf_init_set_str(elementPop->ionE2,"-1.0",10);
+    mpf_init_set_str(elementPop->ionE3,"-1.0",10);
+    mpf_init_set_str(elementPop->mHc,"-1.0",10);
+    mpf_init_set_str(elementPop->atomRadius,"70",10);
+    mpf_init_set_str(elementPop->universeAbundance,"0.5",10);
+    mpf_init_set_str(elementPop->crustAbundance,"0.18",10);
+    mpf_init_set_str(elementPop->humanAbundance,"23.0",10);
+	mpf_init_set_str(elementPop->halfLifeYears,"-1.0",10);
+    portstrcpy(elementPop->CASn,"7440-44-0");
+    portstrcpy(elementPop->CIDn,"N/A");
+
+
 }
 
 //void popIso()
