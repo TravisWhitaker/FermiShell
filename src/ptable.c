@@ -224,6 +224,41 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-44-0");
     portstrcpy(elementPop->CIDn,"N/A");
 
+	elementPop = &nitrogen;
+	Elements[6] = &nitrogen;
+
+	elementPop->atomNumber = 7;
+	portstrcpy(elementPop->atomSymbol,"N");
+    portstrcpy(elementPop->atomName,"Nitrogen");
+    mpf_init_set_str(elementPop->atomMass,"14.0067",10);
+    elementPop->phase = 0;
+    mpf_init_set_str(elementPop->fusionP,"-210.1",10);
+    mpf_init_set_str(elementPop->vaporP,"-195.79",10);
+    mpf_init_set_str(elementPop->density,".001251",10);
+	mpf_init_set_str(elementPop->mohsHardness,"-1.0",10);
+	mpf_init_set_str(elementPop->youngsModulus,"-1.0",10);
+    mpf_init_set_str(elementPop->soundSpeed,"333.6",10);
+	mpf_init_set_str(elementPop->thermalExp,"-1.0",10);	
+    mpf_init_set_str(elementPop->thermCon,"0.02583",10);
+    elementPop->metalloid = 2;
+    elementPop->magType = 0;
+	mpf_init_set_str(elementPop->superconductingPoint,"-1.0",10);
+    portstrcpy(elementPop->color,"colorless");
+    mpf_init_set_str(elementPop->refractiveIndex,"1.000298",10);
+    elementPop->valence = 3;
+    mpf_init_set_str(elementPop->electroneg,"3.04",10);
+    mpf_init_set_str(elementPop->electroAffinity,"0.07",10);
+    mpf_init_set_str(elementPop->ionE1,"14.534",10);
+    mpf_init_set_str(elementPop->ionE2,"-1.0",10);
+    mpf_init_set_str(elementPop->ionE3,"-1.0",10);
+    mpf_init_set_str(elementPop->mHc,"-1.0",10);
+    mpf_init_set_str(elementPop->atomRadius,"65.0",10);
+    mpf_init_set_str(elementPop->universeAbundance,"0.1",10);
+    mpf_init_set_str(elementPop->crustAbundance,"0.002",10);
+    mpf_init_set_str(elementPop->humanAbundance,"2.6",10);
+	mpf_init_set_str(elementPop->halfLifeYears,"-1.0",10);
+    portstrcpy(elementPop->CASn,"7727-37-9");
+    portstrcpy(elementPop->CIDn,"947");
 
 }
 
