@@ -159,6 +159,7 @@ void basicElementData(element *input)
 	printf("Atomic Mass:\t%s\n",niceMPF(input->atomMass,mpfOut));
 	printf("Melting Point:\t%s°C\n",niceMPF(input->fusionP,mpfOut));
 	printf("Boiling Point:\t%s°C\n",niceMPF(input->vaporP,mpfOut));
+	printf("Density:\t%s g/cm^3\n",niceMPF(input->density,mpfOut));
 
 	free(mpfOut);
 }
