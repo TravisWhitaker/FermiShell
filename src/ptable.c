@@ -50,7 +50,7 @@ void popPtable()
 	elementPop->atomNumber = 2;
 	portstrcpy(elementPop->atomSymbol,"He");
 	portstrcpy(elementPop->atomName,"Helium");
-	mpf_init_set_str(elementPop->atomMass,"4.00260",10);
+	mpf_init_set_str(elementPop->atomMass,"4.002602",10);
 	elementPop->phase = 0;
 	mpf_init_set_str(elementPop->fusionP,"-1.0",10);
 	mpf_init_set_str(elementPop->vaporP,"-268.93",10);
