@@ -99,6 +99,11 @@ char *niceMPF(mpf_t input, char output[])
 
 	mpf_get_str(mantissa,exponent,10,100,input);
 
+	if(mantissa[0] == '-')
+	{
+		magnitude++;
+	}
+
 	if(magnitude == 0)
 	{
 		portstrcpy(output,"0");
@@ -111,7 +116,16 @@ char *niceMPF(mpf_t input, char output[])
 			if(i == magnitude)
 			{
 				output[i] = '.';
-				continue;
+				if(mantissa[(j+1)] == '\0')
+				{
+					output[(i+1)] = '0';
+					output[(i+2)] = '\0';
+					return output;
+				}
+				else
+				{
+					continue;
+				}
 			}
 			else if(mantissa[j] == '\0')
 			{
@@ -125,20 +139,13 @@ char *niceMPF(mpf_t input, char output[])
 			}
 		}
 	}
-	else if(magnitude < 0)
-	{
-		portstrcpy(output,"NEGATIVE RESULT");
-		return output;
-	}
 	else
 	{
-		portstrcpy(output,"MP_EXT_T ERROR");
+		portstrcpy(output,"MP_EXP_T ERROR");
 		return output;
 	}
-
 	portstrcpy(output,"UNKNOWN ERROR");
 	return output;
-
 }
 
 void basicElementData(element *input)
@@ -150,6 +157,8 @@ void basicElementData(element *input)
 	printf("Symbol:\t\t%s\n",input->atomSymbol);
 	printf("Atomic Number:\t%d\n",input->atomNumber);
 	printf("Atomic Mass:\t%s\n",niceMPF(input->atomMass,mpfOut));
+	printf("Melting Point:\t%s°C\n",niceMPF(input->fusionP,mpfOut));
+	printf("Boiling Point:\t%s°C\n",niceMPF(input->vaporP,mpfOut));
 
 	free(mpfOut);
 }
