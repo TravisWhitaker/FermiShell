@@ -89,82 +89,15 @@ element *singularParse(char input[], const int inputSize)
 	return 0;
 }
 
-char *niceMPF(mpf_t input, char output[])
-{
-	int j = 0;
-	char mantissa[102];
-	mp_exp_t magnitude;
-	mp_exp_t apparentMagnitude;
-	mp_exp_t *exponent;
-	exponent = &magnitude;
-
-	mpf_get_str(mantissa,exponent,10,100,input);
-
-	apparentMagnitude = magnitude;
-
-	if(mantissa[0] == '-')
-	{
-		apparentMagnitude++;
-	}
-
-	if(magnitude == 0)
-	{
-		portstrcpy(output,"NEG NOT IMPLEMENTED");
-		return output;
-	}
-	else if(magnitude > 0)
-	{
-		for(int i=j;i<118;i++)
-		{
-			if(i == apparentMagnitude)
-			{
-				output[i] = '.';
-				if(mantissa[(j+1)] == '\0')
-				{
-					output[(i+1)] = '0';
-					output[(i+2)] = '\0';
-					return output;
-				}
-				else
-				{
-					continue;
-				}
-			}
-			else if(mantissa[j] == '\0')
-			{
-				output[i] = '\0';
-				return output;
-			}
-			else
-			{
-				output[i] = mantissa[j];
-				j++;
-			}
-		}
-	}
-	else
-	{
-		portstrcpy(output,"MP_EXP_T ERROR");
-		return output;
-	}
-	portstrcpy(output,"UNKNOWN ERROR");
-	return output;
-}
-
 void basicElementData(element *input)
 {
-	char *mpfOut;
-	mpfOut = malloc(sizeof(mpfOut)*118);
-
 	printf("Name:\t\t%s\n",input->atomName);
 	printf("Symbol:\t\t%s\n",input->atomSymbol);
 	printf("Atomic Number:\t%d\n",input->atomNumber);
-	printf("Atomic Mass:\t%s\n",niceMPF(input->atomMass,mpfOut));
-	printf("Melting Point:\t%s°C\n",niceMPF(input->fusionP,mpfOut));
-	printf("Boiling Point:\t%s°C\n",niceMPF(input->vaporP,mpfOut));
-	printf("Density:\t%s g/cm^3\n",niceMPF(input->density,mpfOut));
-
-	free(mpfOut);
+	gmp_printf("Atomic Mass:\t%.Ff\n",input->atomMass);
+	gmp_printf("Density:\t%.Ff g/cm^3\n",input->density);
+	gmp_printf("Menting Point:\t%.Ff°C\n",input->fusionP);
+	gmp_printf("Boiling Point:\t%.Ff°C\n",input->vaporP);
 }
 
 
