@@ -91,13 +91,36 @@ element *singularParse(char input[], const int inputSize)
 
 void basicElementData(element *input)
 {
-	printf("Name:\t\t%s\n",input->atomName);
-	printf("Symbol:\t\t%s\n",input->atomSymbol);
-	printf("Atomic Number:\t%d\n",input->atomNumber);
-	gmp_printf("Atomic Mass:\t%.Ff\n",input->atomMass);
-	gmp_printf("Density:\t%.Ff g/cm^3\n",input->density);
-	gmp_printf("Menting Point:\t%.Ff°C\n",input->fusionP);
-	gmp_printf("Boiling Point:\t%.Ff°C\n",input->vaporP);
+	printf("Name:\t\t\t%s\n",input->atomName);
+	printf("Symbol:\t\t\t%s\n",input->atomSymbol);
+	printf("Atomic Number:\t\t%d\n",input->atomNumber);
+	gmp_printf("Atomic Mass:\t\t%.Ff\n",input->atomMass);
+	gmp_printf("Density:\t\t%.Ff g/cm^3\n",input->density);
+	gmp_printf("Menting Point:\t\t%.Ff°C\n",input->fusionP);
+	gmp_printf("Boiling Point:\t\t%.Ff°C\n",input->vaporP);
+	printf("Metallic Character:\t");
+	if(input->metalloid == -1)
+	{
+		printf("Ambiguous/Unknown");
+	}
+	else if(input->metalloid == 0)
+	{
+		printf("Metallic");
+	}
+	else if(input->metalloid == 1)
+	{
+		printf("Metalloid");
+	}
+	else if(input->metalloid == 2)
+	{
+		printf("Non-metallic");
+	}
+	printf("\n");
+	printf("Color:\t\t\t%s\n",input->color);
+	printf("Valence:\t\t%d\n",input->valence);
+	gmp_printf("Electronegativity:\t%.Ff\n",input->electroneg);
+	gmp_printf("Ionization Energies:\t%.Ff eV\n",input->ionE1);
+	gmp_printf("Atomic Radius:\t\t%.Ff pm\n",input->atomRadius);
 }
 
 
