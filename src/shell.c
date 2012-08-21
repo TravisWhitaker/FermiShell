@@ -14,7 +14,7 @@ int main()
 	printf("ChemTerm v0.0.1d\n");
 	printf("Populating tables...");
 	popPtable();
-	printf("                    [OK!]\n");
+	printf("\t\t\t\t\t[OK!]\n");
 	usersays[0] = '\0';
 	while(usersays[0] != 'q' && usersays[0] != 'Q')
 	{

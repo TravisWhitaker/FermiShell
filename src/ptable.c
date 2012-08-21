@@ -730,8 +730,3 @@ void popPtable()
     portstrcpy(elementPop->CIDn,"5460231");
 
 }
-
-//void popIso()
-//{
-//	isoPop = &___;
-//}

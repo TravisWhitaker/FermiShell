@@ -41,26 +41,8 @@ typedef struct
 	char CIDn[15];
 } element;
 
-typedef struct
-{
-	int isoNumber;
-	char isoSymbol[5];
-	char isoName[25];
-	mpf_t isoMass;
-	mpf_t isoRadius;
-	mpf_t isoAbundance;
-	mpf_t halfLifeYears;
-	int primaryDecayMode;
-	int secondaryDecayMode;
-	int tertiaryDecayMode;
-	element *finalState;
-} isotope;
-
 element *elementPop;
 void popPtable();
-
-isotope *isoPop;
-void popIso();
 
 element *Elements[119];
 
