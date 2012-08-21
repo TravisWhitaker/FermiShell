@@ -94,26 +94,29 @@ char *niceMPF(mpf_t input, char output[])
 	int j = 0;
 	char mantissa[102];
 	mp_exp_t magnitude;
+	mp_exp_t apparentMagnitude;
 	mp_exp_t *exponent;
 	exponent = &magnitude;
 
 	mpf_get_str(mantissa,exponent,10,100,input);
 
+	apparentMagnitude = magnitude;
+
 	if(mantissa[0] == '-')
 	{
-		magnitude++;
+		apparentMagnitude++;
 	}
 
 	if(magnitude == 0)
 	{
-		portstrcpy(output,"0");
+		portstrcpy(output,"NEG NOT IMPLEMENTED");
 		return output;
 	}
 	else if(magnitude > 0)
 	{
 		for(int i=j;i<118;i++)
 		{
-			if(i == magnitude)
+			if(i == apparentMagnitude)
 			{
 				output[i] = '.';
 				if(mantissa[(j+1)] == '\0')
