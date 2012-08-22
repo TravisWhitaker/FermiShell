@@ -22,4 +22,4 @@ What can ChemTerm do?
 Dependencies:
 =============
 - libc
-- gmblib(version 4 or greater for best simulation performance)
+- gmblib(version 4 or greater for best performance)
