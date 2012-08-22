@@ -30,7 +30,7 @@ int main()
 
 			if(output != 0)
 			{
-				basicElementData(output);
+				completeElementData(output);
 			}
 			else
 			{
