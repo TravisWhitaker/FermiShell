@@ -73,11 +73,11 @@ element *singularParse(char input[], const int inputSize)
 		{
 			break;
 		}
-		else if(portstrcmp(input,Elements[i]->atomName,sizeof(input),sizeof(Elements[i]->atomName)) == 1)
+		else if(portstrcmp(input,Elements[i]->atomName,inputSize,sizeof(Elements[i]->atomName)) == 1)
 		{
 			return Elements[i];
 		}
-		else if(portstrcmp(input,Elements[i]->atomSymbol,sizeof(input),sizeof(Elements[i]->atomSymbol)) == 1)
+		else if(portstrcmp(input,Elements[i]->atomSymbol,inputSize,sizeof(Elements[i]->atomSymbol)) == 1)
 		{
 			return Elements[i];
 		}
