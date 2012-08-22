@@ -95,6 +95,24 @@ void basicElementData(element *input)
 	printf("Symbol:\t\t\t%s\n",input->atomSymbol);
 	printf("Atomic Number:\t\t%d\n",input->atomNumber);
 	gmp_printf("Atomic Mass:\t\t%.Ff\n",input->atomMass);
+	printf("Phase:\t\t\t");
+	if(input->phase == -1)
+	{
+		printf("Unknown/Ambiguous");
+	}
+	else if(input->phase == 0)
+	{
+		printf("Gaseous");
+	}
+	else if(input->phase == 1)
+	{
+		printf("Liquid");
+	}
+	else if(input->phase == 2)
+	{
+		printf("Solid");
+	}
+	printf("\n");
 	gmp_printf("Density:\t\t%.Ff g/cm^3\n",input->density);
 	gmp_printf("Menting Point:\t\t%.Ff°C\n",input->fusionP);
 	gmp_printf("Boiling Point:\t\t%.Ff°C\n",input->vaporP);
