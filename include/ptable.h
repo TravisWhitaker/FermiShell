@@ -82,5 +82,23 @@ element arsenic;
 element selenium;
 element bromine;
 element krypton;
+element rubidium;
+element strontium;
+element yttrium;
+element zirconium;
+element niobium;
+element molybdenum;
+element technetium;
+element ruthenium;
+element rhodium;
+element palladium;
+element silver;
+element cadmium;
+element indium;
+element tin;
+element antimony;
+element tellurium;
+element iodine;
+element xenon;
 
 #endif
