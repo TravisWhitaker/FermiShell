@@ -7,6 +7,7 @@
 #include <portutils.h>
 #include <parser.h>
 
+char Version[] = "ChemTerm Version 0.0.1d";
 char usersays[256];
 element *output;
 
@@ -36,7 +37,7 @@ int main(int argc, char *argv[])
 	}
 	if(version == 1)
 	{
-		printf("ChemTerm Version 0.0.1d\n");
+		printf("%s\n",Version);
 		return 0;
 	}
 	else
