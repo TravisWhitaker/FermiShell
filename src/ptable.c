@@ -27,6 +27,7 @@ void popPtable()
     mpf_init_set_str(elementPop->thermCon,"0.01805",10);
     elementPop->metalloid = -1;
     elementPop->magType = 0;
+	mpf_init_set_str(elementPop->superconductingPoint,"-1",10);
     portstrcpy(elementPop->color,"colorless");
     mpf_init_set_str(elementPop->refractiveIndex,"1.000132",10);
     elementPop->valence = 1;
