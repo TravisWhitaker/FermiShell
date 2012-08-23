@@ -3362,7 +3362,7 @@ void popPtable()
     portstrcpy(elementPop->atomName,"Actinium");
     mpf_init_set_str(elementPop->atomMass,"227.027752127",10);
 	portstrcpy(elementPop->block,"f");
-    elementPop->phase = 0;
+    elementPop->phase =2;
     mpf_init_set_str(elementPop->fusionP,"1050",10);
     mpf_init_set_str(elementPop->vaporP,"3200",10);
     mpf_init_set_str(elementPop->density,"10.07",10);
@@ -3400,7 +3400,7 @@ void popPtable()
     portstrcpy(elementPop->atomName,"Thorium");
     mpf_init_set_str(elementPop->atomMass,"232.03806",10);
 	portstrcpy(elementPop->block,"f");
-    elementPop->phase = 0;
+    elementPop->phase =2;
     mpf_init_set_str(elementPop->fusionP,"1750",10);
     mpf_init_set_str(elementPop->vaporP,"4820",10);
     mpf_init_set_str(elementPop->density,"11.724",10);
@@ -3438,7 +3438,7 @@ void popPtable()
     portstrcpy(elementPop->atomName,"Protactinium");
     mpf_init_set_str(elementPop->atomMass,"231.03586",10);
 	portstrcpy(elementPop->block,"f");
-    elementPop->phase = 0;
+    elementPop->phase =2;
     mpf_init_set_str(elementPop->fusionP,"1572",10);
     mpf_init_set_str(elementPop->vaporP,"4000",10);
     mpf_init_set_str(elementPop->density,"15.37",10);
@@ -3476,7 +3476,7 @@ void popPtable()
     portstrcpy(elementPop->atomName,"Uranium");
     mpf_init_set_str(elementPop->atomMass,"238.02891",10);
 	portstrcpy(elementPop->block,"f");
-    elementPop->phase = 0;
+    elementPop->phase =2;
     mpf_init_set_str(elementPop->fusionP,"1135",10);
     mpf_init_set_str(elementPop->vaporP,"3927",10);
     mpf_init_set_str(elementPop->density,"19.05",10);
@@ -3514,7 +3514,7 @@ void popPtable()
     portstrcpy(elementPop->atomName,"Neptunium");
     mpf_init_set_str(elementPop->atomMass,"237.048173444",10);
 	portstrcpy(elementPop->block,"f");
-    elementPop->phase = 0;
+    elementPop->phase =2;
     mpf_init_set_str(elementPop->fusionP,"644",10);
     mpf_init_set_str(elementPop->vaporP,"4000",10);
     mpf_init_set_str(elementPop->density,"20.45",10);
@@ -3552,7 +3552,7 @@ void popPtable()
     portstrcpy(elementPop->atomName,"Plutonium");
     mpf_init_set_str(elementPop->atomMass,"244.064203907",10);
 	portstrcpy(elementPop->block,"f");
-    elementPop->phase = 0;
+    elementPop->phase =2;
     mpf_init_set_str(elementPop->fusionP,"640",10);
     mpf_init_set_str(elementPop->vaporP,"3230",10);
     mpf_init_set_str(elementPop->density,"19.816",10);
@@ -3590,7 +3590,7 @@ void popPtable()
     portstrcpy(elementPop->atomName,"Americium");
     mpf_init_set_str(elementPop->atomMass,"243.06138108",10);
 	portstrcpy(elementPop->block,"f");
-    elementPop->phase = 0;
+    elementPop->phase =2;
     mpf_init_set_str(elementPop->fusionP,"1170",10);
     mpf_init_set_str(elementPop->vaporP,"2011",10);
     mpf_init_set_str(elementPop->density,"13.67",10);
@@ -3628,7 +3628,7 @@ void popPtable()
     portstrcpy(elementPop->atomName,"Curium");
     mpf_init_set_str(elementPop->atomMass,"247.07035354",10);
 	portstrcpy(elementPop->block,"f");
-    elementPop->phase = 0;
+    elementPop->phase =2;
     mpf_init_set_str(elementPop->fusionP,"1345",10);
     mpf_init_set_str(elementPop->vaporP,"3110",10);
     mpf_init_set_str(elementPop->density,"13.51",10);
@@ -3666,7 +3666,7 @@ void popPtable()
     portstrcpy(elementPop->atomName,"Berkelium");
     mpf_init_set_str(elementPop->atomMass,"247.07030708",10);
 	portstrcpy(elementPop->block,"f");
-    elementPop->phase = 0;
+    elementPop->phase =2;
     mpf_init_set_str(elementPop->fusionP,"986",10);
     mpf_init_set_str(elementPop->vaporP,"-1",10);
     mpf_init_set_str(elementPop->density,"13.25",10);
@@ -3704,7 +3704,7 @@ void popPtable()
     portstrcpy(elementPop->atomName,"Californium");
     mpf_init_set_str(elementPop->atomMass,"251.079586788",10);
 	portstrcpy(elementPop->block,"f");
-    elementPop->phase = 0;
+    elementPop->phase =2;
     mpf_init_set_str(elementPop->fusionP,"900",10);
     mpf_init_set_str(elementPop->vaporP,"-1",10);
     mpf_init_set_str(elementPop->density,"15.1",10);
@@ -3742,7 +3742,7 @@ void popPtable()
     portstrcpy(elementPop->atomName,"Einsteinium");
     mpf_init_set_str(elementPop->atomMass,"252.082978512",10);
 	portstrcpy(elementPop->block,"f");
-    elementPop->phase = 0;
+    elementPop->phase =2;
     mpf_init_set_str(elementPop->fusionP,"860",10);
     mpf_init_set_str(elementPop->vaporP,"-1",10);
     mpf_init_set_str(elementPop->density,"-1",10);
@@ -3780,7 +3780,7 @@ void popPtable()
     portstrcpy(elementPop->atomName,"Fermium");
     mpf_init_set_str(elementPop->atomMass,"257.095104724",10);
 	portstrcpy(elementPop->block,"f");
-    elementPop->phase = 0;
+    elementPop->phase =2;
     mpf_init_set_str(elementPop->fusionP,"1527",10);
     mpf_init_set_str(elementPop->vaporP,"-1",10);
     mpf_init_set_str(elementPop->density,"-1",10);
@@ -3818,7 +3818,7 @@ void popPtable()
     portstrcpy(elementPop->atomName,"Mendelevium");
     mpf_init_set_str(elementPop->atomMass,"258.098431319",10);
 	portstrcpy(elementPop->block,"f");
-    elementPop->phase = 0;
+    elementPop->phase =2;
     mpf_init_set_str(elementPop->fusionP,"827",10);
     mpf_init_set_str(elementPop->vaporP,"-1",10);
     mpf_init_set_str(elementPop->density,"-1",10);
@@ -3856,7 +3856,7 @@ void popPtable()
     portstrcpy(elementPop->atomName,"Nobelium");
     mpf_init_set_str(elementPop->atomMass,"259.101031",10);
 	portstrcpy(elementPop->block,"f");
-    elementPop->phase = 0;
+    elementPop->phase =2;
     mpf_init_set_str(elementPop->fusionP,"827",10);
     mpf_init_set_str(elementPop->vaporP,"-1",10);
     mpf_init_set_str(elementPop->density,"-1",10);
@@ -3894,7 +3894,7 @@ void popPtable()
     portstrcpy(elementPop->atomName,"Lawrencium");
     mpf_init_set_str(elementPop->atomMass,"262.109634",10);
 	portstrcpy(elementPop->block,"d");
-    elementPop->phase = 0;
+    elementPop->phase =2;
     mpf_init_set_str(elementPop->fusionP,"1627",10);
     mpf_init_set_str(elementPop->vaporP,"-1",10);
     mpf_init_set_str(elementPop->density,"-1",10);
@@ -3932,7 +3932,7 @@ void popPtable()
     portstrcpy(elementPop->atomName,"Rutherfordium");
     mpf_init_set_str(elementPop->atomMass,"265.116704",10);
 	portstrcpy(elementPop->block,"d");
-    elementPop->phase = 0;
+    elementPop->phase = -1;
     mpf_init_set_str(elementPop->fusionP,"-1",10);
     mpf_init_set_str(elementPop->vaporP,"-1",10);
     mpf_init_set_str(elementPop->density,"-1",10);
@@ -3970,7 +3970,7 @@ void popPtable()
     portstrcpy(elementPop->atomName,"Dubnium");
     mpf_init_set_str(elementPop->atomMass,"268.125445",10);
 	portstrcpy(elementPop->block,"d");
-    elementPop->phase = 0;
+    elementPop->phase = -1;
     mpf_init_set_str(elementPop->fusionP,"-1",10);
     mpf_init_set_str(elementPop->vaporP,"-1",10);
     mpf_init_set_str(elementPop->density,"-1",10);
@@ -4008,7 +4008,7 @@ void popPtable()
     portstrcpy(elementPop->atomName,"Seaborgium");
     mpf_init_set_str(elementPop->atomMass,"271.133472",10);
 	portstrcpy(elementPop->block,"d");
-    elementPop->phase = 0;
+    elementPop->phase = -1;
     mpf_init_set_str(elementPop->fusionP,"-1",10);
     mpf_init_set_str(elementPop->vaporP,"-1",10);
     mpf_init_set_str(elementPop->density,"-1",10);
