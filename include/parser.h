@@ -234,15 +234,23 @@ void basicElementData(element *input)
 	}
 	printf("\n");
 	printf("Atomic Radius:\t\t");
-	if(precision == 0)
+	if(mpf_cmp_si(input->atomRadius,1) == 0)
 	{
-		gmp_printf("%.Ff",input->atomRadius);
+		printf("Unknown/Relatavistic");
 	}
 	else
 	{
-		gmp_printf("%.*Ff",precision,input->atomRadius);
+		if(precision == 0)
+		{
+			gmp_printf("%.Ff",input->atomRadius);
+		}
+		else
+		{
+			gmp_printf("%.*Ff",precision,input->atomRadius);
+		}
+		printf(" pm\n");
 	}
-	printf(" pm\n");
+	printf("\n");
 }
 
 void completeElementData(element *input)
@@ -604,6 +612,23 @@ void completeElementData(element *input)
 	}
 	printf("\n");
 	gmp_printf("Atomic Radius:\t\t\t%.Ff pm\n",input->atomRadius);
+	if(mpf_cmp_si(input->atomRadius,-1) == 0)
+	{
+		printf("Unknown/Relatavistic");
+	}
+	else
+	{
+		if(precision == 0)
+		{
+			gmp_printf("%.Ff",input->atomRadius);
+		}
+		else
+		{
+			gmp_printf("%.*Ff",precision,input->atomRadius);
+		}
+		printf(" pm");
+	}
+	printf("\n");
 	gmp_printf("Universe Abundance:\t\t%.Ff%\n",input->universeAbundance);
 	gmp_printf("Earth's Crust Abundance:\t%.Ff%\n",input->crustAbundance);
 	gmp_printf("Human Abundance:\t\t%.Ff%\n",input->humanAbundance);
