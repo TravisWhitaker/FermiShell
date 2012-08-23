@@ -97,7 +97,7 @@ void basicElementData(element *input)
 	printf("Symbol:\t\t\t%s\n",input->atomSymbol);
 	printf("Atomic Number:\t\t%d\n",input->atomNumber);
 	printf("Atomic Mass:\t\t");
-	if(mpf_cmp_si(input->atomMass) == 0)
+	if(mpf_cmp_si(input->atomMass,-1) == 0)
 	{
 		printf("Unknown/Relativistic");
 	}
@@ -242,7 +242,7 @@ void basicElementData(element *input)
 	}
 	printf("\n");
 	printf("Atomic Radius:\t\t");
-	if(mpf_cmp_si(input->atomRadius,1) == 0)
+	if(mpf_cmp_si(input->atomRadius,-1) == 0)
 	{
 		printf("Unknown/Relativistic");
 	}
@@ -256,7 +256,7 @@ void basicElementData(element *input)
 		{
 			gmp_printf("%.*Ff",precision,input->atomRadius);
 		}
-		printf(" pm\n");
+		printf(" pm");
 	}
 	printf("\n");
 }
@@ -269,7 +269,7 @@ void completeElementData(element *input)
 	printf("Atomic Mass:\t\t\t");
 	if(mpf_cmp_si(input->atomMass,-1) == 0)
 	{
-		printf("Unknown/Relativistic")
+		printf("Unknown/Relativistic");
 	}
 	else
 	{
@@ -627,7 +627,7 @@ void completeElementData(element *input)
 		printf(" kJ/mol");
 	}
 	printf("\n");
-	gmp_printf("Atomic Radius:\t\t\t%.Ff pm\n",input->atomRadius);
+	printf("Atomic Radius:\t\t\t");
 	if(mpf_cmp_si(input->atomRadius,-1) == 0)
 	{
 		printf("Unknown/Relativistic");
