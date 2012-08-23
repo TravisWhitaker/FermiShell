@@ -205,7 +205,16 @@ void basicElementData(element *input)
 	}
 	printf("\n");
 	printf("Color:\t\t\t%s\n",input->color);
-	printf("Valence:\t\t%d\n",input->valence);
+	printf("Valence:\t\t");
+	if(input->valence == -1)
+	{
+		printf("Unknown/Relativistic");
+	}
+	else
+	{
+		printf("%d",input->valence);
+	}
+	printf("\n");
 	printf("Electronegativity:\t");
 	if(mpf_cmp_si(input->electroneg,-1) == 0)
 	{
@@ -521,7 +530,16 @@ void completeElementData(element *input)
 		}
 	}
 	printf("\n");
-	printf("Valence:\t\t\t%d\n",input->valence);
+	printf("Valence:\t\t\t");
+	if(input->valence == -1)
+	{
+		printf("Unknown/Relativistic");
+	}
+	else
+	{
+		printf("%d",input->valence);
+	}	
+	printf("\n");
 	printf("Electronegativity:\t\t");
 	if(mpf_cmp_si(input->electroneg,-1) == 0)
 	{
