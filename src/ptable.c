@@ -8,9 +8,10 @@ char *portstrcpy(char dest[], const char source[]);
 
 void popPtable()
 {
+	int i = 0;
 
 	elementPop = &hydrogen;
-	Elements[0] = &hydrogen;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 1;
 	portstrcpy(elementPop->atomSymbol,"H");
@@ -45,8 +46,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"1333-74-0");
     portstrcpy(elementPop->CIDn,"783");
 
+	i++;
 	elementPop = &helium;
-	Elements[1] = &helium;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 2;
 	portstrcpy(elementPop->atomSymbol,"He");
@@ -81,8 +83,9 @@ void popPtable()
 	portstrcpy(elementPop->CASn,"7440-59-7");
 	portstrcpy(elementPop->CIDn,"23987");
 
+	i++;
 	elementPop = &lithium;
-	Elements[2] = &lithium;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 3;
 	portstrcpy(elementPop->atomSymbol,"Li");
@@ -117,8 +120,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7439-93-2");
     portstrcpy(elementPop->CIDn,"3028194");
 
+	i++;
 	elementPop = &beryllium;
-	Elements[3] = &beryllium;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 4;
 	portstrcpy(elementPop->atomSymbol,"Be");
@@ -153,8 +157,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-41-7");
     portstrcpy(elementPop->CIDn,"5460467");
 
+	i++;
 	elementPop = &boron;
-	Elements[4] = &boron;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 5;
 	portstrcpy(elementPop->atomSymbol,"B");
@@ -189,8 +194,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-42-8");
     portstrcpy(elementPop->CIDn,"5462311");
 
+	i++;
 	elementPop = &carbon;
-	Elements[5] = &carbon;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 6;
 	portstrcpy(elementPop->atomSymbol,"C");
@@ -225,8 +231,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-44-0");
     portstrcpy(elementPop->CIDn,"N/A");
 
+	i++;
 	elementPop = &nitrogen;
-	Elements[6] = &nitrogen;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 7;
 	portstrcpy(elementPop->atomSymbol,"N");
@@ -261,8 +268,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7727-37-9");
     portstrcpy(elementPop->CIDn,"947");
 	
+	i++;
 	elementPop = &oxygen;
-	Elements[7] = &oxygen;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 8;
 	portstrcpy(elementPop->atomSymbol,"O");
@@ -297,8 +305,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7782-44-7");
     portstrcpy(elementPop->CIDn,"977");
 
+	i++;
 	elementPop = &fluorine;
-	Elements[8] = &fluorine;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 9;
 	portstrcpy(elementPop->atomSymbol,"F");
@@ -333,8 +342,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7782-41-4");
     portstrcpy(elementPop->CIDn,"24524");
 
+	i++;
 	elementPop = &neon;
-	Elements[9] = &neon;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 10;
 	portstrcpy(elementPop->atomSymbol,"Ne");
@@ -369,8 +379,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-01-9");
     portstrcpy(elementPop->CIDn,"23935");
 
+	i++;
 	elementPop = &sodium;
-	Elements[10] = &sodium;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 11;
 	portstrcpy(elementPop->atomSymbol,"Na");
@@ -405,8 +416,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-23-5");
     portstrcpy(elementPop->CIDn,"5360545");
 
+	i++;
 	elementPop = &magnesium;
-	Elements[11] = &magnesium;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 12;
 	portstrcpy(elementPop->atomSymbol,"Mg");
@@ -441,8 +453,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7439-95-4");
     portstrcpy(elementPop->CIDn,"5462224");
 
+	i++;
 	elementPop = &aluminium;
-	Elements[12] = &aluminium;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 13;
 	portstrcpy(elementPop->atomSymbol,"Al");
@@ -477,8 +490,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7429-90-5");
     portstrcpy(elementPop->CIDn,"5359268");
 
+	i++;
 	elementPop = &silicon;
-	Elements[13] = &silicon;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 14;
 	portstrcpy(elementPop->atomSymbol,"Si");
@@ -513,9 +527,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-21-3");
     portstrcpy(elementPop->CIDn,"5461123");
 
-
+	i++;
 	elementPop = &phosphorus;
-	Elements[14] = &phosphorus;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 15;
 	portstrcpy(elementPop->atomSymbol,"P");
@@ -550,8 +564,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7723-14-0");
     portstrcpy(elementPop->CIDn,"N/A");
 
+	i++;
 	elementPop = &sulfur;
-	Elements[15] = &sulfur;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 16;
 	portstrcpy(elementPop->atomSymbol,"S");
@@ -586,8 +601,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7704-34-9");
     portstrcpy(elementPop->CIDn,"N/A");
 
+	i++;
 	elementPop = &chlorine;
-	Elements[16] = &chlorine;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 17;
 	portstrcpy(elementPop->atomSymbol,"Cl");
@@ -622,8 +638,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7782-50-5");
     portstrcpy(elementPop->CIDn,"24526");
 
+	i++;
 	elementPop = &argon;
-	Elements[17] = &argon;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 18;
 	portstrcpy(elementPop->atomSymbol,"Ar");
@@ -658,8 +675,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-37-1");
     portstrcpy(elementPop->CIDn,"23968");
 
+	i++;
 	elementPop = &potassium;
-	Elements[18] = &potassium;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 19;
 	portstrcpy(elementPop->atomSymbol,"K");
@@ -694,8 +712,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-09-7");
     portstrcpy(elementPop->CIDn,"5462222");
 
+	i++;
 	elementPop = &calcium;
-	Elements[19] = &calcium;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 20;
 	portstrcpy(elementPop->atomSymbol,"Ca");
@@ -730,8 +749,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-70-2");
     portstrcpy(elementPop->CIDn,"5460231");
 
+	i++;
 	elementPop = &scandium;
-	Elements[20] = &scandium;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 21;
 	portstrcpy(elementPop->atomSymbol,"Sc");
@@ -766,8 +786,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-20-2");
     portstrcpy(elementPop->CIDn,"23952");
 
+	i++;
 	elementPop = &titanium;
-	Elements[21] = &titanium;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 22;
 	portstrcpy(elementPop->atomSymbol,"Ti");
@@ -802,8 +823,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-32-6");
     portstrcpy(elementPop->CIDn,"23963");
 
+	i++;
 	elementPop = &vanadium;
-	Elements[22] = &vanadium;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 23;
 	portstrcpy(elementPop->atomSymbol,"V");
@@ -838,8 +860,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-62-2");
     portstrcpy(elementPop->CIDn,"23990");
 
+	i++;
 	elementPop = &chromium;
-	Elements[23] = &chromium;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 24;
 	portstrcpy(elementPop->atomSymbol,"Cr");
@@ -874,8 +897,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-47-3");
     portstrcpy(elementPop->CIDn,"23976");
 
+	i++;
 	elementPop = &manganese;
-	Elements[24] = &manganese;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 25;
 	portstrcpy(elementPop->atomSymbol,"Mn");
@@ -910,8 +934,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7439-96-5");
     portstrcpy(elementPop->CIDn,"23930");
 
+	i++;
 	elementPop = &iron;
-	Elements[25] = &iron;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 26;
 	portstrcpy(elementPop->atomSymbol,"Fe");
@@ -946,8 +971,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7439-89-6");
     portstrcpy(elementPop->CIDn,"23925");
 
+	i++;
 	elementPop = &cobalt;
-	Elements[26] = &cobalt;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 27;
 	portstrcpy(elementPop->atomSymbol,"Co");
@@ -982,8 +1008,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-48-4");
     portstrcpy(elementPop->CIDn,"104730");
 
+	i++;
 	elementPop = &nickel;
-	Elements[27] = &nickel;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 28;
 	portstrcpy(elementPop->atomSymbol,"Ni");
@@ -1018,8 +1045,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-02-0");
     portstrcpy(elementPop->CIDn,"935");
 
+	i++;
 	elementPop = &copper;
-	Elements[28] = &copper;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 29;
 	portstrcpy(elementPop->atomSymbol,"Cu");
@@ -1054,8 +1082,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-50-8");
     portstrcpy(elementPop->CIDn,"23978");
 
+	i++;
 	elementPop = &zinc;
-	Elements[29] = &zinc;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 30;
 	portstrcpy(elementPop->atomSymbol,"Zn");
@@ -1090,8 +1119,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-66-6");
     portstrcpy(elementPop->CIDn,"23994");
 
+	i++;
 	elementPop = &gallium;
-	Elements[30] = &gallium;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 31;
 	portstrcpy(elementPop->atomSymbol,"Ga");
@@ -1126,8 +1156,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-55-3");
     portstrcpy(elementPop->CIDn,"5360835");
 
+	i++;
 	elementPop = &germanium;
-	Elements[31] = &germanium;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 32;
 	portstrcpy(elementPop->atomSymbol,"Ge");
@@ -1162,8 +1193,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-56-4");
     portstrcpy(elementPop->CIDn,"6326954");
 
+	i++;
 	elementPop = &arsenic;
-	Elements[32] = &arsenic;
+	Elements[i] = elementPop;;
 
 	elementPop->atomNumber = 33;
 	portstrcpy(elementPop->atomSymbol,"As");
@@ -1198,8 +1230,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-38-2");
     portstrcpy(elementPop->CIDn,"N/A");
 
+	i++;
 	elementPop = &selenium;
-	Elements[33] = &selenium;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 34;
 	portstrcpy(elementPop->atomSymbol,"Se");
@@ -1234,8 +1267,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7782-49-2");
     portstrcpy(elementPop->CIDn,"N/A");
 
+	i++;
 	elementPop = &bromine;
-	Elements[34] = &bromine;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 35;
 	portstrcpy(elementPop->atomSymbol,"Br");
@@ -1270,8 +1304,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7726-95-6");
     portstrcpy(elementPop->CIDn,"23304");
 
+	i++;
 	elementPop = &krypton;
-	Elements[35] = &krypton;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 36;
 	portstrcpy(elementPop->atomSymbol,"Kr");
@@ -1306,8 +1341,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7439-90-9");
     portstrcpy(elementPop->CIDn,"5416");
 
+	i++;	
 	elementPop = &rubidium;
-	Elements[36] = &rubidium;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 37;
 	portstrcpy(elementPop->atomSymbol,"Rb");
@@ -1342,8 +1378,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-17-7");
     portstrcpy(elementPop->CIDn,"5357696");
 
+	i++;
 	elementPop = &strontium;
-	Elements[37] = &strontium;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 38;
 	portstrcpy(elementPop->atomSymbol,"Sr");
@@ -1378,8 +1415,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-24-6");
     portstrcpy(elementPop->CIDn,"5359327");
 
+	i++;
 	elementPop = &yttrium;
-	Elements[38] = &yttrium;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 39;
 	portstrcpy(elementPop->atomSymbol,"Y");
@@ -1414,8 +1452,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-65-5");
     portstrcpy(elementPop->CIDn,"233993");
 
+	i++;
 	elementPop = &zirconium;
-	Elements[39] = &zirconium;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 40;
 	portstrcpy(elementPop->atomSymbol,"Zr");
@@ -1450,8 +1489,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-67-7");
     portstrcpy(elementPop->CIDn,"239995");
 
+	i++;
 	elementPop = &niobium;
-	Elements[40] = &niobium;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 41;
 	portstrcpy(elementPop->atomSymbol,"Nb");
@@ -1486,8 +1526,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-03-1");
     portstrcpy(elementPop->CIDn,"23936");
 
+	i++;
 	elementPop = &molybdenum;
-	Elements[41] = &molybdenum;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 42;
 	portstrcpy(elementPop->atomSymbol,"Mo");
@@ -1521,9 +1562,10 @@ void popPtable()
 	mpf_init_set_str(elementPop->halfLifeYears,"-1.0",10);
     portstrcpy(elementPop->CASn,"7439-98-7");
     portstrcpy(elementPop->CIDn,"23932");
-
+	
+	i++;
 	elementPop = &technetium;
-	Elements[42] = &technetium;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 43;
 	portstrcpy(elementPop->atomSymbol,"Tc");
@@ -1558,8 +1600,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-26-8");
     portstrcpy(elementPop->CIDn,"N/A");
 
+	i++;
 	elementPop = &ruthenium;
-	Elements[43] = &ruthenium;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 44;
 	portstrcpy(elementPop->atomSymbol,"Ru");
@@ -1594,8 +1637,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-18-8");
     portstrcpy(elementPop->CIDn,"23950");
 
+	i++;
 	elementPop = &rhodium;
-	Elements[44] = &rhodium;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 45;
 	portstrcpy(elementPop->atomSymbol,"Rh");
@@ -1630,8 +1674,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-16-6");
     portstrcpy(elementPop->CIDn,"23948");
 
+	i++;
 	elementPop = &palladium;
-	Elements[45] = &palladium;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 46;
 	portstrcpy(elementPop->atomSymbol,"Pd");
@@ -1666,8 +1711,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-05-3");
     portstrcpy(elementPop->CIDn,"23928");
 
+	i++;
 	elementPop = &silver;
-	Elements[46] = &silver;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 47;
 	portstrcpy(elementPop->atomSymbol,"Ag");//It ain't gold...
@@ -1702,8 +1748,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-22-4");
     portstrcpy(elementPop->CIDn,"23954");
 
+	i++;
 	elementPop = &cadmium;
-	Elements[47] = &cadmium;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 48;
 	portstrcpy(elementPop->atomSymbol,"Cd");
@@ -1738,8 +1785,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-43-9");
     portstrcpy(elementPop->CIDn,"23973");
 
+	i++;
 	elementPop = &indium;
-	Elements[48] = &indium;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 49;
 	portstrcpy(elementPop->atomSymbol,"In");
@@ -1774,8 +1822,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-74-6");
     portstrcpy(elementPop->CIDn,"5359967");
 
+	i++;
 	elementPop = &tin;
-	Elements[49] = &tin;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 50;
 	portstrcpy(elementPop->atomSymbol,"Sn");
@@ -1810,8 +1859,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-31-5");
     portstrcpy(elementPop->CIDn,"N/A");
 
+	i++;
 	elementPop = &antimony;
-	Elements[50] = &antimony;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 51;
 	portstrcpy(elementPop->atomSymbol,"Sb");
@@ -1846,8 +1896,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-36-0");
     portstrcpy(elementPop->CIDn,"5354495");
 
+	i++;
 	elementPop = &tellurium;
-	Elements[51] = &tellurium;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 52;
 	portstrcpy(elementPop->atomSymbol,"Te");
@@ -1882,8 +1933,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"13494-80-9");
     portstrcpy(elementPop->CIDn,"6327182");
 
+	i++;
 	elementPop = &iodine;
-	Elements[52] = &iodine;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 53;
 	portstrcpy(elementPop->atomSymbol,"I");
@@ -1918,8 +1970,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7553-56-2");
     portstrcpy(elementPop->CIDn,"807");
 
+	i++;
 	elementPop = &xenon;
-	Elements[53] = &xenon;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 54;
 	portstrcpy(elementPop->atomSymbol,"Xe");
@@ -1954,8 +2007,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-63-3");
     portstrcpy(elementPop->CIDn,"23991");
 
+	i++;
 	elementPop = &caesium;
-	Elements[54] = &caesium;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 55;
 	portstrcpy(elementPop->atomSymbol,"Cs");
@@ -1990,8 +2044,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-46-2");
     portstrcpy(elementPop->CIDn,"5354618");
 
+	i++;
 	elementPop = &barium;
-	Elements[55] = &barium;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 56;
 	portstrcpy(elementPop->atomSymbol,"Ba");
@@ -2026,8 +2081,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-39-3");
     portstrcpy(elementPop->CIDn,"5355457");
 
+	i++;
 	elementPop = &lanthanum;
-	Elements[56] = &lanthanum;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 57;
 	portstrcpy(elementPop->atomSymbol,"La");
@@ -2062,8 +2118,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7439-91-0");
     portstrcpy(elementPop->CIDn,"23926");
 
+	i++;
 	elementPop = &cerium;
-	Elements[57] = &cerium;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 58;
 	portstrcpy(elementPop->atomSymbol,"Ce");
@@ -2098,8 +2155,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-45-1");
     portstrcpy(elementPop->CIDn,"23974");
 
+	i++;
 	elementPop = &praseodymium;
-	Elements[58] = &praseodymium;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 59;
 	portstrcpy(elementPop->atomSymbol,"Pr");
@@ -2134,8 +2192,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-10-0");
     portstrcpy(elementPop->CIDn,"23942");
 
+	i++;
 	elementPop = &neodymium;
-	Elements[59] = &neodymium;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 60;
 	portstrcpy(elementPop->atomSymbol,"Nd");
@@ -2170,8 +2229,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-00-8");
     portstrcpy(elementPop->CIDn,"23934");
 
+	i++;
 	elementPop = &promethium;
-	Elements[60] = &promethium;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 61;
 	portstrcpy(elementPop->atomSymbol,"Pm");
@@ -2206,8 +2266,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-12-2");
     portstrcpy(elementPop->CIDn,"N/A");
 
+	i++;
 	elementPop = &samarium;
-	Elements[61] = &samarium;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 62;
 	portstrcpy(elementPop->atomSymbol,"Sm");
@@ -2242,8 +2303,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-19-9");
     portstrcpy(elementPop->CIDn,"23951");
 
+	i++;
 	elementPop = &europium;
-	Elements[62] = &europium;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 63;
 	portstrcpy(elementPop->atomSymbol,"Eu");
@@ -2278,8 +2340,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-53-1");
     portstrcpy(elementPop->CIDn,"23981");
 
+	i++;
 	elementPop = &gadolinium;
-	Elements[63] = &gadolinium;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 64;
 	portstrcpy(elementPop->atomSymbol,"Gd");
@@ -2314,8 +2377,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-54-2");
     portstrcpy(elementPop->CIDn,"23982");
 
+	i++;
 	elementPop = &terbium;
-	Elements[64] = &terbium;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 65;
 	portstrcpy(elementPop->atomSymbol,"Tb");
@@ -2350,8 +2414,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-27-9");
     portstrcpy(elementPop->CIDn,"23958");
 
+	i++;
 	elementPop = &dysprosium;
-	Elements[65] = &dysprosium;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 66;
 	portstrcpy(elementPop->atomSymbol,"Dy");
@@ -2386,8 +2451,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7429-91-6");
     portstrcpy(elementPop->CIDn,"23912");
 
+	i++;
 	elementPop = &holmium;
-	Elements[66] = &holmium;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 67;
 	portstrcpy(elementPop->atomSymbol,"Ho");
@@ -2422,8 +2488,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-60-0");
     portstrcpy(elementPop->CIDn,"23988");
 
+	i++;
 	elementPop = &erbium;
-	Elements[67] = &erbium;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 68;
 	portstrcpy(elementPop->atomSymbol,"Er");
@@ -2458,8 +2525,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-52-0");
     portstrcpy(elementPop->CIDn,"23980");
 
+	i++;
 	elementPop = &thulium;
-	Elements[68] = &thulium;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 69;//lol
 	portstrcpy(elementPop->atomSymbol,"Tm");
@@ -2494,8 +2562,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-30-4");
     portstrcpy(elementPop->CIDn,"23961");
 
+	i++;
 	elementPop = &ytterbium;
-	Elements[69] = &ytterbium;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 70;
 	portstrcpy(elementPop->atomSymbol,"Yb");
@@ -2530,8 +2599,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-64-4");
     portstrcpy(elementPop->CIDn,"23992");
 
+	i++;
 	elementPop = &lutetium;
-	Elements[70] = &lutetium;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 71;
 	portstrcpy(elementPop->atomSymbol,"Lu");
@@ -2566,8 +2636,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7439-94-3");
     portstrcpy(elementPop->CIDn,"23929");
 
+	i++;
 	elementPop = &hafnium;
-	Elements[71] = &hafnium;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 72;
 	portstrcpy(elementPop->atomSymbol,"Hf");
@@ -2602,8 +2673,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-58-6");
     portstrcpy(elementPop->CIDn,"23986");
 
+	i++;
 	elementPop = &tantalum;
-	Elements[72] = &tantalum;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 73;
 	portstrcpy(elementPop->atomSymbol,"Ta");
@@ -2638,8 +2710,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-25-7");
     portstrcpy(elementPop->CIDn,"23956");
 
+	i++;
 	elementPop = &tungsten;
-	Elements[73] = &tungsten;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 74;
 	portstrcpy(elementPop->atomSymbol,"W");
@@ -2674,8 +2747,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-33-7");
     portstrcpy(elementPop->CIDn,"23964");
 
+	i++;
 	elementPop = &rhenium;
-	Elements[74] = &rhenium;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 75;
 	portstrcpy(elementPop->atomSymbol,"Re");
@@ -2710,8 +2784,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-15-5");
     portstrcpy(elementPop->CIDn,"23947");
 
+	i++;
 	elementPop = &osmium;
-	Elements[75] = &osmium;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 76;
 	portstrcpy(elementPop->atomSymbol,"Os");
@@ -2746,8 +2821,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-04-2");
     portstrcpy(elementPop->CIDn,"23937");
 
+	i++;
 	elementPop = &iridium;
-	Elements[76] = &iridium;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 77;
 	portstrcpy(elementPop->atomSymbol,"Ir");
@@ -2782,8 +2858,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7439-88-5");
     portstrcpy(elementPop->CIDn,"23924");
 
+	i++;
 	elementPop = &platinum;
-	Elements[77] = &platinum;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 78;
 	portstrcpy(elementPop->atomSymbol,"Pt");
@@ -2818,8 +2895,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-06-4");
     portstrcpy(elementPop->CIDn,"23939");
 
+	i++;
 	elementPop = &gold;
-	Elements[78] = &gold;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 79;
 	portstrcpy(elementPop->atomSymbol,"Au");
@@ -2854,8 +2932,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-57-5");
     portstrcpy(elementPop->CIDn,"23985");
 
+	i++;
 	elementPop = &mercury;
-	Elements[79] = &mercury;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 80;
 	portstrcpy(elementPop->atomSymbol,"Hg");
@@ -2890,8 +2969,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7439-97-6");
     portstrcpy(elementPop->CIDn,"23931");
 
+	i++;
 	elementPop = &thallium;
-	Elements[80] = &thallium;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 81;
 	portstrcpy(elementPop->atomSymbol,"Tl");
@@ -2926,8 +3006,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-28-0");
     portstrcpy(elementPop->CIDn,"5359464");
 
+	i++;
 	elementPop = &lead;
-	Elements[81] = &lead;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 82;
 	portstrcpy(elementPop->atomSymbol,"Pb");
@@ -2962,8 +3043,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7439-92-1");
     portstrcpy(elementPop->CIDn,"5352425");
 
+	i++;
 	elementPop = &bismuth;
-	Elements[82] = &bismuth;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 83;
 	portstrcpy(elementPop->atomSymbol,"Bi");
@@ -2998,8 +3080,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-69-9");
     portstrcpy(elementPop->CIDn,"5359367");
 
+	i++;
 	elementPop = &polonium;
-	Elements[83] = &polonium;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 84;
 	portstrcpy(elementPop->atomSymbol,"Po");
@@ -3034,8 +3117,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-08-6");
     portstrcpy(elementPop->CIDn,"N/A");
 
+	i++;	
 	elementPop = &astatine;
-	Elements[84] = &astatine;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 85;
 	portstrcpy(elementPop->atomSymbol,"At");
@@ -3070,8 +3154,9 @@ void popPtable()
     portstrcpy(elementPop->CASn,"7440-68-8");
     portstrcpy(elementPop->CIDn,"N/A");
 
+	i++;
 	elementPop = &radon;
-	Elements[85] = &radon;
+	Elements[i] = elementPop;
 
 	elementPop->atomNumber = 86;
 	portstrcpy(elementPop->atomSymbol,"Rn");
@@ -3105,6 +3190,4 @@ void popPtable()
 	mpf_init_set_str(elementPop->halfLifeYears,".0104753",10);
     portstrcpy(elementPop->CASn,"10043-92-2");
     portstrcpy(elementPop->CIDn,"24857");
-
-
 }
