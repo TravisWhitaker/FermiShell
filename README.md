@@ -23,3 +23,7 @@ Dependencies:
 =============
 - libc
 - gmblib(version 4 or greater for best performance)
+
+How to Build:
+=============
+If the commit you have is not tagged with a release number, the makefile will specify Clang/LLVM as the compiler. If it is tagged as a release, it will specify GCC and will include the -O2 flag(this helps a lot with ChemTerm's internal database). You are of course free to change these, just make sure that you link against GMP, usually with the -lgmp compiler flag. There is no config scipt(right now). The executable that is built doesn't require any other files; you can put it anywhere and it will be run just fine.
