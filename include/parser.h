@@ -6,6 +6,8 @@
 #include <portutils.h>
 #include <stdlib.h>
 
+int precision;
+
 int beanCounter(const char input[], const int inputSize)
 {
 	int beans = 0;

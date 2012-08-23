@@ -11,13 +11,14 @@ char Version[] = "ChemTerm Version 0.0.1d";
 char usersays[256];
 element *output;
 int argHandled = 0;
+int tablesFilled = 0;
 char mutableArg[256];
 
 int main(int argc, char *argv[])
 {
 	int version = 0;
-	int precision = 0;
 	int complete = 0;
+	precision = 0;
 	for(int i=1;i<argc;i++)
 	{
 		if(portstrcmp(argv[i],"-v",sizeof(argv[i]),3) == 1)
@@ -33,14 +34,31 @@ int main(int argc, char *argv[])
 		{
 			i++;
 			precision = atoi(argv[i]);
-			printf("Got precision level %d\n",precision);
-			return 0;
+			if(precision == 0)
+			{
+				if(portstrcmp(argv[i],"0",sizeof(argv[i]),2) == 1)
+				{
+					continue;
+				}
+				else
+				{
+					printf("Erroneous precision.\n");
+				}
+			}
+			else
+			{
+				continue;
+			}
 		}
 		else
 		{
-			printf("Populating tables...");
-			popPtable();
-			printf("\t\t\t\t\t[OK!]\n");
+			if(tablesFilled == 0)
+			{
+				printf("Populating tables...");
+				popPtable();
+				tablesFilled = 1;
+				printf("\t\t\t\t\t[OK!]\n");
+			}
 
 			portstrcpy(mutableArg,argv[i]);
 
@@ -75,6 +93,13 @@ int main(int argc, char *argv[])
 	}
 	else
 	{
+		if(tablesFilled == 0)
+		{
+			printf("Populating tables...");
+			popPtable();
+			tablesFilled = 1;
+			printf("\t\t\t\t\t[OK!]\n");
+		}
 		usersays[0] = '\0';
 		while(usersays[0] != 'q' && usersays[0] != 'Q')
 		{
@@ -105,7 +130,7 @@ int main(int argc, char *argv[])
 				}
 			}
 		}
-		printf("Exiting...");
+		printf("Exiting...\n");
 		return 0;
 	}
 }
