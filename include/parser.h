@@ -139,7 +139,7 @@ void basicElementData(element *input)
 		{
 			gmp_printf("%.*Ff",precision,input->density);
 		}
-		printf(" g/cm^3");
+		printf(" g/cm³");
 	}
 	printf("\n");
 	printf("Melting Point:\t\t");
@@ -215,7 +215,6 @@ void basicElementData(element *input)
 		}
 	}
 	printf("\n");
-	gmp_printf("Ionization Energies:\t%.Ff eV\n",input->ionE1);
 	printf("Ionization Energies:\t");
 	if(mpf_cmp_si(input->ionE1,-1) == 0)
 	{
@@ -270,7 +269,7 @@ void completeElementData(element *input)
 		printf("Solid");
 	}
 	printf("\n");
-	gmp_printf("Density:\t\t\t%.Ff g/cm^3\n",input->density);
+	gmp_printf("Density:\t\t\t%.Ff g/cm³\n",input->density);
 	gmp_printf("Menting Point:\t\t\t%.Ff°C\n",input->fusionP);
 	gmp_printf("Boiling Point:\t\t\t%.Ff°C\n",input->vaporP);
 	gmp_printf("Mohs Hardness:\t\t\t%.Ff\n",input->mohsHardness);
