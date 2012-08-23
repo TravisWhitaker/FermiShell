@@ -10,6 +10,7 @@ typedef struct
 	int atomNumber;
 	char atomSymbol[5];
 	char atomName[15];
+	char block[2];
 	mpf_t atomMass;
 	int phase; // -1 indicates unknown/ambiguous phase, 0 indicates a gas, 1 indicates a liquid, 2 indicates a solid.
 	mpf_t fusionP; //-1 indicates unknown temperature.

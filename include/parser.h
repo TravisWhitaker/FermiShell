@@ -97,6 +97,7 @@ void basicElementData(element *input)
 	printf("Name:\t\t\t%s\n",input->atomName);
 	printf("Symbol:\t\t\t%s\n",input->atomSymbol);
 	printf("Atomic Number:\t\t%d\n",input->atomNumber);
+	printf("Table Block:\t\t%s\n",input->block);
 	printf("Atomic Mass:\t\t");
 	if(mpf_cmp_si(input->atomMass,-1) == 0)
 	{
@@ -276,6 +277,7 @@ void completeElementData(element *input)
 	printf("Name:\t\t\t\t%s\n",input->atomName);
 	printf("Symbol:\t\t\t\t%s\n",input->atomSymbol);
 	printf("Atomic Number:\t\t\t%d\n",input->atomNumber);
+	printf("Table Block:\t\t\t%s\n",input->block);
 	printf("Atomic Mass:\t\t\t");
 	if(mpf_cmp_si(input->atomMass,-1) == 0)
 	{
