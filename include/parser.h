@@ -250,7 +250,16 @@ void completeElementData(element *input)
 	printf("Name:\t\t\t\t%s\n",input->atomName);
 	printf("Symbol:\t\t\t\t%s\n",input->atomSymbol);
 	printf("Atomic Number:\t\t\t%d\n",input->atomNumber);
-	gmp_printf("Atomic Mass:\t\t\t%.Ff\n",input->atomMass);
+	printf("Atomic Mass:\t\t\t");
+	if(precision == 0)
+	{
+		gmp_printf("%.Ff",input->atomMass);
+	}
+	else
+	{
+		gmp_printf("%.*Ff",precision,input->atomMass);
+	}
+	printf(" amu\n");
 	printf("Phase:\t\t\t\t");
 	if(input->phase == -1)
 	{
@@ -269,14 +278,149 @@ void completeElementData(element *input)
 		printf("Solid");
 	}
 	printf("\n");
-	gmp_printf("Density:\t\t\t%.Ff g/cm³\n",input->density);
-	gmp_printf("Menting Point:\t\t\t%.Ff°C\n",input->fusionP);
-	gmp_printf("Boiling Point:\t\t\t%.Ff°C\n",input->vaporP);
-	gmp_printf("Mohs Hardness:\t\t\t%.Ff\n",input->mohsHardness);
-	gmp_printf("Young's Modulus:\t\t%.Ff GPa\n",input->youngsModulus);
-	gmp_printf("Sound Propagation Speed:\t%.Ff m/s\n",input->soundSpeed);
-	gmp_printf("Thermal Expansion:\t\t%.Ff 1/K\n",input->thermalExp);
-	gmp_printf("Thermal Conductivity:\t\t%.Ff W/(mK)\n",input->thermCon);
+	printf("Density:\t\t\t");
+	if(mpf_cmp_si(input->density,-1) == 0)
+	{
+		printf("Unknown");
+	}
+	else
+	{
+		if(precision == 0)
+		{
+			gmp_printf("%.Ff",input->density);
+		}
+		else
+		{
+			gmp_printf("%.*Ff",precision,input->density);
+		}
+		printf(" g/cm³");
+	}
+	printf("\n");
+	printf("Melting Point:\t\t\t");
+	if(mpf_cmp_si(input->fusionP,-1) == 0)
+	{
+		printf("Ambiguous/Unknown");
+	}
+	else
+	{
+		if(precision == 0)
+		{
+			gmp_printf("%.Ff",input->fusionP);
+		}
+		else
+		{
+			gmp_printf("%.*Ff",precision,input->fusionP);
+		}
+		printf("°C");
+	}
+	printf("\n");
+	printf("Boilint Point:\t\t\t");
+	if(mpf_cmp_si(input->vaporP,-1) == 0)
+	{
+		printf("Ambiguous/Unknown");
+	}
+	else
+	{
+		if(precision == 0)
+		{
+			gmp_printf("%.Ff",input->vaporP);
+		}
+		else
+		{
+			gmp_printf("%.*Ff",precision,input->vaporP);
+		}
+		printf("°C");
+	}
+	printf("\n");
+	printf("Mohs Hardness:\t\t\t");
+	if(mpf_cmp_si(input->mohsHardness,-1) == 0)
+	{
+		printf("Ambiguous/Unknown");
+	}
+	else
+	{
+		if(precision == 0)
+		{
+			gmp_printf("%.Ff",input->mohsHardness);
+		}
+		else
+		{
+			gmp_printf("%.*Ff",precision,input->mohsHardness);
+		}
+	}
+	printf("\n");
+	printf("Yount's Modulus:\t\t");
+	if(mpf_cmp_si(input->youngsModulus,-1) == 0)
+	{
+		printf("Ambiguous/Unknown");
+	}
+	else
+	{
+		if(precision == 0)
+		{
+			gmp_printf("%.Ff",input->youngsModulus);
+		}
+		else
+		{
+			gmp_printf("%.*Ff",precision,input->youngsModulus);
+		}
+		printf(" GPa");
+	}
+	printf("\n");
+	printf("Sound Propagation Speed:\t");
+	if(mpf_cmp_si(input->soundSpeed,-1) == 0)
+	{
+		printf("Ambiguous/Unknown");
+	}
+	else
+	{
+		if(precision == 0)
+		{
+			gmp_printf("%.Ff",input->soundSpeed);
+		}
+		else
+		{
+			gmp_printf("%.*Ff",precision,input->soundSpeed);
+		}
+		printf(" m/s");
+	}
+	printf("\n");
+	printf("Thermal Expansion:\t\t");
+	if(mpf_cmp_si(input->thermalExp,-1) == 0)
+	{
+		printf("Ambiguous/Unknown");
+	}
+	else
+	{
+		if(precision == 0)
+		{
+			gmp_printf("%.Ff",input->thermalExp);
+		}
+		else
+		{
+			gmp_printf("%.*Ff",precision,input->thermalExp);
+		}
+		printf(" 1/K");
+	}
+	printf("\n");
+	printf("Thermal Conductivity:\t\t");
+	if(mpf_cmp_si(input->thermCon,-1) == 0)
+	{
+		printf("Ambiguous/Unknown");
+	}
+	else
+	{
+		if(precision == 0)
+		{
+			gmp_printf("%.Ff",input->thermCon);
+		}
+		else
+		{
+			gmp_printf("%.*Ff",precision,input->thermCon);
+		}
+		printf(" W/(mK)");
+	}
+	printf("\n");
 	printf("Metallic Character:\t\t");
 	if(input->metalloid == -1)
 	{
@@ -320,11 +464,19 @@ void completeElementData(element *input)
 	printf("Superconducting Point:\t\t");
 	if(mpf_cmp_si(input->superconductingPoint,-1) == 0)
 	{
-		printf("Unknown");
+		printf("Unknown/Non-superconducting");
 	}
 	else
 	{
-		gmp_printf("%.Ff K",input->superconductingPoint);
+		if(precision == 0)
+		{
+			gmp_printf("%.Ff",input->superconductingPoint);
+		}
+		else
+		{
+			gmp_printf("%.*Ff",precision,input->superconductingPoint);
+		}
+		printf(" K");
 	}
 	printf("\n");
 	printf("Color:\t\t\t\t%s\n",input->color);
@@ -335,21 +487,120 @@ void completeElementData(element *input)
 	}
 	else
 	{
-		gmp_printf("%.Ff",input->refractiveIndex);
+		if(precision == 0)
+		{
+			gmp_printf("%.Ff",input->refractiveIndex);
+		}
+		else
+		{
+			gmp_printf("%.*Ff",precision,input->refractiveIndex);
+		}
 	}
 	printf("\n");
 	printf("Valence:\t\t\t%d\n",input->valence);
-	gmp_printf("Electronegativity:\t\t%.Ff\n",input->electroneg);
-	gmp_printf("Electron Affinity:\t\t%.Ff eV\n",input->electroAffinity);
-	gmp_printf("Ionization Energies:\t\t%.Ff eV\n",input->ionE1);
-	printf("Molar Heat of Combustion:\t");
-	if(mpf_cmp_si(input->mHc,-1) == 0)
+	printf("Electronegativity:\t\t");
+	if(mpf_cmp_si(input->electroneg,-1) == 0)
 	{
-		printf("Unknown");
+		printf("Ambiguous/Unknown");
 	}
 	else
 	{
-		gmp_printf("%.Ff kJ/mol",input->mHc);
+		if(precision == 0)
+		{
+			gmp_printf("%.Ff",input->electroneg);
+		}
+		else
+		{
+			gmp_printf("%.*Ff",precision,input->electroneg);
+		}
+	}
+	printf("\n");
+	printf("Electron Affinity:\t\t");
+	if(mpf_cmp_si(input->electroAffinity,-1) == 0)
+	{
+		printf("Ambiguous/Unknown");
+	}
+	else
+	{
+		if(precision == 0)
+		{
+			gmp_printf("%.Ff",input->electroAffinity);
+		}
+		else
+		{
+			gmp_printf("%.*Ff",precision,input->electroAffinity);
+		}
+		printf(" eV");
+	}
+	printf("\n");
+	printf("Ionization Energies:\t\t");
+	if(mpf_cmp_si(input->ionE1,-1) == 0)
+	{
+		printf("Ambiguous/Unknown");
+	}
+	else
+	{
+		if(precision  == 0)
+		{
+			gmp_printf("%.Ff",input->ionE1);
+		}
+		else
+		{
+			gmp_printf("%.*Ff",precision,input->ionE1);
+		}
+		printf(" eV");
+	}
+	printf("\t");
+	if(mpf_cmp_si(input->ionE2,-1) == 0)
+	{
+		printf("Ambiguous/Unknown");
+	}
+	else
+	{
+		if(precision == 0)
+		{
+			gmp_printf("%.Ff",input->ionE2);
+		}
+		else
+		{
+			gmp_printf("%.*Ff",precision,input->ionE2);
+		}
+		printf(" eV");
+	}
+	printf("\t");
+	if(mpf_cmp_si(input->ionE3,-1) == 0)
+	{
+		printf("Ambiguous/Unknown");
+	}
+	else
+	{
+		if(precision == 0)
+		{
+			gmp_printf("%.Ff",input->ionE3);
+		}
+		else
+		{
+			gmp_printf("%.*Ff",input->ionE3);
+		}
+		printf(" eV");
+	}
+	printf("\n");
+	printf("Molar Heat of Combustion:\t");
+	if(mpf_cmp_si(input->mHc,-1) == 0)
+	{
+		printf("Unknown/Non-spontaneous");
+	}
+	else
+	{
+		if(precision == 0)
+		{
+			gmp_printf("%.Ff",input->mHc);
+		}
+		else
+		{
+			gmp_printf("%.*Ff",precision,input->mHc);
+		}
+		printf(" kJ/mol");
 	}
 	printf("\n");
 	gmp_printf("Atomic Radius:\t\t\t%.Ff pm\n",input->atomRadius);
@@ -363,7 +614,15 @@ void completeElementData(element *input)
 	}
 	else
 	{
-		gmp_printf("%.Ff years",input->halfLifeYears);
+		if(precision == 0)
+		{
+			gmp_printf("%.Ff",input->halfLifeYears);
+		}
+		else
+		{
+			gmp_printf("%.*Ff",precision,input->halfLifeYears);
+		}
+		printf(" years");
 	}
 	printf("\n");
 	printf("CAS:\t\t\t\t%s\n",input->CASn);
