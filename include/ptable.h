@@ -157,7 +157,7 @@ element hassium;
 element meitnerium;
 element darmstadtium;
 element roentgenium;
-element copernicum;
+element copernicium;
 element ununtrium;
 element flerovium;
 element ununpentium;
