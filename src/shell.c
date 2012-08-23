@@ -1,4 +1,4 @@
-//	ChemTerm Copyright (C) 2012 Travis Whitaker
+//	FermiShell Copyright (C) 2012 Travis Whitaker
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -7,7 +7,7 @@
 #include <portutils.h>
 #include <parser.h>
 
-char Version[] = "ChemTerm Version 0.0.1d";
+char Version[] = "FermiShell Version 0.0.1d";
 char usersays[256];
 element *output;
 int argHandled = 0;

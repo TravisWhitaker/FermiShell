@@ -1,4 +1,4 @@
-//	Copyright (C) 2012 Travis Whitaker
+//	FermiShell	Copyright (C) 2012 Travis Whitaker
 
 #include <gmp.h>
 #include <ptable.h>

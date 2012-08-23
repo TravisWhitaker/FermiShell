@@ -1,17 +1,17 @@
-<!--- ChemTerm Copyright (C) 2012 Travis Whitaker -->
+<!--- FermiShell Copyright (C) 2012 Travis Whitaker -->
 
-ChemTerm
+FermiShell
 ========
 
 Retrieve, compare, calculate, analyze, graph, simulate, and experiment with chemical data.
 
 ---
 
-ChemTerm is an interactive shell designed to allow for straightforward, computational, simulatory, and scriptable modelling and analysis of chemical states and systems. It can draw from an extensive built-in database of chemical data and statistics. ChemTerm is written in C and makes extensive use of the GNU Multiprecision library(GMP). ChemTerm is released under the terms of a modified version of the MIT license, the full terms of which may be found in the file "LICENSE."
+FermiShell is an interactive shell designed to allow for straightforward, computational, simulatory, and scriptable modelling and analysis of chemical states and systems. It can draw from an extensive built-in database of chemical data and statistics. FermiShell is written in C and makes extensive use of the GNU Multiprecision library(GMP). FermiShell is released under the terms of a modified version of the MIT license, the full terms of which may be found in the file "LICENSE."
 
-What can ChemTerm do?
+What can FermiShell do?
 =====================
-- Retrieve data and statistics. What is the most common isotope of Plutonium? What are the potential oxidation states of Technetium? What is the specific heat capacity of Aluminium? ChemTerm    allows you to script access to it's extensive built-in periodic, polyatomic ion, and CCC tables.
+- Retrieve data and statistics. What is the most common isotope of Plutonium? What are the potential oxidation states of Technetium? What is the specific heat capacity of Aluminium? FermiShell    allows you to script access to it's extensive built-in periodic, polyatomic ion, and CCC tables.
 - Compare and contrast electronegativities, ionization energies, solubilities, free energy states, and oxidation/reduction states. What salt must be used to extract pure Copper from CuSO4? What is the best solvent for extracting caffeine from Jolt™?
 - Calculate rates, limiting-reagents, molarities, molalities, free energies, and cell potentials. Want to build your own MacBook Pro battery? What metals and salts should you use for the correct voltage? How much sugar can you dissolve in your 90°C coffee?
 - Analyze theoretical chemical systems with support for many common reactions, including electrochemical cells. Test hypotheses and verify the range and accuracy of experimental data.
@@ -26,4 +26,4 @@ Dependencies:
 
 How to Build:
 =============
-If the commit you have is not tagged with a release number, the makefile will specify Clang/LLVM as the compiler. If it is tagged as a release, it will specify GCC and will include the -O2 flag(this helps a lot with ChemTerm's internal database). You are of course free to change these, just make sure that you link against GMP, usually with the -lgmp compiler flag. There is no config scipt(right now). The executable that is built doesn't require any other files; you can put it anywhere and it will be run just fine.
+If the commit you have is not tagged with a release number, the makefile will specify Clang/LLVM as the compiler. If it is tagged as a release, it will specify GCC and will include the -O2 flag(this helps a lot with FermiShell's internal database). You are of course free to change these, just make sure that you link against GMP, usually with the -lgmp compiler flag. There is no config scipt(right now). The executable that is built doesn't require any other files; you can put it anywhere and it will be run just fine.

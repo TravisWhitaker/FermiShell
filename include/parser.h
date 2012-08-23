@@ -1,4 +1,4 @@
-//  ChemTerm Copyright (C) 2012 Travis Whitaker
+//  FermiShell Copyright (C) 2012 Travis Whitaker
 #ifndef PARSER
 #define PARSER
 
@@ -66,6 +66,7 @@ element *singularParse(char input[], const int inputSize)
 			continue;
 		}
 	}
+
 	element *scanner;
 
 	for(int i=0;i<119;i++)
@@ -687,6 +688,5 @@ void completeElementData(element *input)
 	printf("CAS:\t\t\t\t%s\n",input->CASn);
 	printf("CID:\t\t\t\t%s\n",input->CIDn);
 }
-
 	
 #endif

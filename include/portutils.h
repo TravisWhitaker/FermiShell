@@ -1,7 +1,8 @@
-//	ChemTerm Copyright (C) 2012 Travis Whitaker
+//	FermiShell Copyright (C) 2012 Travis Whitaker
 
 #ifndef PORTUTILS
 #define PORTUTILS
+
 char *portstrcpy(char dest[], const char source[]) //Copies one null-terminated string onto another.
 {
 	int i = 0;
@@ -58,4 +59,5 @@ int portstrcmp(const char str1[], const char str2[], int str1len, int str2len) /
 		return 0;
 	}
 }
+
 #endif

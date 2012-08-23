@@ -1,4 +1,4 @@
-//	ChemTerm Copyright (C) 2012 Travis Whitaker
+//	FermiShell Copyright (C) 2012 Travis Whitaker
 
 #ifndef PTABLE
 #define PTABLE
