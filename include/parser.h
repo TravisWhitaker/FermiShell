@@ -96,7 +96,16 @@ void basicElementData(element *input)
 	printf("Name:\t\t\t%s\n",input->atomName);
 	printf("Symbol:\t\t\t%s\n",input->atomSymbol);
 	printf("Atomic Number:\t\t%d\n",input->atomNumber);
-	gmp_printf("Atomic Mass:\t\t%.Ff\n",input->atomMass);
+	printf("Atomic Mass:\t\t");
+	if(precision == 0)
+	{
+		gmp_printf("%.Ff",input->atomMass);
+	}
+	else
+	{
+		gmp_printf("%.*Ff",precision,input->atomMass);
+	}
+	printf(" amu\n");
 	printf("Phase:\t\t\t");
 	if(input->phase == -1)
 	{
@@ -115,9 +124,60 @@ void basicElementData(element *input)
 		printf("Solid");
 	}
 	printf("\n");
-	gmp_printf("Density:\t\t%.Ff g/cm^3\n",input->density);
-	gmp_printf("Menting Point:\t\t%.Ff°C\n",input->fusionP);
-	gmp_printf("Boiling Point:\t\t%.Ff°C\n",input->vaporP);
+	printf("Density:\t\t");
+	if(mpf_cmp_si(input->density,-1) == 0)
+	{
+		printf("Unknown");
+	}
+	else
+	{
+		if(precision == 0)
+		{
+			gmp_printf("%.Ff",input->density);
+		}
+		else
+		{
+			gmp_printf("%.*Ff",precision,input->density);
+		}
+		printf(" g/cm^3");
+	}
+	printf("\n");
+	printf("Melting Point:\t\t");
+	if(mpf_cmp_si(input->fusionP,-1) == 0)
+	{
+		printf("Unknown");
+	}
+	else
+	{
+		if(precision == 0)
+		{
+			gmp_printf("%.Ff",input->fusionP);
+		}
+		else
+		{
+			gmp_printf("%.*Ff",precision,input->fusionP);
+		}
+		printf("°C");
+	}
+	printf("\n");
+	printf("Boiling Point:\t\t");
+	if(mpf_cmp_si(input->vaporP,-1) == 0)
+	{
+		printf("Unknown");
+	}
+	else
+	{
+		if(precision == 0)
+		{
+			gmp_printf("%.Ff",input->vaporP);
+		}
+		else
+		{
+			gmp_printf("%.*Ff",precision,input->vaporP);
+		}
+		printf("°C");
+	}
+	printf("\n");
 	printf("Metallic Character:\t");
 	if(input->metalloid == -1)
 	{
@@ -138,9 +198,52 @@ void basicElementData(element *input)
 	printf("\n");
 	printf("Color:\t\t\t%s\n",input->color);
 	printf("Valence:\t\t%d\n",input->valence);
-	gmp_printf("Electronegativity:\t%.Ff\n",input->electroneg);
+	printf("Electronegativity:\t");
+	if(mpf_cmp_si(input->electroneg,-1) == 0)
+	{
+		printf("Ambiguous/Unknown");
+	}
+	else
+	{
+		if(precision == 0)
+		{	
+			gmp_printf("%.Ff",input->electroneg);
+		}
+		else
+		{
+			gmp_printf("%.*Ff",precision,input->electroneg);
+		}
+	}
+	printf("\n");
 	gmp_printf("Ionization Energies:\t%.Ff eV\n",input->ionE1);
-	gmp_printf("Atomic Radius:\t\t%.Ff pm\n",input->atomRadius);
+	printf("Ionization Energies:\t");
+	if(mpf_cmp_si(input->ionE1,-1) == 0)
+	{
+		printf("Ambiguous/Unknown");
+	}	
+	else
+	{
+		if(precision == 0)
+		{
+			gmp_printf("%.Ff",input->ionE1);
+		}
+		else
+		{
+			gmp_printf("%.*Ff",precision,input->ionE1);
+		}
+		printf(" eV");
+	}
+	printf("\n");
+	printf("Atomic Radius:\t\t");
+	if(precision == 0)
+	{
+		gmp_printf("%.Ff",input->atomRadius);
+	}
+	else
+	{
+		gmp_printf("%.*Ff",precision,input->atomRadius);
+	}
+	printf(" pm\n");
 }
 
 void completeElementData(element *input)
