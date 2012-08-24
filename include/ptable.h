@@ -12,6 +12,7 @@ typedef struct
 	char atomName[15];
 	char block[2];
 	mpf_t atomMass;
+	int naturalOccurence; // 0 indicates primordial, 1 indicates decay product, 2 indicates synthetic.
 	int phase; // -1 indicates unknown/ambiguous phase, 0 indicates a gas, 1 indicates a liquid, 2 indicates a solid.
 	mpf_t fusionP; //-1 indicates unknown temperature.
 	mpf_t vaporP;

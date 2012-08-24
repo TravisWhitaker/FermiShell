@@ -17,6 +17,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"H");
     portstrcpy(elementPop->atomName,"Hydrogen");
 	mpf_init_set_str(elementPop->atomMass,"1.00794",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"s");
     elementPop->phase = 0;
     mpf_init_set_str(elementPop->fusionP,"-259.14",10);
@@ -55,6 +56,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"He");
 	portstrcpy(elementPop->atomName,"Helium");
 	mpf_init_set_str(elementPop->atomMass,"4.002602",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"s");
 	elementPop->phase = 0;
 	mpf_init_set_str(elementPop->fusionP,"-1.0",10);
@@ -93,6 +95,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Li");
     portstrcpy(elementPop->atomName,"Lithium");
     mpf_init_set_str(elementPop->atomMass,"6.941",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"s");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"180.54",10);
@@ -131,6 +134,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Be");
     portstrcpy(elementPop->atomName,"Beryllium");
     mpf_init_set_str(elementPop->atomMass,"9.012182",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"s");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"1287.0",10);
@@ -169,6 +173,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"B");
     portstrcpy(elementPop->atomName,"Boron");
     mpf_init_set_str(elementPop->atomMass,"10.811",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"p");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"2075.0",10);
@@ -207,6 +212,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"C");
     portstrcpy(elementPop->atomName,"Carbon");
     mpf_init_set_str(elementPop->atomMass,"12.0107",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"p");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"3550.0",10);
@@ -245,6 +251,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"N");
     portstrcpy(elementPop->atomName,"Nitrogen");
     mpf_init_set_str(elementPop->atomMass,"14.0067",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"p");
     elementPop->phase = 0;
     mpf_init_set_str(elementPop->fusionP,"-210.1",10);
@@ -283,6 +290,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"O");
     portstrcpy(elementPop->atomName,"Oxygen");
     mpf_init_set_str(elementPop->atomMass,"15.9994",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"p");
     elementPop->phase = 0;
     mpf_init_set_str(elementPop->fusionP,"-218.3",10);
@@ -321,6 +329,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"F");
     portstrcpy(elementPop->atomName,"Fluorine");
     mpf_init_set_str(elementPop->atomMass,"18.9984032",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"p");
     elementPop->phase = 0;
     mpf_init_set_str(elementPop->fusionP,"-219.6",10);
@@ -359,6 +368,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Ne");
     portstrcpy(elementPop->atomName,"Neon");
     mpf_init_set_str(elementPop->atomMass,"20.1791",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"p");
     elementPop->phase = 0;
     mpf_init_set_str(elementPop->fusionP,"-248.59",10);
@@ -397,6 +407,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Na");
     portstrcpy(elementPop->atomName,"Sodium");
     mpf_init_set_str(elementPop->atomMass,"22.98976928",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"s");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"97.72",10);
@@ -435,6 +446,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Mg");
     portstrcpy(elementPop->atomName,"Magnesium");
     mpf_init_set_str(elementPop->atomMass,"24.3050",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"s");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"650.0",10);
@@ -473,6 +485,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Al");
     portstrcpy(elementPop->atomName,"Aluminium");
     mpf_init_set_str(elementPop->atomMass,"26.9815286",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"p");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"660.32",10);
@@ -511,6 +524,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Si");
     portstrcpy(elementPop->atomName,"Silicon");
     mpf_init_set_str(elementPop->atomMass,"28.0855",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"p");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"141.04",10);
@@ -549,6 +563,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"P");
     portstrcpy(elementPop->atomName,"Phosphorus");
     mpf_init_set_str(elementPop->atomMass,"30.973762",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"p");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"-1.0",10);
@@ -587,6 +602,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"S");
     portstrcpy(elementPop->atomName,"Sulfur");
     mpf_init_set_str(elementPop->atomMass,"32.065",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"p");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"112.8",10);
@@ -625,6 +641,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Cl");
     portstrcpy(elementPop->atomName,"Chlorine");
     mpf_init_set_str(elementPop->atomMass,"35.453",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"p");
     elementPop->phase = 0;
     mpf_init_set_str(elementPop->fusionP,"-101.5",10);
@@ -663,6 +680,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Ar");
     portstrcpy(elementPop->atomName,"Argon");
     mpf_init_set_str(elementPop->atomMass,"39.948",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"p");
     elementPop->phase = 0;
     mpf_init_set_str(elementPop->fusionP,"-189.3",10);
@@ -701,6 +719,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"K");
     portstrcpy(elementPop->atomName,"Potassium");
     mpf_init_set_str(elementPop->atomMass,"39.0983",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"s");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"63.38",10);
@@ -739,6 +758,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Ca");
     portstrcpy(elementPop->atomName,"Calcium");
     mpf_init_set_str(elementPop->atomMass,"40.078",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"s");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"842.0",10);
@@ -777,6 +797,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Sc");
     portstrcpy(elementPop->atomName,"Scandium");
     mpf_init_set_str(elementPop->atomMass,"44.955912",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"d");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"1541",10);
@@ -815,6 +836,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Ti");
     portstrcpy(elementPop->atomName,"Titanium");
     mpf_init_set_str(elementPop->atomMass,"47.867",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"d");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"1668",10);
@@ -853,6 +875,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"V");
     portstrcpy(elementPop->atomName,"Vanadium");
     mpf_init_set_str(elementPop->atomMass,"50.9415",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"d");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"1910",10);
@@ -891,6 +914,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Cr");
     portstrcpy(elementPop->atomName,"Chromium");
     mpf_init_set_str(elementPop->atomMass,"51.9961",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"d");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"1907",10);
@@ -929,6 +953,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Mn");
     portstrcpy(elementPop->atomName,"Manganese");
     mpf_init_set_str(elementPop->atomMass,"54.938045",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"d");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"1246",10);
@@ -967,6 +992,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Fe");
     portstrcpy(elementPop->atomName,"Iron");
     mpf_init_set_str(elementPop->atomMass,"55.845",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"d");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"1538",10);
@@ -1005,6 +1031,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Co");
     portstrcpy(elementPop->atomName,"Cobalt");
     mpf_init_set_str(elementPop->atomMass,"58.933195",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"d");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"1495",10);
@@ -1043,6 +1070,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Ni");
     portstrcpy(elementPop->atomName,"Nickel");
     mpf_init_set_str(elementPop->atomMass,"58.6934",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"d");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"1455",10);
@@ -1081,6 +1109,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Cu");
     portstrcpy(elementPop->atomName,"Copper");
     mpf_init_set_str(elementPop->atomMass,"63.546",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"d");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"1084.62",10);
@@ -1119,6 +1148,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Zn");
     portstrcpy(elementPop->atomName,"Zinc");
     mpf_init_set_str(elementPop->atomMass,"65.38",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"d");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"419.53",10);
@@ -1157,6 +1187,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Ga");
     portstrcpy(elementPop->atomName,"Gallium");
     mpf_init_set_str(elementPop->atomMass,"69.723",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"p");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"29.76",10);
@@ -1195,6 +1226,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Ge");
     portstrcpy(elementPop->atomName,"Germanium");
     mpf_init_set_str(elementPop->atomMass,"72.63",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"p");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"938.3",10);
@@ -1233,6 +1265,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"As");
     portstrcpy(elementPop->atomName,"Arsenic");
     mpf_init_set_str(elementPop->atomMass,"84.92160",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"p");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"817",10);
@@ -1271,6 +1304,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Se");
     portstrcpy(elementPop->atomName,"Selenium");
     mpf_init_set_str(elementPop->atomMass,"78.96",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"p");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"217",10);
@@ -1309,6 +1343,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Br");
     portstrcpy(elementPop->atomName,"Bromine");
     mpf_init_set_str(elementPop->atomMass,"79.904",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"p");
     elementPop->phase = 1;
     mpf_init_set_str(elementPop->fusionP,"-7.3",10);
@@ -1347,6 +1382,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Kr");
     portstrcpy(elementPop->atomName,"Krypton");
     mpf_init_set_str(elementPop->atomMass,"83.798",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"p");
     elementPop->phase = 0;
     mpf_init_set_str(elementPop->fusionP,"-157.36",10);
@@ -1385,6 +1421,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Rb");
     portstrcpy(elementPop->atomName,"Rubidium");
     mpf_init_set_str(elementPop->atomMass,"85.4678",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"s");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"39.31",10);
@@ -1423,6 +1460,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Sr");
     portstrcpy(elementPop->atomName,"Strontium");
     mpf_init_set_str(elementPop->atomMass,"87.62",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"s");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"777",10);
@@ -1461,6 +1499,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Y");
     portstrcpy(elementPop->atomName,"Yttrium");
     mpf_init_set_str(elementPop->atomMass,"88.90585",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"d");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"1526",10);
@@ -1499,6 +1538,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Zr");
     portstrcpy(elementPop->atomName,"Zirconium");
     mpf_init_set_str(elementPop->atomMass,"91.224",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"d");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"1855",10);
@@ -1537,6 +1577,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Nb");
     portstrcpy(elementPop->atomName,"Niobium");
     mpf_init_set_str(elementPop->atomMass,"92.90638",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"d");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"2477",10);
@@ -1575,6 +1616,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Mo");
     portstrcpy(elementPop->atomName,"Molybdenum");
     mpf_init_set_str(elementPop->atomMass,"95.96",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"d");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"2423",10);
@@ -1613,6 +1655,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Tc");
     portstrcpy(elementPop->atomName,"Technetium");
     mpf_init_set_str(elementPop->atomMass,"97.907215966",10);
+	elementPop->naturalOccurence = 1;
 	portstrcpy(elementPop->block,"d");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"2157",10);
@@ -1651,6 +1694,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Ru");
     portstrcpy(elementPop->atomName,"Ruthenium");
     mpf_init_set_str(elementPop->atomMass,"101.07",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"d");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"2334",10);
@@ -1689,6 +1733,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Rh");
     portstrcpy(elementPop->atomName,"Rhodium");
     mpf_init_set_str(elementPop->atomMass,"102.90550",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"d");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"1964",10);
@@ -1727,6 +1772,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Pd");
     portstrcpy(elementPop->atomName,"Palladium");
     mpf_init_set_str(elementPop->atomMass,"106.42",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"d");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"1554.9",10);
@@ -1765,6 +1811,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Ag");//It ain't gold...
     portstrcpy(elementPop->atomName,"Silver");
     mpf_init_set_str(elementPop->atomMass,"107.8682",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"d");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"961.78",10);
@@ -1803,6 +1850,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Cd");
     portstrcpy(elementPop->atomName,"Cadmium");
     mpf_init_set_str(elementPop->atomMass,"112.411",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"d");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"321.07",10);
@@ -1841,6 +1889,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"In");
     portstrcpy(elementPop->atomName,"Indium");
     mpf_init_set_str(elementPop->atomMass,"114.818",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"p");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"156.6",10);
@@ -1879,6 +1928,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Sn");
     portstrcpy(elementPop->atomName,"Tin");
     mpf_init_set_str(elementPop->atomMass,"118.710",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"p");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"231.9",10);
@@ -1917,6 +1967,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Sb");
     portstrcpy(elementPop->atomName,"Antimony");
     mpf_init_set_str(elementPop->atomMass,"121.760",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"p");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"630.63",10);
@@ -1955,6 +2006,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Te");
     portstrcpy(elementPop->atomName,"Tellurium");
     mpf_init_set_str(elementPop->atomMass,"127.60",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"p");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"449.51",10);
@@ -1993,6 +2045,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"I");
     portstrcpy(elementPop->atomName,"Iodine");
     mpf_init_set_str(elementPop->atomMass,"126.90447",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"p");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"113.7",10);
@@ -2031,6 +2084,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Xe");
     portstrcpy(elementPop->atomName,"Xenon");
     mpf_init_set_str(elementPop->atomMass,"131.293",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"p");
     elementPop->phase = 0;
     mpf_init_set_str(elementPop->fusionP,"-111.8",10);
@@ -2069,6 +2123,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Cs");
     portstrcpy(elementPop->atomName,"Caesium");
     mpf_init_set_str(elementPop->atomMass,"132.9054519",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"s");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"28.44",10);
@@ -2107,6 +2162,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Ba");
     portstrcpy(elementPop->atomName,"Barium");
     mpf_init_set_str(elementPop->atomMass,"137.327",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"s");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"727",10);
@@ -2145,6 +2201,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"La");
     portstrcpy(elementPop->atomName,"Lanthanum");
     mpf_init_set_str(elementPop->atomMass,"138.90547",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"f");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"920",10);
@@ -2183,6 +2240,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Ce");
     portstrcpy(elementPop->atomName,"Cerium");
     mpf_init_set_str(elementPop->atomMass,"140.116",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"f");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"798",10);
@@ -2221,6 +2279,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Pr");
     portstrcpy(elementPop->atomName,"Praseodymium");
     mpf_init_set_str(elementPop->atomMass,"140.90765",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"f");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"931",10);
@@ -2259,6 +2318,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Nd");
     portstrcpy(elementPop->atomName,"Neodymium");
     mpf_init_set_str(elementPop->atomMass,"144.242",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"f");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"1021",10);
@@ -2297,6 +2357,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Pm");
     portstrcpy(elementPop->atomName,"Promethium");
     mpf_init_set_str(elementPop->atomMass,"144.912749023",10);
+	elementPop->naturalOccurence = 1;
 	portstrcpy(elementPop->block,"f");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"1100",10);
@@ -2335,6 +2396,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Sm");
     portstrcpy(elementPop->atomName,"Samarium");
     mpf_init_set_str(elementPop->atomMass,"150.36",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"f");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"1072",10);
@@ -2373,6 +2435,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Eu");
     portstrcpy(elementPop->atomName,"Europium");
     mpf_init_set_str(elementPop->atomMass,"151.964",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"f");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"822",10);
@@ -2411,6 +2474,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Gd");
     portstrcpy(elementPop->atomName,"Gadolinium");
     mpf_init_set_str(elementPop->atomMass,"157.25",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"f");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"1313",10);
@@ -2449,6 +2513,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Tb");
     portstrcpy(elementPop->atomName,"Terbium");
     mpf_init_set_str(elementPop->atomMass,"158.92535",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"f");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"1356",10);
@@ -2487,6 +2552,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Dy");
     portstrcpy(elementPop->atomName,"Dysprosium");
     mpf_init_set_str(elementPop->atomMass,"162.500",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"f");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"1412",10);
@@ -2525,6 +2591,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Ho");
     portstrcpy(elementPop->atomName,"Holmium");
     mpf_init_set_str(elementPop->atomMass,"164.93032",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"f");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"1474",10);
@@ -2563,6 +2630,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Er");
     portstrcpy(elementPop->atomName,"Erbium");
     mpf_init_set_str(elementPop->atomMass,"167.259",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"f");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"1497",10);
@@ -2601,6 +2669,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Tm");
     portstrcpy(elementPop->atomName,"Thulium");
     mpf_init_set_str(elementPop->atomMass,"168.93421",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"f");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"1545",10);
@@ -2639,6 +2708,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Yb");
     portstrcpy(elementPop->atomName,"Ytterbium");
     mpf_init_set_str(elementPop->atomMass,"173.054",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"f");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"819",10);
@@ -2677,6 +2747,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Lu");
     portstrcpy(elementPop->atomName,"Lutetium");
     mpf_init_set_str(elementPop->atomMass,"174.9668",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"d");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"1663",10);
@@ -2715,6 +2786,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Hf");
     portstrcpy(elementPop->atomName,"Hafnium");
     mpf_init_set_str(elementPop->atomMass,"178.49",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"d");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"2233",10);
@@ -2753,6 +2825,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Ta");
     portstrcpy(elementPop->atomName,"Tantalum");
     mpf_init_set_str(elementPop->atomMass,"180.94780",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"d");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"3017",10);
@@ -2791,6 +2864,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"W");
     portstrcpy(elementPop->atomName,"Tungsten");
     mpf_init_set_str(elementPop->atomMass,"183.84",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"d");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"3422",10);
@@ -2829,6 +2903,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Re");
     portstrcpy(elementPop->atomName,"Rhenium");
     mpf_init_set_str(elementPop->atomMass,"186.207",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"d");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"3186",10);
@@ -2867,6 +2942,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Os");
     portstrcpy(elementPop->atomName,"Osmium");
     mpf_init_set_str(elementPop->atomMass,"190.23",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"d");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"3033",10);
@@ -2905,6 +2981,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Ir");
     portstrcpy(elementPop->atomName,"Iridium");
     mpf_init_set_str(elementPop->atomMass,"192.217",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"d");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"2466",10);
@@ -2943,6 +3020,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Pt");
     portstrcpy(elementPop->atomName,"Platinum");
     mpf_init_set_str(elementPop->atomMass,"195.084",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"d");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"1768",10);
@@ -2981,6 +3059,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Au");
     portstrcpy(elementPop->atomName,"Gold");
     mpf_init_set_str(elementPop->atomMass,"196.966569",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"d");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"1064.18",10);
@@ -3019,6 +3098,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Hg");
     portstrcpy(elementPop->atomName,"Mercury");
     mpf_init_set_str(elementPop->atomMass,"200.59",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"d");
     elementPop->phase = 1;
     mpf_init_set_str(elementPop->fusionP,"-38.83",10);
@@ -3057,6 +3137,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Tl");
     portstrcpy(elementPop->atomName,"thallium");
     mpf_init_set_str(elementPop->atomMass,"204.3833",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"p");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"304",10);
@@ -3095,6 +3176,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Pb");
     portstrcpy(elementPop->atomName,"Lead");
     mpf_init_set_str(elementPop->atomMass,"207.2",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"p");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"327.46",10);
@@ -3133,6 +3215,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Bi");
     portstrcpy(elementPop->atomName,"Bismuth");
     mpf_init_set_str(elementPop->atomMass,"208.98040",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"p");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"271.3",10);
@@ -3171,6 +3254,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Po");
     portstrcpy(elementPop->atomName,"Polonium");
     mpf_init_set_str(elementPop->atomMass,"208.982430435",10);
+	elementPop->naturalOccurence = 1;
 	portstrcpy(elementPop->block,"p");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"254",10);
@@ -3209,6 +3293,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"At");
     portstrcpy(elementPop->atomName,"Astatine");
     mpf_init_set_str(elementPop->atomMass,"209.98714771",10);
+	elementPop->naturalOccurence = 1;
 	portstrcpy(elementPop->block,"p");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"302",10);
@@ -3247,6 +3332,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Rn");
     portstrcpy(elementPop->atomName,"Radon");
     mpf_init_set_str(elementPop->atomMass,"222.017577738",10);
+	elementPop->naturalOccurence = 1;
 	portstrcpy(elementPop->block,"p");
     elementPop->phase = 0;
     mpf_init_set_str(elementPop->fusionP,"-71",10);
@@ -3285,6 +3371,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Fr");
     portstrcpy(elementPop->atomName,"Francium");
     mpf_init_set_str(elementPop->atomMass,"223.019735857",10);
+	elementPop->naturalOccurence = 1;
 	portstrcpy(elementPop->block,"s");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"-1",10);
@@ -3323,6 +3410,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Ra");
     portstrcpy(elementPop->atomName,"Radium");
     mpf_init_set_str(elementPop->atomMass,"226.025409823",10);
+	elementPop->naturalOccurence = 1;
 	portstrcpy(elementPop->block,"s");
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"700",10);
@@ -3361,6 +3449,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Ac");
     portstrcpy(elementPop->atomName,"Actinium");
     mpf_init_set_str(elementPop->atomMass,"227.027752127",10);
+	elementPop->naturalOccurence = 1;
 	portstrcpy(elementPop->block,"f");
     elementPop->phase =2;
     mpf_init_set_str(elementPop->fusionP,"1050",10);
@@ -3399,6 +3488,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Th");
     portstrcpy(elementPop->atomName,"Thorium");
     mpf_init_set_str(elementPop->atomMass,"232.03806",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"f");
     elementPop->phase =2;
     mpf_init_set_str(elementPop->fusionP,"1750",10);
@@ -3437,6 +3527,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Pa");
     portstrcpy(elementPop->atomName,"Protactinium");
     mpf_init_set_str(elementPop->atomMass,"231.03586",10);
+	elementPop->naturalOccurence = 1;
 	portstrcpy(elementPop->block,"f");
     elementPop->phase =2;
     mpf_init_set_str(elementPop->fusionP,"1572",10);
@@ -3475,6 +3566,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"U");
     portstrcpy(elementPop->atomName,"Uranium");
     mpf_init_set_str(elementPop->atomMass,"238.02891",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"f");
     elementPop->phase =2;
     mpf_init_set_str(elementPop->fusionP,"1135",10);
@@ -3513,6 +3605,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Np");
     portstrcpy(elementPop->atomName,"Neptunium");
     mpf_init_set_str(elementPop->atomMass,"237.048173444",10);
+	elementPop->naturalOccurence = 1;
 	portstrcpy(elementPop->block,"f");
     elementPop->phase =2;
     mpf_init_set_str(elementPop->fusionP,"644",10);
@@ -3551,6 +3644,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Pu");
     portstrcpy(elementPop->atomName,"Plutonium");
     mpf_init_set_str(elementPop->atomMass,"244.064203907",10);
+	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"f");
     elementPop->phase =2;
     mpf_init_set_str(elementPop->fusionP,"640",10);
@@ -3589,6 +3683,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Am");
     portstrcpy(elementPop->atomName,"Americium");
     mpf_init_set_str(elementPop->atomMass,"243.06138108",10);
+	elementPop->naturalOccurence = 1;
 	portstrcpy(elementPop->block,"f");
     elementPop->phase =2;
     mpf_init_set_str(elementPop->fusionP,"1170",10);
@@ -3627,6 +3722,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Cm");
     portstrcpy(elementPop->atomName,"Curium");
     mpf_init_set_str(elementPop->atomMass,"247.07035354",10);
+	elementPop->naturalOccurence = 1;
 	portstrcpy(elementPop->block,"f");
     elementPop->phase =2;
     mpf_init_set_str(elementPop->fusionP,"1345",10);
@@ -3665,6 +3761,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Bk");
     portstrcpy(elementPop->atomName,"Berkelium");
     mpf_init_set_str(elementPop->atomMass,"247.07030708",10);
+	elementPop->naturalOccurence = 1;
 	portstrcpy(elementPop->block,"f");
     elementPop->phase =2;
     mpf_init_set_str(elementPop->fusionP,"986",10);
@@ -3703,6 +3800,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Cf");
     portstrcpy(elementPop->atomName,"Californium");
     mpf_init_set_str(elementPop->atomMass,"251.079586788",10);
+	elementPop->naturalOccurence = 1; 
 	portstrcpy(elementPop->block,"f");
     elementPop->phase =2;
     mpf_init_set_str(elementPop->fusionP,"900",10);
@@ -3741,6 +3839,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Es");
     portstrcpy(elementPop->atomName,"Einsteinium");
     mpf_init_set_str(elementPop->atomMass,"252.082978512",10);
+	elementPop->naturalOccurence = 2;
 	portstrcpy(elementPop->block,"f");
     elementPop->phase =2;
     mpf_init_set_str(elementPop->fusionP,"860",10);
@@ -3779,6 +3878,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Fm");
     portstrcpy(elementPop->atomName,"Fermium");
     mpf_init_set_str(elementPop->atomMass,"257.095104724",10);
+	elementPop->naturalOccurence = 2;
 	portstrcpy(elementPop->block,"f");
     elementPop->phase =2;
     mpf_init_set_str(elementPop->fusionP,"1527",10);
@@ -3817,6 +3917,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Md");
     portstrcpy(elementPop->atomName,"Mendelevium");
     mpf_init_set_str(elementPop->atomMass,"258.098431319",10);
+	elementPop->naturalOccurence = 2;
 	portstrcpy(elementPop->block,"f");
     elementPop->phase =2;
     mpf_init_set_str(elementPop->fusionP,"827",10);
@@ -3855,6 +3956,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"No");
     portstrcpy(elementPop->atomName,"Nobelium");
     mpf_init_set_str(elementPop->atomMass,"259.101031",10);
+	elementPop->naturalOccurence = 2;
 	portstrcpy(elementPop->block,"f");
     elementPop->phase =2;
     mpf_init_set_str(elementPop->fusionP,"827",10);
@@ -3893,6 +3995,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Lr");
     portstrcpy(elementPop->atomName,"Lawrencium");
     mpf_init_set_str(elementPop->atomMass,"262.109634",10);
+	elementPop->naturalOccurence = 2;
 	portstrcpy(elementPop->block,"d");
     elementPop->phase =2;
     mpf_init_set_str(elementPop->fusionP,"1627",10);
@@ -3931,6 +4034,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Rf");
     portstrcpy(elementPop->atomName,"Rutherfordium");
     mpf_init_set_str(elementPop->atomMass,"265.116704",10);
+	elementPop->naturalOccurence = 2;
 	portstrcpy(elementPop->block,"d");
     elementPop->phase = -1;
     mpf_init_set_str(elementPop->fusionP,"-1",10);
@@ -3969,6 +4073,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Db");
     portstrcpy(elementPop->atomName,"Dubnium");
     mpf_init_set_str(elementPop->atomMass,"268.125445",10);
+	elementPop->naturalOccurence = 2;
 	portstrcpy(elementPop->block,"d");
     elementPop->phase = -1;
     mpf_init_set_str(elementPop->fusionP,"-1",10);
@@ -4007,6 +4112,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Sg");
     portstrcpy(elementPop->atomName,"Seaborgium");
     mpf_init_set_str(elementPop->atomMass,"271.133472",10);
+	elementPop->naturalOccurence = 2;
 	portstrcpy(elementPop->block,"d");
     elementPop->phase = -1;
     mpf_init_set_str(elementPop->fusionP,"-1",10);
@@ -4045,6 +4151,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Bh");
     portstrcpy(elementPop->atomName,"Bohrium");
     mpf_init_set_str(elementPop->atomMass,"272.138032",10);
+	elementPop->naturalOccurence = 2;
 	portstrcpy(elementPop->block,"d");
     elementPop->phase = -1;
     mpf_init_set_str(elementPop->fusionP,"-1",10);
@@ -4083,6 +4190,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Hs");
     portstrcpy(elementPop->atomName,"Hassium");
     mpf_init_set_str(elementPop->atomMass,"270.134650",10);
+	elementPop->naturalOccurence = 2;
 	portstrcpy(elementPop->block,"d");
     elementPop->phase = -1;
     mpf_init_set_str(elementPop->fusionP,"-1",10);
@@ -4121,6 +4229,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Mt");
     portstrcpy(elementPop->atomName,"Meitnerium");
     mpf_init_set_str(elementPop->atomMass,"276.151156",10);
+	elementPop->naturalOccurence = 2;
 	portstrcpy(elementPop->block,"d");
     elementPop->phase = -1;
     mpf_init_set_str(elementPop->fusionP,"-1",10);
@@ -4159,6 +4268,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Ds");
     portstrcpy(elementPop->atomName,"Darmstadtium");
     mpf_init_set_str(elementPop->atomMass,"281.162061",10);
+	elementPop->naturalOccurence = 2;
 	portstrcpy(elementPop->block,"d");
     elementPop->phase = -1;
     mpf_init_set_str(elementPop->fusionP,"-1",10);
@@ -4197,6 +4307,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Rg");
     portstrcpy(elementPop->atomName,"Roentgenium");
     mpf_init_set_str(elementPop->atomMass,"280.164473",10);
+	elementPop->naturalOccurence = 2;
 	portstrcpy(elementPop->block,"d");
     elementPop->phase = -1;
     mpf_init_set_str(elementPop->fusionP,"-1",10);
@@ -4235,6 +4346,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Cn");
     portstrcpy(elementPop->atomName,"Copernicium");
     mpf_init_set_str(elementPop->atomMass,"285.174105",10);
+	elementPop->naturalOccurence = 2;
 	portstrcpy(elementPop->block,"d");
     elementPop->phase = -1;
     mpf_init_set_str(elementPop->fusionP,"-1",10);
@@ -4273,6 +4385,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Uut");
     portstrcpy(elementPop->atomName,"Ununtrium");
     mpf_init_set_str(elementPop->atomMass,"284.178080",10);
+	elementPop->naturalOccurence = 2;
 	portstrcpy(elementPop->block,"p");
     elementPop->phase = -1;
     mpf_init_set_str(elementPop->fusionP,"-1",10);
@@ -4311,6 +4424,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Fl");
     portstrcpy(elementPop->atomName,"Flerovium");
     mpf_init_set_str(elementPop->atomMass,"-1",10);
+	elementPop->naturalOccurence = 2;
 	portstrcpy(elementPop->block,"p");
     elementPop->phase = -1;
     mpf_init_set_str(elementPop->fusionP,"-1",10);
@@ -4349,6 +4463,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Uup");
     portstrcpy(elementPop->atomName,"Ununpentium");
     mpf_init_set_str(elementPop->atomMass,"-1",10);
+	elementPop->naturalOccurence = 2;
 	portstrcpy(elementPop->block,"p");
     elementPop->phase = -1;
     mpf_init_set_str(elementPop->fusionP,"-1",10);
@@ -4387,6 +4502,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Lv");
     portstrcpy(elementPop->atomName,"Livermorium");
     mpf_init_set_str(elementPop->atomMass,"-1",10);
+	elementPop->naturalOccurence = 2;
 	portstrcpy(elementPop->block,"p");
     elementPop->phase = -1;
     mpf_init_set_str(elementPop->fusionP,"-1",10);
@@ -4425,6 +4541,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Uus");
     portstrcpy(elementPop->atomName,"Ununseptium");
     mpf_init_set_str(elementPop->atomMass,"-1",10);
+	elementPop->naturalOccurence = 2;
 	portstrcpy(elementPop->block,"p");
     elementPop->phase = -1;
     mpf_init_set_str(elementPop->fusionP,"-1",10);
@@ -4463,6 +4580,7 @@ void popPtable()
 	portstrcpy(elementPop->atomSymbol,"Uuo");
     portstrcpy(elementPop->atomName,"Ununoctium");
     mpf_init_set_str(elementPop->atomMass,"-1",10);
+	elementPop->naturalOccurence = 2;
 	portstrcpy(elementPop->block,"p");
     elementPop->phase = -1;
     mpf_init_set_str(elementPop->fusionP,"-1",10);

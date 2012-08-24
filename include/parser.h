@@ -296,6 +296,20 @@ void completeElementData(element *input)
 		printf(" amu");
 	}
 	printf("\n");
+	printf("Natural Occurence:\t\t");
+	if(input->naturalOccurence == 0)
+	{
+		printf("Primordial");
+	}
+	else if(input->naturalOccurence == 1)
+	{
+		printf("Decay Product");
+	}
+	else if(input->naturalOccurence == 2)
+	{
+		printf("Synthetic");
+	}
+	printf("\n");
 	printf("Phase:\t\t\t\t");
 	if(input->phase == -1)
 	{
