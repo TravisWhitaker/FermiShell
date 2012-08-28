@@ -19,6 +19,8 @@ void popPtable()
 	mpf_init_set_str(elementPop->atomMass,"1.00794",10);
 	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"s");
+	elementPop->bohrShells[0] = 1;
+	elementPop->vEshell = elementPop->bohrShells[0];
     elementPop->phase = 0;
     mpf_init_set_str(elementPop->fusionP,"-259.14",10);
     mpf_init_set_str(elementPop->vaporP,"-252.87",10);
