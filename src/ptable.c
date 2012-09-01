@@ -1865,7 +1865,7 @@ void popPtable()
 	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"d");
 	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 18;
-	elementPop->vEshell = elementPop->bohrShells[4];
+	elementPop->vEshell = elementPop->bohrShells[4]; //This is NOT a mistake, vEshell must equal zero. Palladium is the only element for which this occurs.
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"1554.9",10);
     mpf_init_set_str(elementPop->vaporP,"2963",10);

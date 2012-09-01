@@ -5,6 +5,7 @@
 #include <gmp.h>
 #include <portutils.h>
 #include <stdlib.h>
+#include <bohr.h>
 
 int precision;
 
@@ -98,7 +99,6 @@ void basicElementData(element *input)
 	printf("Symbol:\t\t\t%s\n",input->atomSymbol);
 	printf("Atomic Number:\t\t%d\n",input->atomNumber);
 	printf("Table Block:\t\t%s\n",input->block);
-	printf("\n");
 	printf("Atomic Mass:\t\t");
 	if(mpf_cmp_si(input->atomMass,-1) == 0)
 	{
@@ -116,6 +116,9 @@ void basicElementData(element *input)
 		}
 		printf(" amu");
 	}
+	printf("\n");
+	printf("Bohr Shells:\t\t");
+	fancyBshells(input);
 	printf("\n");
 	printf("Phase:\t\t\t");
 	if(input->phase == -1)
@@ -296,6 +299,9 @@ void completeElementData(element *input)
 		}
 		printf(" amu");
 	}
+	printf("\n");
+	printf("Bohr Shells:\t\t\t");
+	fancyBshells(input);
 	printf("\n");
 	printf("Natural Occurence:\t\t");
 	if(input->naturalOccurence == 0)
