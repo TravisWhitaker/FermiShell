@@ -98,23 +98,6 @@ void basicElementData(element *input)
 	printf("Symbol:\t\t\t%s\n",input->atomSymbol);
 	printf("Atomic Number:\t\t%d\n",input->atomNumber);
 	printf("Table Block:\t\t%s\n",input->block);
-	printf("Bohr Shells:\t\t");
-	for(int i=0;i<9;i++)
-	{
-		if(input->bohrShells[i] == 0)
-		{
-			break;
-		}
-		else if(input->bohrShells[(i+1)] == 0)
-		{
-			printf("%d",input->bohrShells[i]);
-			break;
-		}
-		else
-		{
-			printf("%d-",input->bohrShells[i]);
-		}
-	}
 	printf("\n");
 	printf("Atomic Mass:\t\t");
 	if(mpf_cmp_si(input->atomMass,-1) == 0)
@@ -382,7 +365,7 @@ void completeElementData(element *input)
 		printf("°C");
 	}
 	printf("\n");
-	printf("Boilint Point:\t\t\t");
+	printf("Boiling Point:\t\t\t");
 	if(mpf_cmp_si(input->vaporP,-1) == 0)
 	{
 		printf("Ambiguous/Unknown");
