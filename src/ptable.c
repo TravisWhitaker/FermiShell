@@ -1905,6 +1905,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"107.8682",10);
 	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"d");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 18; elementPop->bohrShells[4] = 1;
+	elementPop->vEshell = elementPop->bohrShells[4];
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"961.78",10);
     mpf_init_set_str(elementPop->vaporP,"2161",10);
@@ -1944,6 +1946,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"112.411",10);
 	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"d");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 18; elementPop->bohrShells[4] = 2;
+	elementPop->vEshell = elementPop->bohrShells[4];
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"321.07",10);
     mpf_init_set_str(elementPop->vaporP,"767",10);
@@ -1983,6 +1987,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"114.818",10);
 	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"p");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 18; elementPop->bohrShells[4] = 3;
+	elementPop->vEshell = elementPop->bohrShells[4];
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"156.6",10);
     mpf_init_set_str(elementPop->vaporP,"2072",10);
@@ -2022,6 +2028,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"118.710",10);
 	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"p");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 18; elementPop->bohrShells[4] = 4;
+	elementPop->vEshell = elementPop->bohrShells[4];
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"231.9",10);
     mpf_init_set_str(elementPop->vaporP,"2602",10);
@@ -2061,6 +2069,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"121.760",10);
 	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"p");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 18; elementPop->bohrShells[4] = 5;
+	elementPop->vEshell = elementPop->bohrShells[4];
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"630.63",10);
     mpf_init_set_str(elementPop->vaporP,"1587",10);
@@ -2100,6 +2110,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"127.60",10);
 	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"p");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 18; elementPop->bohrShells[4] = 6;
+	elementPop->vEshell = elementPop->bohrShells[4];
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"449.51",10);
     mpf_init_set_str(elementPop->vaporP,"988",10);
@@ -2139,6 +2151,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"126.90447",10);
 	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"p");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 18; elementPop->bohrShells[4] = 7;
+	elementPop->vEshell = elementPop->bohrShells[4];
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"113.7",10);
     mpf_init_set_str(elementPop->vaporP,"184.3",10);
@@ -2178,6 +2192,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"131.293",10);
 	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"p");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 18; elementPop->bohrShells[4] = 8;
+	elementPop->vEshell = elementPop->bohrShells[4];
     elementPop->phase = 0;
     mpf_init_set_str(elementPop->fusionP,"-111.8",10);
     mpf_init_set_str(elementPop->vaporP,"-108",10);
@@ -2217,6 +2233,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"132.9054519",10);
 	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"s");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 18; elementPop->bohrShells[4] = 8; elementPop->bohrShells[5] = 1;
+	elementPop->vEshell = elementPop->bohrShells[5];
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"28.44",10);
     mpf_init_set_str(elementPop->vaporP,"671",10);
@@ -2256,6 +2274,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"137.327",10);
 	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"s");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 18; elementPop->bohrShells[4] = 8; elementPop->bohrShells[5] = 2;
+	elementPop->vEshell = elementPop->bohrShells[5];
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"727",10);
     mpf_init_set_str(elementPop->vaporP,"1870",10);
@@ -2295,6 +2315,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"138.90547",10);
 	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"f");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 18; elementPop->bohrShells[4] = 9; elementPop->bohrShells[5] = 2;
+	elementPop->vEshell = elementPop->bohrShells[5];
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"920",10);
     mpf_init_set_str(elementPop->vaporP,"3464",10);
@@ -2334,6 +2356,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"140.116",10);
 	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"f");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 19; elementPop->bohrShells[4] = 9; elementPop->bohrShells[5] = 2;
+	elementPop->vEshell = elementPop->bohrShells[5];
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"798",10);
     mpf_init_set_str(elementPop->vaporP,"3360",10);
@@ -2373,6 +2397,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"140.90765",10);
 	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"f");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 21; elementPop->bohrShells[4] = 8; elementPop->bohrShells[5] = 2;
+	elementPop->vEshell = elementPop->bohrShells[5];
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"931",10);
     mpf_init_set_str(elementPop->vaporP,"3290",10);
@@ -2412,6 +2438,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"144.242",10);
 	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"f");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 22; elementPop->bohrShells[4] = 8; elementPop->bohrShells[5] = 2;
+	elementPop->vEshell = elementPop->bohrShells[5];
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"1021",10);
     mpf_init_set_str(elementPop->vaporP,"3100",10);
@@ -2451,6 +2479,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"144.912749023",10);
 	elementPop->naturalOccurence = 1;
 	portstrcpy(elementPop->block,"f");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 23; elementPop->bohrShells[4] = 8; elementPop->bohrShells[5] = 2;
+	elementPop->vEshell = elementPop->bohrShells[5];
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"1100",10);
     mpf_init_set_str(elementPop->vaporP,"3000",10);
@@ -2490,6 +2520,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"150.36",10);
 	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"f");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 24; elementPop->bohrShells[4] = 8; elementPop->bohrShells[5] = 2;
+	elementPop->vEshell = elementPop->bohrShells[5];
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"1072",10);
     mpf_init_set_str(elementPop->vaporP,"1803",10);
@@ -2529,6 +2561,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"151.964",10);
 	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"f");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 25; elementPop->bohrShells[4] = 8; elementPop->bohrShells[5] = 2;
+	elementPop->vEshell = elementPop->bohrShells[5];
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"822",10);
     mpf_init_set_str(elementPop->vaporP,"1527",10);
@@ -2568,6 +2602,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"157.25",10);
 	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"f");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 25; elementPop->bohrShells[4] = 9; elementPop->bohrShells[5] = 2;
+	elementPop->vEshell = elementPop->bohrShells[5];
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"1313",10);
     mpf_init_set_str(elementPop->vaporP,"3250",10);
@@ -2607,6 +2643,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"158.92535",10);
 	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"f");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 27; elementPop->bohrShells[4] = 8; elementPop->bohrShells[5] = 2;
+	elementPop->vEshell = elementPop->bohrShells[5];
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"1356",10);
     mpf_init_set_str(elementPop->vaporP,"3230",10);
@@ -2646,6 +2684,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"162.500",10);
 	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"f");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 28; elementPop->bohrShells[4] = 8; elementPop->bohrShells[5] = 2;
+	elementPop->vEshell = elementPop->bohrShells[5];
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"1412",10);
     mpf_init_set_str(elementPop->vaporP,"2567",10);
@@ -2685,6 +2725,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"164.93032",10);
 	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"f");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 29; elementPop->bohrShells[4] = 8; elementPop->bohrShells[5] = 2;
+	elementPop->vEshell = elementPop->bohrShells[5];
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"1474",10);
     mpf_init_set_str(elementPop->vaporP,"2700",10);
@@ -2724,6 +2766,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"167.259",10);
 	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"f");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 20; elementPop->bohrShells[4] = 8; elementPop->bohrShells[5] = 2;
+	elementPop->vEshell = elementPop->bohrShells[5];
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"1497",10);
     mpf_init_set_str(elementPop->vaporP,"2868",10);
@@ -2763,6 +2807,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"168.93421",10);
 	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"f");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 31; elementPop->bohrShells[4] = 8; elementPop->bohrShells[5] = 2;
+	elementPop->vEshell = elementPop->bohrShells[5];
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"1545",10);
     mpf_init_set_str(elementPop->vaporP,"1950",10);
@@ -2802,6 +2848,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"173.054",10);
 	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"f");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 32; elementPop->bohrShells[4] = 8; elementPop->bohrShells[5] = 2;
+	elementPop->vEshell = elementPop->bohrShells[5];
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"819",10);
     mpf_init_set_str(elementPop->vaporP,"1196",10);
@@ -2841,6 +2889,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"174.9668",10);
 	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"d");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 32; elementPop->bohrShells[4] = 9; elementPop->bohrShells[5] = 2;
+	elementPop->vEshell = elementPop->bohrShells[5];
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"1663",10);
     mpf_init_set_str(elementPop->vaporP,"3402",10);
@@ -2880,6 +2930,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"178.49",10);
 	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"d");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 32; elementPop->bohrShells[4] = 10; elementPop->bohrShells[5] = 2;
+	elementPop->vEshell = elementPop->bohrShells[5];
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"2233",10);
     mpf_init_set_str(elementPop->vaporP,"4603",10);
@@ -2919,6 +2971,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"180.94780",10);
 	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"d");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 32; elementPop->bohrShells[4] = 11; elementPop->bohrShells[5] = 2;
+	elementPop->vEshell = elementPop->bohrShells[5];
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"3017",10);
     mpf_init_set_str(elementPop->vaporP,"5458",10);
@@ -2958,6 +3012,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"183.84",10);
 	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"d");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 32; elementPop->bohrShells[4] = 12; elementPop->bohrShells[5] = 2;
+	elementPop->vEshell = elementPop->bohrShells[5];
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"3422",10);
     mpf_init_set_str(elementPop->vaporP,"5555",10);
@@ -2997,6 +3053,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"186.207",10);
 	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"d");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 32; elementPop->bohrShells[4] = 13; elementPop->bohrShells[5] = 2;
+	elementPop->vEshell = elementPop->bohrShells[5];
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"3186",10);
     mpf_init_set_str(elementPop->vaporP,"5596",10);
@@ -3036,6 +3094,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"190.23",10);
 	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"d");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 32; elementPop->bohrShells[4] = 14; elementPop->bohrShells[5] = 2;
+	elementPop->vEshell = elementPop->bohrShells[5];
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"3033",10);
     mpf_init_set_str(elementPop->vaporP,"5012",10);
@@ -3075,6 +3135,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"192.217",10);
 	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"d");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 32; elementPop->bohrShells[4] = 15; elementPop->bohrShells[5] = 2;
+	elementPop->vEshell = elementPop->bohrShells[5];
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"2466",10);
     mpf_init_set_str(elementPop->vaporP,"4428",10);
@@ -3114,6 +3176,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"195.084",10);
 	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"d");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 32; elementPop->bohrShells[4] = 17; elementPop->bohrShells[5] = 1;
+	elementPop->vEshell = elementPop->bohrShells[5];
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"1768",10);
     mpf_init_set_str(elementPop->vaporP,"3825",10);
@@ -3153,6 +3217,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"196.966569",10);
 	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"d");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 32; elementPop->bohrShells[4] = 18; elementPop->bohrShells[5] = 1;
+	elementPop->vEshell = elementPop->bohrShells[5];
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"1064.18",10);
     mpf_init_set_str(elementPop->vaporP,"2856",10);
@@ -3192,6 +3258,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"200.59",10);
 	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"d");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 32; elementPop->bohrShells[4] = 18; elementPop->bohrShells[5] = 2;
+	elementPop->vEshell = elementPop->bohrShells[5];
     elementPop->phase = 1;
     mpf_init_set_str(elementPop->fusionP,"-38.83",10);
     mpf_init_set_str(elementPop->vaporP,"356.73",10);
@@ -3231,6 +3299,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"204.3833",10);
 	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"p");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 32; elementPop->bohrShells[4] = 18; elementPop->bohrShells[5] = 3;
+	elementPop->vEshell = elementPop->bohrShells[5];
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"304",10);
     mpf_init_set_str(elementPop->vaporP,"1473",10);
@@ -3270,6 +3340,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"207.2",10);
 	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"p");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 32; elementPop->bohrShells[4] = 18; elementPop->bohrShells[5] = 4;
+	elementPop->vEshell = elementPop->bohrShells[5];
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"327.46",10);
     mpf_init_set_str(elementPop->vaporP,"1749",10);
@@ -3309,6 +3381,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"208.98040",10);
 	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"p");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 32; elementPop->bohrShells[4] = 18; elementPop->bohrShells[5] = 5;
+	elementPop->vEshell = elementPop->bohrShells[5];
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"271.3",10);
     mpf_init_set_str(elementPop->vaporP,"1564",10);
@@ -3348,6 +3422,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"208.982430435",10);
 	elementPop->naturalOccurence = 1;
 	portstrcpy(elementPop->block,"p");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 32; elementPop->bohrShells[4] = 18; elementPop->bohrShells[5] = 6;
+	elementPop->vEshell = elementPop->bohrShells[5];
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"254",10);
     mpf_init_set_str(elementPop->vaporP,"962",10);
@@ -3387,6 +3463,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"209.98714771",10);
 	elementPop->naturalOccurence = 1;
 	portstrcpy(elementPop->block,"p");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 32; elementPop->bohrShells[4] = 18; elementPop->bohrShells[5] = 7;
+	elementPop->vEshell = elementPop->bohrShells[5];
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"302",10);
     mpf_init_set_str(elementPop->vaporP,"-1",10);
@@ -3426,6 +3504,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"222.017577738",10);
 	elementPop->naturalOccurence = 1;
 	portstrcpy(elementPop->block,"p");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 32; elementPop->bohrShells[4] = 18; elementPop->bohrShells[5] = 8;
+	elementPop->vEshell = elementPop->bohrShells[5];
     elementPop->phase = 0;
     mpf_init_set_str(elementPop->fusionP,"-71",10);
     mpf_init_set_str(elementPop->vaporP,"-61.7",10);
@@ -3465,6 +3545,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"223.019735857",10);
 	elementPop->naturalOccurence = 1;
 	portstrcpy(elementPop->block,"s");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 32; elementPop->bohrShells[4] = 18; elementPop->bohrShells[5] = 8; elementPop->bohrShells[6] = 1;
+	elementPop->vEshell = elementPop->bohrShells[6];
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"-1",10);
     mpf_init_set_str(elementPop->vaporP,"-1",10);
@@ -3504,6 +3586,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"226.025409823",10);
 	elementPop->naturalOccurence = 1;
 	portstrcpy(elementPop->block,"s");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 32; elementPop->bohrShells[4] = 18; elementPop->bohrShells[5] = 8; elementPop->bohrShells[6] = 2;
+	elementPop->vEshell = elementPop->bohrShells[6];
     elementPop->phase = 2;
     mpf_init_set_str(elementPop->fusionP,"700",10);
     mpf_init_set_str(elementPop->vaporP,"1731",10);
@@ -3543,6 +3627,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"227.027752127",10);
 	elementPop->naturalOccurence = 1;
 	portstrcpy(elementPop->block,"f");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 32; elementPop->bohrShells[4] = 18; elementPop->bohrShells[5] = 9; elementPop->bohrShells[6] = 2;
+	elementPop->vEshell = elementPop->bohrShells[6];
     elementPop->phase =2;
     mpf_init_set_str(elementPop->fusionP,"1050",10);
     mpf_init_set_str(elementPop->vaporP,"3200",10);
@@ -3582,6 +3668,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"232.03806",10);
 	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"f");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 32; elementPop->bohrShells[4] = 18; elementPop->bohrShells[5] = 10; elementPop->bohrShells[6] = 2;
+	elementPop->vEshell = elementPop->bohrShells[6];
     elementPop->phase =2;
     mpf_init_set_str(elementPop->fusionP,"1750",10);
     mpf_init_set_str(elementPop->vaporP,"4820",10);
@@ -3621,6 +3709,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"231.03586",10);
 	elementPop->naturalOccurence = 1;
 	portstrcpy(elementPop->block,"f");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 32; elementPop->bohrShells[4] = 20; elementPop->bohrShells[5] = 9; elementPop->bohrShells[6] = 2;
+	elementPop->vEshell = elementPop->bohrShells[6];
     elementPop->phase =2;
     mpf_init_set_str(elementPop->fusionP,"1572",10);
     mpf_init_set_str(elementPop->vaporP,"4000",10);
@@ -3660,6 +3750,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"238.02891",10);
 	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"f");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 32; elementPop->bohrShells[4] = 21; elementPop->bohrShells[5] = 9; elementPop->bohrShells[6] = 2;
+	elementPop->vEshell = elementPop->bohrShells[6];
     elementPop->phase =2;
     mpf_init_set_str(elementPop->fusionP,"1135",10);
     mpf_init_set_str(elementPop->vaporP,"3927",10);
@@ -3699,6 +3791,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"237.048173444",10);
 	elementPop->naturalOccurence = 1;
 	portstrcpy(elementPop->block,"f");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 32; elementPop->bohrShells[4] = 22; elementPop->bohrShells[5] = 9; elementPop->bohrShells[6] = 2;
+	elementPop->vEshell = elementPop->bohrShells[6];
     elementPop->phase =2;
     mpf_init_set_str(elementPop->fusionP,"644",10);
     mpf_init_set_str(elementPop->vaporP,"4000",10);
@@ -3738,6 +3832,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"244.064203907",10);
 	elementPop->naturalOccurence = 0;
 	portstrcpy(elementPop->block,"f");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 32; elementPop->bohrShells[4] = 24; elementPop->bohrShells[5] = 8; elementPop->bohrShells[6] = 2;
+	elementPop->vEshell = elementPop->bohrShells[6];
     elementPop->phase =2;
     mpf_init_set_str(elementPop->fusionP,"640",10);
     mpf_init_set_str(elementPop->vaporP,"3230",10);
@@ -3777,6 +3873,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"243.06138108",10);
 	elementPop->naturalOccurence = 1;
 	portstrcpy(elementPop->block,"f");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 32; elementPop->bohrShells[4] = 25; elementPop->bohrShells[5] = 8; elementPop->bohrShells[6] = 2;
+	elementPop->vEshell = elementPop->bohrShells[6];
     elementPop->phase =2;
     mpf_init_set_str(elementPop->fusionP,"1170",10);
     mpf_init_set_str(elementPop->vaporP,"2011",10);
@@ -3816,6 +3914,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"247.07035354",10);
 	elementPop->naturalOccurence = 1;
 	portstrcpy(elementPop->block,"f");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 32; elementPop->bohrShells[4] = 25; elementPop->bohrShells[5] = 9; elementPop->bohrShells[6] = 2;
+	elementPop->vEshell = elementPop->bohrShells[6];
     elementPop->phase =2;
     mpf_init_set_str(elementPop->fusionP,"1345",10);
     mpf_init_set_str(elementPop->vaporP,"3110",10);
@@ -3855,6 +3955,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"247.07030708",10);
 	elementPop->naturalOccurence = 1;
 	portstrcpy(elementPop->block,"f");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 32; elementPop->bohrShells[4] = 27; elementPop->bohrShells[5] = 8; elementPop->bohrShells[6] = 2;
+	elementPop->vEshell = elementPop->bohrShells[6];
     elementPop->phase =2;
     mpf_init_set_str(elementPop->fusionP,"986",10);
     mpf_init_set_str(elementPop->vaporP,"-1",10);
@@ -3894,6 +3996,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"251.079586788",10);
 	elementPop->naturalOccurence = 1; 
 	portstrcpy(elementPop->block,"f");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 32; elementPop->bohrShells[4] = 28; elementPop->bohrShells[5] = 8; elementPop->bohrShells[6] = 2;
+	elementPop->vEshell = elementPop->bohrShells[6];
     elementPop->phase =2;
     mpf_init_set_str(elementPop->fusionP,"900",10);
     mpf_init_set_str(elementPop->vaporP,"-1",10);
@@ -3933,6 +4037,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"252.082978512",10);
 	elementPop->naturalOccurence = 2;
 	portstrcpy(elementPop->block,"f");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 32; elementPop->bohrShells[4] = 29; elementPop->bohrShells[5] = 8; elementPop->bohrShells[6] = 2;
+	elementPop->vEshell = elementPop->bohrShells[6];
     elementPop->phase =2;
     mpf_init_set_str(elementPop->fusionP,"860",10);
     mpf_init_set_str(elementPop->vaporP,"-1",10);
@@ -3972,6 +4078,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"257.095104724",10);
 	elementPop->naturalOccurence = 2;
 	portstrcpy(elementPop->block,"f");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 32; elementPop->bohrShells[4] = 30; elementPop->bohrShells[5] = 8; elementPop->bohrShells[6] = 2;
+	elementPop->vEshell = elementPop->bohrShells[6];
     elementPop->phase =2;
     mpf_init_set_str(elementPop->fusionP,"1527",10);
     mpf_init_set_str(elementPop->vaporP,"-1",10);
@@ -4011,6 +4119,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"258.098431319",10);
 	elementPop->naturalOccurence = 2;
 	portstrcpy(elementPop->block,"f");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 32; elementPop->bohrShells[4] = 31; elementPop->bohrShells[5] = 8; elementPop->bohrShells[6] = 2;
+	elementPop->vEshell = elementPop->bohrShells[6];
     elementPop->phase =2;
     mpf_init_set_str(elementPop->fusionP,"827",10);
     mpf_init_set_str(elementPop->vaporP,"-1",10);
@@ -4050,6 +4160,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"259.101031",10);
 	elementPop->naturalOccurence = 2;
 	portstrcpy(elementPop->block,"f");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 32; elementPop->bohrShells[4] = 32; elementPop->bohrShells[5] = 8; elementPop->bohrShells[6] = 2;
+	elementPop->vEshell = elementPop->bohrShells[6];
     elementPop->phase =2;
     mpf_init_set_str(elementPop->fusionP,"827",10);
     mpf_init_set_str(elementPop->vaporP,"-1",10);
@@ -4089,6 +4201,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"262.109634",10);
 	elementPop->naturalOccurence = 2;
 	portstrcpy(elementPop->block,"d");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 32; elementPop->bohrShells[4] = 32; elementPop->bohrShells[5] = 8; elementPop->bohrShells[6] = 3;
+	elementPop->vEshell = elementPop->bohrShells[6];
     elementPop->phase =2;
     mpf_init_set_str(elementPop->fusionP,"1627",10);
     mpf_init_set_str(elementPop->vaporP,"-1",10);
@@ -4128,6 +4242,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"265.116704",10);
 	elementPop->naturalOccurence = 2;
 	portstrcpy(elementPop->block,"d");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 32; elementPop->bohrShells[4] = 32; elementPop->bohrShells[5] = 10; elementPop->bohrShells[6] = 2;
+	elementPop->vEshell = elementPop->bohrShells[6];
     elementPop->phase = -1;
     mpf_init_set_str(elementPop->fusionP,"-1",10);
     mpf_init_set_str(elementPop->vaporP,"-1",10);
@@ -4167,6 +4283,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"268.125445",10);
 	elementPop->naturalOccurence = 2;
 	portstrcpy(elementPop->block,"d");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 32; elementPop->bohrShells[4] = 32; elementPop->bohrShells[5] = 11; elementPop->bohrShells[6] = 2;
+	elementPop->vEshell = elementPop->bohrShells[6];
     elementPop->phase = -1;
     mpf_init_set_str(elementPop->fusionP,"-1",10);
     mpf_init_set_str(elementPop->vaporP,"-1",10);
@@ -4206,6 +4324,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"271.133472",10);
 	elementPop->naturalOccurence = 2;
 	portstrcpy(elementPop->block,"d");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 32; elementPop->bohrShells[4] = 32; elementPop->bohrShells[5] = 12; elementPop->bohrShells[6] = 2;
+	elementPop->vEshell = elementPop->bohrShells[6];
     elementPop->phase = -1;
     mpf_init_set_str(elementPop->fusionP,"-1",10);
     mpf_init_set_str(elementPop->vaporP,"-1",10);
@@ -4245,6 +4365,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"272.138032",10);
 	elementPop->naturalOccurence = 2;
 	portstrcpy(elementPop->block,"d");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 32; elementPop->bohrShells[4] = 32; elementPop->bohrShells[5] = 13; elementPop->bohrShells[6] = 2;
+	elementPop->vEshell = elementPop->bohrShells[6];
     elementPop->phase = -1;
     mpf_init_set_str(elementPop->fusionP,"-1",10);
     mpf_init_set_str(elementPop->vaporP,"-1",10);
@@ -4284,6 +4406,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"270.134650",10);
 	elementPop->naturalOccurence = 2;
 	portstrcpy(elementPop->block,"d");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 32; elementPop->bohrShells[4] = 32; elementPop->bohrShells[5] = 14; elementPop->bohrShells[6] = 2;
+	elementPop->vEshell = elementPop->bohrShells[6];
     elementPop->phase = -1;
     mpf_init_set_str(elementPop->fusionP,"-1",10);
     mpf_init_set_str(elementPop->vaporP,"-1",10);
@@ -4323,6 +4447,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"276.151156",10);
 	elementPop->naturalOccurence = 2;
 	portstrcpy(elementPop->block,"d");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 32; elementPop->bohrShells[4] = 32; elementPop->bohrShells[5] = 15; elementPop->bohrShells[6] = 2;
+	elementPop->vEshell = elementPop->bohrShells[6];
     elementPop->phase = -1;
     mpf_init_set_str(elementPop->fusionP,"-1",10);
     mpf_init_set_str(elementPop->vaporP,"-1",10);
@@ -4362,6 +4488,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"281.162061",10);
 	elementPop->naturalOccurence = 2;
 	portstrcpy(elementPop->block,"d");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 32; elementPop->bohrShells[4] = 32; elementPop->bohrShells[5] = 16; elementPop->bohrShells[6] = 2;
+	elementPop->vEshell = elementPop->bohrShells[6];
     elementPop->phase = -1;
     mpf_init_set_str(elementPop->fusionP,"-1",10);
     mpf_init_set_str(elementPop->vaporP,"-1",10);
@@ -4401,6 +4529,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"280.164473",10);
 	elementPop->naturalOccurence = 2;
 	portstrcpy(elementPop->block,"d");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 32; elementPop->bohrShells[4] = 32; elementPop->bohrShells[5] = 17; elementPop->bohrShells[6] = 2;
+	elementPop->vEshell = elementPop->bohrShells[6];
     elementPop->phase = -1;
     mpf_init_set_str(elementPop->fusionP,"-1",10);
     mpf_init_set_str(elementPop->vaporP,"-1",10);
@@ -4440,6 +4570,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"285.174105",10);
 	elementPop->naturalOccurence = 2;
 	portstrcpy(elementPop->block,"d");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 32; elementPop->bohrShells[4] = 32; elementPop->bohrShells[5] = 18; elementPop->bohrShells[6] = 2;
+	elementPop->vEshell = elementPop->bohrShells[6];
     elementPop->phase = -1;
     mpf_init_set_str(elementPop->fusionP,"-1",10);
     mpf_init_set_str(elementPop->vaporP,"-1",10);
@@ -4479,6 +4611,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"284.178080",10);
 	elementPop->naturalOccurence = 2;
 	portstrcpy(elementPop->block,"p");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 32; elementPop->bohrShells[4] = 32; elementPop->bohrShells[5] = 18; elementPop->bohrShells[6] = 3;
+	elementPop->vEshell = elementPop->bohrShells[6];
     elementPop->phase = -1;
     mpf_init_set_str(elementPop->fusionP,"-1",10);
     mpf_init_set_str(elementPop->vaporP,"-1",10);
@@ -4518,6 +4652,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"-1",10);
 	elementPop->naturalOccurence = 2;
 	portstrcpy(elementPop->block,"p");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 32; elementPop->bohrShells[4] = 32; elementPop->bohrShells[5] = 18; elementPop->bohrShells[6] = 4;
+	elementPop->vEshell = elementPop->bohrShells[6];
     elementPop->phase = -1;
     mpf_init_set_str(elementPop->fusionP,"-1",10);
     mpf_init_set_str(elementPop->vaporP,"-1",10);
@@ -4557,6 +4693,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"-1",10);
 	elementPop->naturalOccurence = 2;
 	portstrcpy(elementPop->block,"p");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 32; elementPop->bohrShells[4] = 32; elementPop->bohrShells[5] = 18; elementPop->bohrShells[6] = 5;
+	elementPop->vEshell = elementPop->bohrShells[6];
     elementPop->phase = -1;
     mpf_init_set_str(elementPop->fusionP,"-1",10);
     mpf_init_set_str(elementPop->vaporP,"-1",10);
@@ -4596,6 +4734,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"-1",10);
 	elementPop->naturalOccurence = 2;
 	portstrcpy(elementPop->block,"p");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 32; elementPop->bohrShells[4] = 32; elementPop->bohrShells[5] = 18; elementPop->bohrShells[6] = 6;
+	elementPop->vEshell = elementPop->bohrShells[6];
     elementPop->phase = -1;
     mpf_init_set_str(elementPop->fusionP,"-1",10);
     mpf_init_set_str(elementPop->vaporP,"-1",10);
@@ -4635,6 +4775,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"-1",10);
 	elementPop->naturalOccurence = 2;
 	portstrcpy(elementPop->block,"p");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 32; elementPop->bohrShells[4] = 32; elementPop->bohrShells[5] = 18; elementPop->bohrShells[6] = 7;
+	elementPop->vEshell = elementPop->bohrShells[6];
     elementPop->phase = -1;
     mpf_init_set_str(elementPop->fusionP,"-1",10);
     mpf_init_set_str(elementPop->vaporP,"-1",10);
@@ -4674,6 +4816,8 @@ void popPtable()
     mpf_init_set_str(elementPop->atomMass,"-1",10);
 	elementPop->naturalOccurence = 2;
 	portstrcpy(elementPop->block,"p");
+	elementPop->bohrShells[0] = 2; elementPop->bohrShells[1] = 8; elementPop->bohrShells[2] = 18; elementPop->bohrShells[3] = 32; elementPop->bohrShells[4] = 32; elementPop->bohrShells[5] = 18; elementPop->bohrShells[6] = 8;
+	elementPop->vEshell = elementPop->bohrShells[6];
     elementPop->phase = -1;
     mpf_init_set_str(elementPop->fusionP,"-1",10);
     mpf_init_set_str(elementPop->vaporP,"-1",10);
