@@ -38,5 +38,93 @@ void fancyBshells(element *input)
 	}
 }
 
+void fancyLewisStructure(element *input)
+{
+	int complete;
+	int electrons = input->vEshell;
+	int quadrant[4] = {0,0,0,0};
+	
+	while(electrons != 0)
+	{
+		for(int i=0;i<4;i++)
+		{
+			if(electrons != 0)
+			{
+				quadrant[i] = quadrant[i] + 1;
+				electrons--;
+			}
+			else
+			{
+				break;
+			}
+		}
+		for(int i=0;i<4;i++)
+		{
+			if(electrons != 0)
+			{
+				quadrant[i] = quadrant[i] + 1;
+				electrons--;
+			}
+			else
+			{
+				break;
+			}
+		}
+	}
 
+	printf(" ");
+	if(quadrant[0] == 0)
+	{
+		asm("nop");
+	}
+	else if(quadrant[0] == 1)
+	{
+		printf(".");
+	}
+	else if(quadrant[0] == 2)
+	{
+		printf("..");
+	}
+	printf("\n\t\t\t\t");
+	if(quadrant[1] == 0)
+	{
+		printf(" ");
+	}
+	else if(quadrant[1] == 1)
+	{
+		printf(".");
+	}
+	else if(quadrant[1] == 2)
+	{
+		printf(":");
+	}
+	printf("%s",input->atomSymbol);
+	if(quadrant[2] == 0)
+	{
+		printf(" ");
+	}
+	else if(quadrant[2] == 1)
+	{
+		printf(".");
+	}
+	else if(quadrant[2] == 2)
+	{
+		printf(":");
+	}
+	printf("\n\t\t\t\t");
+	printf(" ");
+	if(quadrant[3] == 0)
+	{
+		asm("nop");
+	}
+	else if(quadrant[3] == 1)
+	{
+		printf("'");
+	}
+	else if(quadrant[3] == 2)
+	{
+		printf("''");
+	}
+	return;
+}
 #endif

@@ -13,11 +13,11 @@ element *output;
 int argHandled = 0;
 int tablesFilled = 0;
 char mutableArg[256];
+int complete = 0;
 
 int main(int argc, char *argv[])
 {
 	int version = 0;
-	int complete = 0;
 	precision = 0;
 	for(int i=1;i<argc;i++)
 	{

@@ -120,6 +120,9 @@ void basicElementData(element *input)
 	printf("Bohr Shells:\t\t");
 	fancyBshells(input);
 	printf("\n");
+	printf("Lewis Structure:\t\t");
+	fancyLewisStructure(input);
+	printf("\n");
 	printf("Phase:\t\t\t");
 	if(input->phase == -1)
 	{
