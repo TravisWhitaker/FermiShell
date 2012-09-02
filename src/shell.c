@@ -6,6 +6,7 @@
 #include <ptable.h>
 #include <portutils.h>
 #include <parser.h>
+#include <tableIO.h>
 
 char Version[] = "FermiShell Version 0.0.1d";
 char usersays[256];
@@ -14,6 +15,8 @@ int argHandled = 0;
 int tablesFilled = 0;
 char mutableArg[256];
 int complete = 0;
+int dump = 0;
+int load = 0;
 
 int main(int argc, char *argv[])
 {
@@ -25,6 +28,15 @@ int main(int argc, char *argv[])
 		{
 			version = 1;
 			break;
+		}
+		else if(portstrcmp(argv[i],"-d",sizeof(argv[i]),3) == 1)
+		{
+			dump = 1;
+			break;
+		}
+		else if(portstrcmp(argv[i],"-l",sizeof(argv[i]),3) == 1)
+		{
+			load = 1;
 		}
 		else if(portstrcmp(argv[i],"-c",sizeof(argv[i]),3) == 1)
 		{
@@ -89,6 +101,18 @@ int main(int argc, char *argv[])
 	else if(version == 1)
 	{
 		printf("%s\n",Version);
+		return 0;
+	}
+	else if(dump == 1)
+	{
+		printf("This is where I would take a dump.\n");
+		printf("Populating tables...");
+		popPtable();
+		printf("\t\t\t\t\t[OK!]\n");
+		printf("Dumping tables...");
+		dumpTables("poop.frm");
+		printf("\t\t\t\t\t[OK!]\n");
+		printf("Exiting...\n");
 		return 0;
 	}
 	else
