@@ -128,7 +128,7 @@ int main(int argc, char *argv[])
 		while(usersays[0] != 'q' && usersays[0] != 'Q')
 		{
 			printf("~#>");
-			fgets(usersays,356,stdin);
+			fgets(usersays,256,stdin);
 			if(usersays[0] == 'q' || usersays[0] == 'Q')
 			{
 				break;
