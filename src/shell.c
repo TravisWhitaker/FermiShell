@@ -59,6 +59,7 @@ int main(int argc, char *argv[])
 			}
 			else
 			{
+				mpf_set_default_prec(8*precision);
 				continue;
 			}
 		}
