@@ -17,6 +17,7 @@ char mutableArg[256];
 int complete = 0;
 int dump = 0;
 int load = 0;
+int parseMode = 0;
 
 int main(int argc, char *argv[])
 {
