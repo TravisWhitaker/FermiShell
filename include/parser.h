@@ -409,7 +409,7 @@ void completeElementData(element *input)
 		}
 	}
 	printf("\n");
-	printf("Yount's Modulus:\t\t");
+	printf("Young's Modulus:\t\t");
 	if(mpf_cmp_si(input->youngsModulus,-1) == 0)
 	{
 		printf("Ambiguous/Unknown");
