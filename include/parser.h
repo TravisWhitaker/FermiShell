@@ -26,7 +26,7 @@ int beanCounter(const char input[], const int inputSize)
 	return -1;
 }
 
-char *muchBetter(char input[], const int inputSize)
+char *muchBetter(char input[], const int inputSize)//EMILY SAID TO WRITE SOMETHING HERE
 {
 	char lowerCase[27] = "abcdefghijklmnopqrstuvwxyz";
 	char upperCase[27] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
@@ -53,7 +53,7 @@ char *muchBetter(char input[], const int inputSize)
 	return input;
 }
 
-element *singularParse(char input[], const int inputSize)
+element *singularParse(char input[], const int inputSize)//COMMENTS
 {
 	for(int i=0;i<inputSize;i++)
 	{
@@ -93,7 +93,7 @@ element *singularParse(char input[], const int inputSize)
 	return 0;
 }
 
-void basicElementData(element *input)
+void basicElementData(element *input)//LOL
 {
 	printf("Name:\t\t\t%s\n",input->atomName);
 	printf("Symbol:\t\t\t%s\n",input->atomSymbol);
