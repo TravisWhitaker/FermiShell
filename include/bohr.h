@@ -1,4 +1,5 @@
-//  FermiShell Copyright (C) 2012 Travis Whitaker
+//	FermiShell Copyright (C) 2012 Travis Whitaker
+
 #ifndef BOHR
 #define BOHR
 
@@ -151,4 +152,5 @@ void fancyLewisStructure(element *input)
 	}
 	return;
 }
+
 #endif

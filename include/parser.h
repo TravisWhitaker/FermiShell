@@ -1,4 +1,5 @@
-//  FermiShell Copyright (C) 2012 Travis Whitaker
+//	FermiShell Copyright (C) 2012 Travis Whitaker
+
 #ifndef PARSER
 #define PARSER
 
@@ -714,5 +715,5 @@ void completeElementData(element *input)
 	printf("CAS:\t\t\t\t%s\n",input->CASn);
 	printf("CID:\t\t\t\t%s\n",input->CIDn);
 }
-	
+
 #endif
