@@ -107,12 +107,12 @@ int main(int argc, char *argv[])
 	}
 	else if(dump == 1)
 	{
-		printf("This is where I would take a dump.\n");
+		printf("This is where tables would be dumped.\n");
 		printf("Populating tables...");
 		popPtable();
 		printf("\t\t\t\t\t[OK!]\n");
 		printf("Dumping tables...");
-		dumpTables("poop.frm");
+		dumpTables("tables.frm");
 		printf("\t\t\t\t\t[OK!]\n");
 		printf("Exiting...\n");
 		return 0;
